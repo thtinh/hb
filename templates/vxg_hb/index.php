@@ -64,7 +64,7 @@ $document->setTitle($webtitle." - ".$document->title);
 
                 <div class="span-17 last">
                     <div id="navbar">
-                        <jdoc:include type="modules" name="menu" style="none" />
+                        <jdoc:include type="modules" name="menu" style="none"/>
                     </div>
                     <div id="lang"><a id="en" class="lang-link" href="#"><img src="images/gb.gif"/></a></div>
                 </div>
@@ -96,7 +96,7 @@ $document->setTitle($webtitle." - ".$document->title);
 
                     <?php if($this->countModules('right')) : ?>
                     <div id="right-modules" class="span-7 last">
-                        <jdoc:include type="modules" name="right" style="withtitle" />
+                        <jdoc:include type="modules" name="right" style="withtitle"/>
                     </div>
                     <?php endif; ?>
 

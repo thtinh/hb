@@ -165,7 +165,7 @@ a:hover{text-decoration: underline;}
 #album-menu ul li.active{font-weight:bold; background-color:#26dcea;}
 #album-menu ul li.active a{color:#fff}
 
-#album-left{background:url('../images/album-sukien-bg.jpg') no-repeat 10px 0}
+#album-left{background:url('../images/album-sukien-bg.jpg') no-repeat 10px 0;position: relative;z-index: 1000}
 #album-left ul {list-style:none;margin-top:0px; margin-left:5px; padding-top:165px; padding-left:20px; overflow:hidden;  width:307px; height:484px;}
 #album-left ul li{background:url('../images/arrow-bt.png') no-repeat left 10px;font-weight:normal; padding:5px 0px 5px;padding-left:12px;border-bottom:1px dotted #c3e7f2;}
 #album-left ul li.last{font-weight:normal;border-bottom:0px}
@@ -173,19 +173,19 @@ a:hover{text-decoration: underline;}
 
 #album-content{padding-right:10px}
 #album-content #title{color:#19b7e4; font-weight:bold; padding:5px 0px;}
-#album-content #album-thumbnail{border-top:1px solid #19b7e4; border-bottom:1px  solid #19b7e4; margin-top:20px; height: 105px;}
+#album-content #album-thumbnail{border-top:1px solid #19b7e4;border-bottom:1px solid #19b7e4; margin-top:20px; height: 105px;}
 #album-content #album-thumbnail #back{padding-top:40px}
 #album-content #album-thumbnail #next{padding-top:40px}
-#album-content #album-thumbnail #thumbnail ul{ list-style:none; padding:0px 16px; margin:0px;}
-#album-content #album-thumbnail #thumbnail ul li{margin:20px 7px 0px 7px; border:1px solid #d3cece; height:62px; width:82px; float:left;}
-#album-content #album-thumbnail #thumbnail ul li.active{margin:20px 7px 0px 7px; border:2px solid #26dcea; height:62px; width:82px; float:left;}
-#album-content #thumbnail{width:530px}
+#album-content #album-thumbnail #thumbnail ul{ list-style:none; margin:0px;position: absolute;width: 11000px;z-index: 1;padding:0px;}
+#album-content #album-thumbnail #thumbnail ul li{margin:20px 10px; border:1px solid #d3cece; height:62px; width:82px; float:left;}
+#album-content #album-thumbnail #thumbnail ul li.active{margin:20px 10px; border:2px solid #26dcea; height:62px; width:82px; float:left;}
+#album-content #thumbnail{width:530px;position: relative;height: 86px;overflow: hidden;}
 #album-content #picture{margin-top:20px;  text-align:center; }
-#album-content #picture img{border:2px solid #d3cece; height:338px; width:450px;}
+#album-content #picture img{border:2px solid #d3cece}
 #album-content #description{width:450px; padding:5px 0px; margin:0 65px;}
 
-#album {background:url("../images/album-bg.jpg") no-repeat left bottom;overflow:hidden}
-
+#album {background:url("../images/album-bg.jpg") no-repeat left bottom;overflow:hidden;height: 790px;}
+#album p{margin-bottom: 5px;}
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
 .moduletable_contact h3, .moduletable_sponsor h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
