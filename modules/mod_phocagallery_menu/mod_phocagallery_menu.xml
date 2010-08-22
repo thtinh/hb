@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" group="" version="1.5.0" method="upgrade">
+	<name>Phoca Gallery Menu Module</name>
+	<creationDate>18/05/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>2.7.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description><![CDATA[ 
+       Phoca Gallery Menu Module - displays a horizontal or vertical menu of Phoca Gallery component's categories<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>  
+      ]]></description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename module="mod_phocagallery_menu">index.html</filename>
+		<filename module="mod_phocagallery_menu">mod_phocagallery_menu.php</filename>
+		<filename module="mod_phocagallery_menu">mod_phocagallery_menu.xml</filename>
+		<filename module="mod_phocagallery_menu">assets/JSCookMenu.js</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/arrow.gif</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/arrowLeft.gif</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/folder.gif</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/folderopen.gif</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/spacer.gif</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/theme.css</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/theme.js</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/themeLeft.css</filename>
+		<filename module="mod_phocagallery_menu">assets/ThemePhoca/themeLeft.js</filename>
+		<filename module="mod_phocagallery_menu">assets/effect.js</filename>
+		<filename module="mod_phocagallery_menu">assets/index.html</filename>
+		<filename module="mod_phocagallery_menu">tmpl/default.php</filename>
+		<filename module="mod_phocagallery_menu">tmpl/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocagallery_menu.ini</language>
+	</languages>
+
+	<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+	<files>
+		<filename>language/en-GB/en-GB.mod_phocagallery_menu.ini</filename>
+		<filename>other/install_xml.php</filename>
+	</files>
+	
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="hide_categories" type="textarea" rows="2" cols="26" default="" label="Hide Categories" description="Hide Categories DESC" />
+		
+		<param name="display_access_category" type="list" default="0" label="Display Access Categories" description="Display Access Categories DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="menu_theme" type="list" default="ThemePhoca" label="Menu Theme" description="Menu Theme DESC">
+			<option value="ThemePhoca">Phoca Theme</option>
+		</param>
+		
+		<param name="menu_type" type="list" default="0" label="Menu Type" description="Menu Type DESC">
+			<option value="hbr">Horizontal Bottom Right</option>
+			<option value="hur">Horizontal Up Right</option>
+			<option value="hbl">Horizontal Bottom Left</option>
+			<option value="hul">Horizontal Up Left</option>
+			<option value="vbr">Vertical Bottom Right</option>
+			<option value="vur">Vertical Up Right</option>
+			<option value="vbl">Vertical Bottom Left</option>
+			<option value="vul">Vertical Up Left</option>
+		</param>
+	</params>
+
+</install>

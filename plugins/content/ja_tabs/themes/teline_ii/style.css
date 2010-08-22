@@ -1,0 +1,238 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+#ja-colmass div.moduletable_tabs {
+	padding:0pt;
+	width:99%;
+	margin:0pt 0pt 20px;
+}
+.teline_ii .ja-tabswrap{
+	border:1px solid #CCCCCC;
+	margin:0pt 0pt 20px;
+	padding:0pt 0pt 0px;
+}
+.teline_ii .container{
+	overflow:hidden;
+	position:relative;
+	z-index:10;
+}
+
+.teline_ii .container .ja-tabs-title-top {
+	background:#F7F7F7 none repeat scroll 0%;
+	border-bottom:1px solid #CCCCCC;
+	height:30px;
+	position:relative;
+}
+
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title {
+	bottom:1px;
+	height:21px;
+	left:10px;
+	margin:0pt;
+	padding:0pt;
+	position:absolute;
+}
+
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li {
+	background:#EBF2F9 none repeat scroll 0%;
+	border:1px solid #CCCCCC;
+	cursor:pointer;
+	display:block;
+	float:left;
+	margin:0pt 1px;
+	
+}
+
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li h3 {	
+	border-color:#F0F0F0 rgb(240, 240, 240) -moz-use-text-color;
+	border-style:solid solid none;
+	border-width:1px 1px medium;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	margin:0pt;
+	padding:0pt 10px;
+	text-transform:uppercase;	
+}
+
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.active,
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background:#FFFFFF none repeat scroll 0%;
+	border-bottom:1px solid #FFFFFF;
+	
+}
+
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.active h3 ,
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.teline_ii .container .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3 {
+	color:#006699;
+	background:none;
+	border-bottom:none;
+	margin:0pt;
+	padding:0pt 10px;
+}
+.teline_ii .ja-tab-panels-top{
+	top:10px;
+}
+
+
+/* JA Tabs left */
+.teline_ii .ja-tabs-title-left {
+	background:#F7F7F7 none repeat scroll 0%;
+	height:100%;
+	border-right:1px solid #CCCCCC;
+}
+
+.teline_ii .ja-tabs-title-left ul.ja-tabs-title li {
+	background:#EBF2F9 none repeat scroll 0%;
+	border-bottom:1px solid #CCCCCC;	
+	cursor:pointer;
+	margin:0pt;
+	height:30px;
+}
+
+.teline_ii .ja-tabs-title-left ul.ja-tabs-title li h3 {		
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	margin:0pt;
+	text-transform:uppercase;	
+	padding-left:3px;
+	padding-top:4px;
+}
+
+.teline_ii .ja-tabs-title-left ul li.active,
+.teline_ii .ja-tabs-title-left ul li.firstactive,
+.teline_ii .ja-tabs-title-left ul li.lastactive {
+	background:#FFFFFF none repeat scroll 0%;
+}
+
+.teline_ii .ja-tabs-title-left ul li.active H3 ,
+.teline_ii .ja-tabs-title-left ul li.firstactive H3,
+.teline_ii .ja-tabs-title-left ul li.lastactive H3 {
+	color:#006699;
+	background:none;
+	border-bottom:none;	
+}
+.teline_ii .ja-tab-panels-left {
+	left:0px;
+}
+.ja-tabswrap div.ja-tab-content {
+	padding-left:5px;
+	width:99%;
+}
+
+/* JA Tabs right */
+.teline_ii .ja-tabs-title-right {
+	background:#F7F7F7 none repeat scroll 0%;
+	height:100%;
+	border-left:1px solid #CCCCCC;
+}
+
+.teline_ii .ja-tabs-title-right ul.ja-tabs-title li {
+	background:#EBF2F9 none repeat scroll 0%;
+	border-bottom:1px solid #CCCCCC;	
+	cursor:pointer;
+	margin: 0;
+	padding: 0;
+	height:30px;
+}
+
+.teline_ii .ja-tabs-title-right ul.ja-tabs-title li h3 {		
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	margin:0pt;
+	text-transform:uppercase;		
+	padding-top:4px;
+	padding-left:3px;
+}
+
+.teline_ii .ja-tabs-title-right ul li.active,
+.teline_ii .ja-tabs-title-right ul li.firstactive,
+.teline_ii .ja-tabs-title-right ul li.lastactive {
+	background:#FFFFFF none repeat scroll 0%;
+}
+
+.teline_ii .ja-tabs-title-right ul li.active H3 ,
+.teline_ii .ja-tabs-title-right ul li.firstactive H3,
+.teline_ii .ja-tabs-title-right ul li.lastactive H3 {
+	color:#006699;
+	background:none;
+	border-bottom:none;	
+}
+
+.teline_ii .ja-tabs-title-right ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top:0px;
+}
+
+.teline_ii * html .ja-tabs-title-right ul.ja-tabs-title { /*IE 6*/
+	right: -1px;
+}
+/* JA Tabs bottom*/
+.teline_ii .ja-tabs-title-bottom {
+	background:#F7F7F7 none repeat scroll 0%;
+	border-top:1px solid #CCCCCC;
+	height:30px;
+	position:relative;
+}
+.ja-tabs-title-bottom ul.ja-tabs-title {
+	top:-1px;
+}
+.teline_ii .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background:#EBF2F9 none repeat scroll 0%;
+	border:1px solid #CCCCCC;
+	border-top:none;
+	cursor:pointer;
+	display:block;
+	float:left;
+	margin:0pt 1px;
+}
+
+.teline_ii .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	border-color:#F0F0F0 rgb(240, 240, 240) -moz-use-text-color;
+	border-style:solid solid none;
+	border-width:1px 1px medium;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	line-height:20px;
+	margin:0pt;
+	padding:0pt 10px;
+	text-transform:uppercase;	
+}
+
+.teline_ii .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.teline_ii .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.teline_ii .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background:#FFFFFF none repeat scroll 0%;
+	border-top:1px solid #FFFFFF;
+}
+
+.teline_ii .ja-tabs-title-bottom ul li.active h3,
+.teline_ii .ja-tabs-title-bottom ul li.firstactive h3,
+.teline_ii .ja-tabs-title-bottom ul li.lastactive h3 {
+	color:#006699;
+	background:none;
+	border-bottom:none;
+	margin:0pt;
+	padding:0pt 10px;
+}

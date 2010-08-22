@@ -1,0 +1,128 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+.ja-tabswrap { margin: 0; padding: 0; }
+
+.seleni .container { overflow: hidden; position: relative; z-index: 10; }
+
+/* JA Tabs top */
+.seleni .container .ja-tabs-title-top {
+	background: #f7f7f7;
+	position: relative;
+	height: 32px !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title {
+	height: 32px;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li {
+	background: #f7f7f7;
+	border-right: 1px solid #ccc;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0;
+	height: 32px;
+}
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: #F5F5F5;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0;
+	padding: 3px 10px !important;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #999;
+	border: none;
+	text-shadow: 1px 1px 0px #fff;
+}
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li.hover { }
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li.hover h3 { color: #000; }
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li.active {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.seleni .container .ja-tabs-title-top ul.ja-tabs-title li.active h3 {
+	background: none !important;
+	color: #000;
+	font-weight: bold;
+}
+
+.seleni .ja-tab-panels-top { top: 10px; }
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 0 15px 15px;
+}
+
+
+/* JA Tabs bottom*/
+.seleni .ja-tabs-title-bottom {
+	background: #f7f7f7 none repeat scroll 0%;
+	border-top: 1px solid #cccccc;
+	height: 30px;
+	position: relative;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title { top: -1px; }
+
+.seleni .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: #ebf2f9 none repeat scroll 0%;
+	border: 1px solid #cccccc;
+	border-top: none;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0pt 1px;
+}
+
+.seleni .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	border-color: #f0f0f0;
+	border-style: solid solid none;
+	border-width: 1px 1px medium;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0pt;
+	padding: 0pt 10px;
+	text-transform: uppercase;
+}
+
+.seleni .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.seleni .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.seleni .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #ffffff none repeat scroll 0%;
+	border-top: 1px solid #ffffff;
+}
+
+.seleni .ja-tabs-title-bottom ul li.active h3,
+.seleni .ja-tabs-title-bottom ul li.firstactive h3,
+.seleni .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: none;
+	border-bottom: none;
+	color: #006699;
+	margin: 0pt;
+	padding: 0pt 10px;
+}

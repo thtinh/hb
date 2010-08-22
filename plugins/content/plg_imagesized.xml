@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Joomla Imagesized Plugin</name>
+	<author>Viet Nguyenhoang</author>
+	<creationDate>December 22, 2009</creationDate>
+	<copyright>(C) 2008 Luyenkim.net. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GPLv2.0</license>
+	<authorEmail>email2@luyenkim.net</authorEmail>
+	<authorUrl>www.luyenkim.net</authorUrl>
+	<version>1.2.5</version>
+	<description>Content - Joomla Imagesized Plugin</description>
+		<files>
+		<filename plugin="plg_imagesized">plg_imagesized.php</filename>		
+		<filename>imagesresizecache/index.php</filename>
+		<filename>imagesresizecache/lastclean</filename>
+		<filename>imagesresizecache/blank.png</filename>
+		<filename>imagesresizecache/blank_white.png</filename>
+		</files>
+		<params>
+		<param name="enabled" type="radio" default="1" label="Enable Plugin" description="Enable or Disable Plugin">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		<param name="sized_img_article" type="list" default="1" label="Sized image in Article" description="Enable or Disable sized images in an Article">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>		
+		<param name="expire" type="text" default="30" label="Expire" description="Type the number of days after which non used images in cache will be removed (0 for never)." />
+		<param name="quality" type="text" default="90" label="Quality" description="Type the quality for generated jpeg files." />
+		<param name="@spacer" type="spacer" default="Article Image setting" label="Article Image setting" description="Article Image setting" />
+		<param name="ar_width" type="text" default="400" label="Max. Image width" description="Image width in Article." />
+		<param name="ar_height" type="text" default="400" label="Max. Image height" description="Image height in Article." />
+		<param name="ar_remove_link" type="list" default="1" label="Remove url to images" description="Remove all url to images in the article.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		<param name="ar_link2originalimage" type="list" default="1" label="Image link" description="Link to original image.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		<param name="extra_link2originalimage" type="text" default="" label="Link option" description="Extra option for image link, such: shadowbox, lightbox..." />
+		<param name="excluded_images" type="textarea" default="" cols="30" rows="5" label="Ex. Image list" description="Each image is separted by ':' letter, for example 'download.gif:mediafire.gif'. The list of Image file names which are not effected by the plugin when 'Remove url to images' is enabled."/>
+		<param name="ar_remove_img_tag" type="text" default="style:class" label="Remove tag" description="Remove Tag such 'style' in IMG tag, each TAG separeted by ':'" />
+		<param name="@spacer" type="spacer" default="Disable Sections and Categories" label="Content setting" description="" />                                             
+		<param name="icl_exc_catsect" type="radio" default="1" label="Choose Cat./Sect. List" description="Enable or Disable these list.">
+		<option value="0">Include</option>
+		<option value="1">Exclude</option>
+		</param>
+		<param name="sectionid_list" type="text" size="6" default="x" label="Section id List" description="List of section ids that this plugin is included/excluded. Each id is separated by ','&lt;br/&gt; for example 2,3,8 &lt;br/&gt; 'x' means no choosed sections" />
+		<param name="catid_list" type="text" size="6" default="x" label="Category id List" description="List of category ids that this plugin is included/excluded. Each id is separated by ','&lt;br/&gt; for example 1,5,6 &lt;br/&gt; 'x' means no choosed categories" />
+		<param name="itemid_list" type="text" size="6" default="x" label="Itemid List" description="List of category itemid that this plugin is included/excluded. Each id is separated by ','&lt;br/&gt; for example 1,5,6 &lt;br/&gt; 'x' means no choosed categories" />
+		</params>
+		<params group="advanced">
+		<param name="@spacer" type="spacer" default="Frontpage setting" label="Frontpage setting" description="Frontpage setting" />
+		<param name="only_frontpage" type="list" default="t" label="Sized image for" description="Do size images only for Frontpage, cat- sect- blogs.">
+		<option value="f">Frontpage</option>
+		<option value="b">Section/category blog</option>
+		<option value="t">Both</option>
+		<option value="n">none</option>	
+		</param>
+		<param name="fp_image_link" type="radio" default="1" label="Linked Image" description="Create a link to image.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		<param name="fp_remove_class" type="radio" default="1" label="Remove caption class" description="Remove class option.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		<param name="fp_default_image" type="text" default="plugins/content/imagesresizecache/blank.png" label="Default image link" description="Default image is used when the article dose not have any images." />
+		<param name="fp_used_default_image" type="radio" default="1" label="Use defult image" description="Use defult image for Frontpage and Blog.">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>	
+		<param name="extra_class" type="text" default="" label="Extra CSS" description="Extra css for Frontpage and Cat.- Sect.-Blogs content." />
+		<param name="fp_width_l" type="text" default="240" label="Leading width" description="Leading image width in Frontpage content." />
+		<param name="fp_height_l" type="text" default="160" label="Leading height" description="Leading image height in Frontpage content." />
+		<param name="fp_align_l" type="list" default="left" label="Leading Image align" description="Select Image alignment with text">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="middle">Middle</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+		</param>
+		<param name="fp_position_l" type="list" default="0" label="Leading Image position" description="Select Image position with text">
+			<option value="0">With text</option>
+			<option value="1">Above</option>
+			<option value="2">Below</option>
+		</param>
+		
+		<param name="fp_textalign_l" type="list" default="justify" label="Leading Text align" description="Select text alignment">
+			<option value="justify">Justify</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="center">Center</option>
+			<option value="none">Keep user setting</option>
+		</param>
+		<param name="fp_width" type="text" default="120" label="Thumbnail width" description="Thumbnail width in Frontpage content." />
+		<param name="fp_height" type="text" default="90" label="Thumbnail height" description="Thumbnail height in Frontpage content." />
+		<param name="fp_advanced_config" type="textarea" default="" cols="30" rows="5" label="Advanced config" description="Setting for each Active menu. Only for next release."/>
+		<param name="fp_frcolor" type="text" default="#ffffff" label="Background Fr color" description="Background color of Image frame." />
+		<param name="fp_bocolor" type="text" default="#a0a0a0" label="Border Fr color" description="Background color of Image frame border." />
+		<param name="fp_vspace" type="text" default="0" label="Vspace param." description="vspace parameter." />
+		<param name="fp_hspace" type="text" default="6" label="Hspace param." description="hspace parameter." />
+		<param name="fp_chars_l" type="text" default="250" label="Frontpage leading char num." description="Char number will be displayed for Frontpage leading content. '0' is shown all. '-1' is shown no text." />
+		<param name="fp_chars" type="text" default="300" label="Frontpage char num." description="Char number will be displayed for Frontpage content. '0' is shown all. '-1' is shown no text." />
+		<param name="fp_more" type="text" default="" label="More ..." description="Default is '[...]' or you can type any text you want here." />
+		<param name="allowed_tags" type="text" default="" label="Allowed html TAG" description="'-' is no TAG." />		
+		<param name="fp_align" type="list" default="left" label="Image align" description="Select Image alignment with text">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="middle">Middle</option>
+			<option value="top">Top</option>
+			<option value="bottom">Bottom</option>
+		</param>
+		<param name="fp_position" type="list" default="0" label="Image position" description="Select Image position with text">
+			<option value="0">With text</option>
+			<option value="1">Above</option>
+			<option value="2">Below</option>
+		</param>
+		
+		<param name="fp_textalign" type="list" default="justify" label="Text align" description="Select text alignment">
+			<option value="justify">Justify</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="center">Center</option>
+			<option value="none">Keep user setting</option>
+		</param>
+		</params>
+</install>

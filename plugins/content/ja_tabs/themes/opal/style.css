@@ -1,0 +1,121 @@
+.opal .container {
+}
+
+.opal .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 15px 10px !important;
+}
+
+/* JA Tabs top*/
+.opal .ja-tabs-title-top {
+	background: url(title-top-bg.gif) repeat-x left bottom #444444;
+	position: relative;
+	width: 100%;
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title {
+	padding: 0;
+	display: block;
+	left: 10px;
+	top: 4px;
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title li {
+	margin-right: 1px;
+	padding: 0;
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: none !important;
+	border-bottom: none;
+	font-size: 12px;
+	font-weight: bold !important;
+	padding: 0 10px;
+	margin: 0;
+	letter-spacing: normal;
+	line-height: 34px;
+	text-transform: uppercase;
+	float: left;
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.opal .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.opal .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.opal .ja-tabs-title-top ul.ja-tabs-title li.active,
+.opal .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.opal .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(active-top-r.gif) no-repeat right bottom;
+}
+
+.opal .ja-tabs-title-top ul li.active h3,
+.opal .ja-tabs-title-top ul li.firstactive h3,
+.opal .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(active-top-l.gif) no-repeat left bottom;
+	color: #444444;
+}
+
+/* JA Tabs bottom */
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	padding: 20px 10px 10px !important;
+}
+
+.opal .ja-tabs-title-bottom {
+	background: url(title-bot-bg.gif) repeat-x left top;
+	position: relative;
+	height: 38px;
+	z-index: 3;
+	width: 100%;
+}
+
+.opal .ja-tabs-title-bottom ul.ja-tabs-title {
+	padding: 0;
+	bottom: 4px;
+	left: 10px;
+}
+
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: none;
+	margin-right: 1px;
+}
+
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: none;
+	border-top: none;
+	font-size: 12px;
+	font-weight: bold !important;
+	line-height: 34px;
+	margin: 0;
+	padding: 0 10px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.opal .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(active-bot-r.gif) no-repeat right top;
+}
+
+.opal .ja-tabs-title-bottom ul li.active h3,
+.opal .ja-tabs-title-bottom ul li.firstactive h3,
+.opal .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: url(active-bot-l.gif) no-repeat left top;
+	color: #444444;
+}
+
+.opal .ja-tab-panels-bottom {
+	left: 0;
+}

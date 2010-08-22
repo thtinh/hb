@@ -1,0 +1,119 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+.ja-tab-subcontent {
+	padding: 10px !important;
+}
+
+/* JA Tabs top */
+.nagya .ja-tabs-title-top {
+	color: #CCCCCC;
+	height: 30px;
+	position: relative;
+}
+
+.nagya .ja-tab-panels-top {
+	background: #5A4032;
+	border: 1px solid #7A5745;
+}
+
+.nagya .ja-tabs-title-top ul.ja-tabs-title {
+	bottom: -1px;
+	left: 5px;
+}
+
+.nagya .ja-tabs-title-top ul.ja-tabs-title li {
+	margin-right: 5px;
+	background: url(tabtop-bg.gif) repeat-x left top;
+}
+
+.nagya .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-weight: bold !important;
+	margin: 0;
+	padding: 8px 22px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+.nagya .ja-tabs-title-top ul.ja-tabs-title li.active,
+.nagya .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.nagya .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	margin-left: 0;
+	border: 1px solid #7A5745;
+	border-bottom: none;
+	background: url(tabtop-active-r.gif) no-repeat right top #503A2E;
+}
+
+.nagya .ja-tabs-title-top ul li.active h3 ,
+.nagya .ja-tabs-title-top ul li.firstactive h3,
+.nagya .ja-tabs-title-top ul li.lastactive h3 {
+	color: #F8B150;
+	background: url(tabtop-active-l.gif) no-repeat left top;
+}
+
+/* JA Tabs bottom */
+.nagya .ja-tabs-title-bottom {
+	color: #CCCCCC;
+	height: 30px;
+	position: relative;
+}
+
+.nagya .ja-tab-panels-bottom {
+	background: #5A4032;
+	border: 1px solid #7A5745;
+}
+
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title {
+	top: -1px;
+	left: 5px;
+}
+
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title li {
+	margin-right: 5px;
+	background: url(tabbot-bg.gif) repeat-x left bottom;
+	border-top: 1px solid #7A5745;
+}
+
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	font-weight: bold !important;
+	margin: 0;
+	padding: 8px 22px;
+	border-top: none;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	background: none;
+	font-size: 100%;
+}
+
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.nagya .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(tabbot-active-r.gif) no-repeat right bottom #503A2E;
+	margin-left: 0px;
+	border: 1px solid #7A5745;
+	border-top: 1px solid #5A4032;
+}
+
+.nagya .ja-tabs-title-bottom ul li.active h3,
+.nagya .ja-tabs-title-bottom ul li.firstactive h3,
+.nagya .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #F8B150;
+	background: url(tabbot-active-l.gif) no-repeat left bottom;
+}
+
+.nagya .ja-tab-panels-top,
+.nagya .ja-tab-panels-top,
+.nagya .ja-tab-panels-top,
+.nagya .ja-tab-panels-top {
+	width: 98%;
+}

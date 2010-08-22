@@ -1,0 +1,122 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+.pyrite .ja-tabs-title-top {
+	color: #CCCCCC;
+	position: relative;
+	height: 30px;
+}
+
+.pyrite .ja-tabs-title-top ul.ja-tabs-title {
+	height: 29px;
+	bottom: -1px;
+	left: 0px;
+}
+
+.pyrite .ja-tabs-title-top ul.ja-tabs-title li {
+	margin: 0 5px 0 0;
+	background: url(tab-bg.gif) repeat-x left top #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.pyrite .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: none;
+	border: none;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 7px 22px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+.pyrite .ja-tabs-title-top ul.ja-tabs-title li.active,
+.pyrite .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.pyrite .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(tab-active.gif) repeat-x left top;
+	margin-left: 0;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.pyrite .ja-tabs-title-top ul li.active h3 ,
+.pyrite .ja-tabs-title-top ul li.firstactive h3,
+.pyrite .ja-tabs-title-top ul li.lastactive h3 {
+	color: #333333;
+}
+
+.pyrite .ja-tab-panels-top {
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+}
+
+/* JA Tabs bottom */
+.pyrite .ja-tabs-title-bottom {
+	color: #CCCCCC;
+	height: 30px;
+	position: relative;
+}
+
+.pyrite .ja-tab-panels-bottom {
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	z-index: 1;
+}
+
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title {
+	height: 30px;
+	top: -1px !important;
+	left: 0;
+}
+
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title li {
+	margin-right: 5px;
+	background: url(tab-bg.gif) repeat-x left bottom #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-bottom: none;
+	border-top: 1px solid #DDDDDD;
+}
+
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: none;
+	border: none;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 7px 22px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.pyrite .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(tab-active.gif) repeat-x left bottom;
+	margin-left: 0px;
+	border: 1px solid #DDDDDD;
+	border-bottom: none;
+	border-top: 1px solid #FFFFFF;
+}
+
+.pyrite .ja-tabs-title-bottom ul li.active h3,
+.pyrite .ja-tabs-title-bottom ul li.firstactive h3,
+.pyrite .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #333333;
+}
+
+.pyrite div.ja-tab-subcontent {
+	padding:10px!important;
+}

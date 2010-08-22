@@ -1,0 +1,182 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.ruby .ja-tabswrap {
+}
+
+.ruby .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+/* JA Tabs top*/
+.ruby .ja-tabs-title-top {
+	height: 30px;
+	padding-left: 7px;
+	position: relative;
+	width:100%;
+}
+
+.ruby .ja-tabs-title-top ul.ja-tabs-title li {
+	background: #CCCCCC url(left.gif) no-repeat top left !important;
+	margin-left: 3px;
+}
+
+.ruby .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-size: 110% !important;
+	font-weight: bold !important;
+	line-height: 20px;
+	height: 14px;
+	margin: 0 !important;
+	padding: 8px 8px !important;	
+	background: url(right.gif) no-repeat top right !important;
+	letter-spacing: normal;
+	font-family: "Lucida Grande", Arial, sans-serif;
+
+}
+
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.active,
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.ruby .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: #DDDDDD url(left-active.gif) no-repeat top left !important;
+}
+
+.ruby .ja-tabs-title-top ul li.active h3 ,
+.ruby .ja-tabs-title-top ul li.firstactive h3,
+.ruby .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(right-active.gif) no-repeat top right !important;
+	color: #454545 !important;
+}
+
+/* JA Tabs left*/
+.ruby .ja-tabs-title-left {
+	position: relative;
+	float: left;	
+	height: 100%;
+	background: url(17pxblank.gif) repeat-y right #F5F4ED;
+}
+
+.ruby .ja-tabs-title-left ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.ruby .ja-tabs-title-left ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.ruby .ja-tabs-title-left ul li.active,
+.ruby .ja-tabs-title-left ul li.firstactive,
+.ruby .ja-tabs-title-left ul li.lastactive {
+	background: url(left-active.gif) no-repeat right #FFFFFF;
+}
+
+.ruby .ja-tabs-title-left ul li.active H3 ,
+.ruby .ja-tabs-title-left ul li.firstactive H3,
+.ruby .ja-tabs-title-left ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+
+/* JA Tabs right*/
+.ruby .ja-tab-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.ruby .ja-tabs-title-right {
+	background: url(17pxblank2.gif) repeat-y left #F5F4ED;
+}
+
+.ruby .ja-tabs-title-right ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.ruby .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px 0 25px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.ruby .ja-tabs-title-right ul li.active,
+.ruby .ja-tabs-title-right ul li.firstactive,
+.ruby .ja-tabs-title-right ul li.lastactive {
+	background: url(right-active.gif) no-repeat left #FFFFFF;
+}
+
+.ruby .ja-tabs-title-right ul li.active H3 ,
+.ruby .ja-tabs-title-right ul li.firstactive H3,
+.ruby .ja-tabs-title-right ul li.lastactive H3 {
+	color: #FA6900;
+}
+/* JA Tabs bottom*/
+.ruby .ja-tabs-title-bottom {
+	width:100%;
+	bottom:0px;
+	height: 30px;
+	border-top: 1px solid #C9C0B7;
+	background: url(grad1.gif) repeat-x top;
+	z-index: 3;
+}
+
+.ruby .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: none;
+	border: 1px solid #C9C0B7;
+}
+
+.ruby .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid #F5F4ED;
+	border-top: none;
+	background: none;
+	letter-spacing: normal;
+	font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+.ruby .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.ruby .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.ruby .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border-top: 1px solid #FFFFFF;	
+}
+
+.ruby .ja-tabs-title-bottom ul li.active h3 ,
+.ruby .ja-tabs-title-bottom ul li.firstactive h3,
+.ruby .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #FA6900;
+}

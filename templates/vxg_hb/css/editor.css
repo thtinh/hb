@@ -1,0 +1,15 @@
+/* 
+    Document   : editor
+    Created on : Aug 7, 2010, 11:10:09 AM
+    Author     : Barney
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+.textstyle1{color:#19b7e4;}
+.textstyle2{color:#385057;}
+.email, .email a{color: #DF7016;text-decoration: none}

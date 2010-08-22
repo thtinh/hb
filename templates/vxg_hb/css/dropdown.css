@@ -1,0 +1,255 @@
+/* @group SUCKERFISH */
+
+#navbar {
+	height: 25px;
+	padding:0;
+	margin: 0;
+	position: relative;
+	z-index: 900;
+	float: none;
+	width: 100%;
+}
+
+#navbar ul {
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin:0;
+	height:25px;
+}
+
+#navbar ul li {
+	position: relative;
+	margin: 0;
+}
+
+/*PARENT MENU*/
+
+#navbar a {
+	float: left;
+	color: #057494;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	height: 25px;
+	line-height:25px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:left
+}
+
+
+/*PARENT MENU ITEM HOVER*/
+#navbar li a:hover {
+	height: 25px;
+}
+#navbar ul li:hover,
+#navbar ul li.sfhover
+{
+
+}
+
+/*ALL LISTS*/
+
+#navbar li {
+	float: left;
+	padding: 0;
+}
+
+#navbar ul li.active a{
+	color: #DF7016;
+}
+
+#navbar ul li span{
+	padding-left:13px;
+	padding-right:13px;
+}
+
+#navbar ul li ul li {
+	margin-right: 0px;
+	border-right: 0px solid #869A9F;
+}
+
+
+#navbar ul ul a {
+	background: none;
+}
+
+
+#navbar li:hover ul, 
+#navbar li li:hover ul, 
+#navbar li li li:hover ul, 
+#navbar li li li li:hover ul,
+#navbar li.sfhover ul, 
+#navbar li li.sfhover ul, 
+#navbar li li li.sfhover ul,
+#navbar li li li li.sfhover ul {
+	background: #eafafe;
+	z-index:200px;
+}
+
+
+
+
+/*DEFINE HOVER COLORS*/
+
+#navbar li:hover a, #navbar li.sfhover a {
+	color: #df7016;
+
+}
+
+#navbar ul li ul li a:link,
+#navbar ul li ul li a:visited
+ {
+	color: #df7016;
+
+}
+
+#navbar ul li ul li a:hover,
+#navbar ul li.active ul li a:hover {
+	color: #fff;
+}
+
+/*SUBLEVEL STYLES*/
+
+/*SUBLEVEL TEXT STYLES*/
+
+#navbar li li a {
+	font-weight: normal;
+	padding: 0;
+	height: 26px;
+	line-height: 26px;
+}
+
+#navbar li li a span{
+	border:0;
+	padding:0;
+}
+	
+#navbar ul ul a {
+	display: block;
+	text-decoration: none;
+	width: 170px;
+	text-transform: none;
+
+	font-weight:bold;
+	padding-left:10px
+}
+
+/*SUBLEVEL POSITIONING*/
+
+#navbar li li {
+	padding: 0;
+	margin:0;
+	width: 170px;
+}
+
+#navbar li ul ul {
+	margin: -29px 0 0 173px;
+}
+
+#navbar li:hover, #navbar li.sfhover {
+	left:0;
+	position:relative;
+}
+
+/*SUBLEVEL HOVER STYLES*/
+
+#navbar ul ul a:hover {
+	background: none;
+	height: 26px;
+	line-height: 26px;
+	padding: 0;
+	padding-left:10px;
+	margin: 0;
+}
+
+
+
+#navbar li ul {
+	top: 25px;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 170px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	filter:alpha(opacity=80);-moz-opacity:.80;opacity:.80;
+}
+
+#navbar ul li ul li{
+	margin:0;
+}
+
+/* MAINLEVEL ACTIVE-A:LINK STYLE */
+
+#navbar li.active a:link,
+#navbar li.active a:visited,
+#navbar li.active ul.sfhover
+{
+  
+	font-weight:bold;
+        
+}
+/* SUBLEVEL ACTIVE-A:LINK STYLE */
+
+#navbar li.active ul li a:link,
+#navbar li.active ul li a:visited,
+#navbar li.active li
+ {
+	color : #DF7016;
+	background-image: none;
+}
+/* SUBLEVEL ACTIVE-A:LINK:HOVER STYLE */
+
+#navbar li.active li a:hover,
+#navbar li.active li.hover {
+	color: #fff;
+	background-image: none;
+}
+/* SUBLEVEL LI BACKGROUND */
+#navbar li li:hover {
+	background: #dc9330;
+	margin:0;
+}
+
+/* HIDE OTHER LISTS FROM IE */
+
+#navbar li:hover ul ul, 
+#navbar li:hover ul ul ul,
+#navbar li:hover ul ul ul ul,  
+#navbar li.sfhover ul ul, 
+#navbar li.sfhover ul ul ul, 
+#navbar li.sfhover ul ul ul ul {
+	left: -999em;
+}
+
+#navbar li:hover ul, 
+#navbar li li:hover ul, 
+#navbar li li li:hover ul, 
+#navbar li li li li:hover ul,
+#navbar li.sfhover ul, 
+#navbar li li.sfhover ul, 
+#navbar li li li.sfhover ul,
+#navbar li li li li.sfhover ul {
+	z-index: 100;
+	left: 0;
+}
+
+/* BECAUSE IE DOESNT UNDERSTAND CSS EVEN IN 2007 */
+
+#navbar li.sfhover ul li.sfhover {
+	background: #4073BF;
+}
+
+
+#navbar li:hover li:hover a.child,
+#navbar li.sfhover li.sfhover a.child {
+	color: #fff;
+}
+
+ul.menu li{float:left;padding:0 15px 0 17px;height:33px;background:url(../images/menu-spr.png) no-repeat 0 8px;background-position: left top}
+ul.menu li li, #menu-1{background:none;}
+
+/* @end */

@@ -1,0 +1,20 @@
+/* CSS Document */
+#mod_contact_container{color:#385057;}
+#mod_contact_container label{font-weight:bold;text-shadow:0 1px 1px #ccc;}
+#mod_contact_container ul{list-style:none;padding:0;margin:0px;}
+#mod_contact_container ul li{margin-bottom:10px;}
+#mod_contact_container #ja-captcha{overflow: hidden;}
+#mod_contact_container .type_captcha{width: 345px;float:left}
+input[type="text"]{height:20px;line-height:1.6;padding:4px 5px 4px;text-shadow:0 1px 1px #ccc;}
+input[id="title"]{width: 550px;}
+textarea[id="description"]{width:550px;margin-left:70px;padding:4px 5px 4px;height: 200px;}
+input[type="text"]:focus, textarea[id="description"]:focus{border:2px solid #19b7e4 !important;outline-width:0;background: #eafafe}
+input[id="name"], input[id="email"], input[id="textCaptcha"]{width: 240px !important;}
+input[id="name"]{margin-right:20px !important;}
+input[id="btnSubmit"]{background:transparent url(../images/bg_gui.png) no-repeat;height:32px;width:87px;border:0 none;text-shadow:0 1px 1px #666;
+              margin-right:10px;font-size:10px;font-weight:bold;text-transform:uppercase;color:#fff;padding:0 15px 5px 0px;float:right
+}
+div.fc-error{display:none;}
+#mod_contact_container input,#mod_contact_container textarea{cursor:pointer;}
+#mod_contact_container .border{border:1px solid red;}
+.fc-field-error{border:2px solid red !important;}

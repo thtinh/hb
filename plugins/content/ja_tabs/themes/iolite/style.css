@@ -1,0 +1,177 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+.ja-tabswrap {
+	border: 1px solid #C9C0B7;
+}
+
+.container {
+	background: #FFFFFF;
+}
+
+/* JA Tabs top*/
+.ja-tabs-title-top {
+	height: 30px;
+	border-bottom: 1px solid #C9C0B7;
+	position: relative;
+	background: url(grad1.gif) repeat-x top;
+}
+
+.ja-tabs-title-top ul.ja-tabs-title li {
+	background: none;
+	border: 1px solid #C9C0B7;
+}
+
+.ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid #F5F4ED;
+	border-bottom: none;
+	background: none;
+	letter-spacing: normal;
+	font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+.ja-tabs-title-top ul.ja-tabs-title li.active,
+.ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.ja-tabs-title-top ul li.active h3 ,
+.ja-tabs-title-top ul li.firstactive h3,
+.ja-tabs-title-top ul li.lastactive h3 {
+	color: #FA6900;
+}
+
+/* JA Tabs left*/
+.ja-tabs-title-left {
+	background: url(17pxblank.gif) repeat-y right #F5F4ED;
+	padding-top: 10px;
+}
+
+.ja-tabs-title-left ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.ja-tabs-title-left ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.ja-tabs-title-left ul li.active,
+.ja-tabs-title-left ul li.firstactive,
+.ja-tabs-title-left ul li.lastactive {
+	background: url(left-active.gif) no-repeat right #FFFFFF;
+}
+
+.ja-tabs-title-left ul li.active H3 ,
+.ja-tabs-title-left ul li.firstactive H3,
+.ja-tabs-title-left ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+/* JA Tabs right*/
+.ja-tab-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.ja-tabs-title-right {
+	background: url(17pxblank2.gif) repeat-y left #F5F4ED;
+	padding-top: 10px;
+}
+
+.ja-tabs-title-right ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px 0 25px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.ja-tabs-title-right ul li.active,
+.ja-tabs-title-right ul li.firstactive,
+.ja-tabs-title-right ul li.lastactive {
+	background: url(right-active.gif) no-repeat left #FFFFFF;
+}
+
+.ja-tabs-title-right ul li.active H3 ,
+.ja-tabs-title-right ul li.firstactive H3,
+.ja-tabs-title-right ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+/* JA Tabs bottom*/
+.ja-tabs-title-bottom {
+	height: 30px;
+	border-top: 1px solid #C9C0B7;
+	position: relative;
+	background: url(grad1.gif) repeat-x top;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: none;
+	border: 1px solid #C9C0B7;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid #F5F4ED;
+	border-top: none;
+	background: none;
+	letter-spacing: normal;
+	font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+.ja-tabs-title-bottom ul li.active h3 ,
+.ja-tabs-title-bottom ul li.firstactive h3,
+.ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #FA6900;
+}

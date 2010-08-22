@@ -1,0 +1,144 @@
+#ja-tabwrap div.moduletable {
+	background: url(box-bg.gif);
+}
+
+#ja-tabwrap div.moduletable h3 {
+	border-top: none;
+}
+
+#ja-tabwrap div.ja-boxct {
+	padding:0px;
+}
+
+.cooper .container {
+	background: #181818;
+}
+
+.cooper .ja-tabswrap div.ja-tab-content {
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	color: #CCCCCC;
+	padding: 10px !important;
+}
+
+/* JA Tabs top*/
+.cooper .ja-tabs-title-top {
+	background: url(h3-bg.gif) repeat-x;
+	border-top: 1px solid #680102;
+	position: relative;
+	width: 100%;
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title {
+	padding: 0 0 0 10px;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li {
+	background: url(sep.gif) no-repeat right top;
+	margin-right: 1px;
+	padding: 0;
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: none;
+	border-bottom: none;
+	border-top: none;
+	font-size: 100%;
+	font-weight: bold !important;
+	padding: 8px 10px 12px;
+	margin: 0;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	float: left;
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li h3 span {}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.active,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(menu-active.gif) no-repeat center bottom;
+}
+
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.hover h3,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.firsthover h3,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.lasthover h3,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.cooper .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3 {
+	color: #FFFFFF;
+}
+
+.cooper .ja-tabs-title-top ul li.active h3,
+.cooper .ja-tabs-title-top ul li.firstactive h3,
+.cooper .ja-tabs-title-top ul li.lastactive h3 {}
+
+/* JA Tabs bottom */
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	padding: 20px 10px 0 !important;
+}
+
+.cooper .ja-tabs-title-bottom {
+	background: url(h3-bg.gif) repeat-x left bottom;
+	border-bottom: 1px solid #680102;
+	position: relative;
+	height: 35px;
+	z-index: 3;
+	width: 100%;
+}
+
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title {
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: url(sep.gif) no-repeat right bottom;
+	margin-right: 1px;
+}
+
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: none;
+	border: none;
+	font-size: 12px;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 12px 10px 8px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.cooper .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(menu-active-bot.gif) no-repeat center top;
+	border-top: none;
+}
+
+.cooper .ja-tabs-title-bottom ul li.active h3,
+.cooper .ja-tabs-title-bottom ul li.firstactive h3,
+.cooper .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: none;
+	color: #FFFFFF;
+}
+
+.cooper .ja-tab-panels-bottom {
+	background: url(box-bg.gif);
+	color: #333333;
+	left: 0;
+}

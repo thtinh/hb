@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - JA Map</name>
+	<author>JoomlArt.com</author>
+	<creationDate>25 Sep 2009</creationDate>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0</version>
+	<description>PLUGIN DESC</description>
+	<files>
+		<filename plugin="plg_jamap">plg_jamap.php</filename>
+		<folder>plg_jamap/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_plg_jamap.ini</language>
+	</languages>
+	<params addpath="/plugins/system/plg_jamap/elements">
+        <param name="@group" type="japaramhelper" hideRow="true" value="" />
+		<param name="api_key" type="jamap" subtype="mapkey" cols="35" rows="4" default="ABQIAAAAoimIIf4nnE7IqJykJ2XrGRRAsdw1R9diEPHz6551ucdaGe87CRRSrxfzPziOCz3Io4RuAZl6j9J9cQ" label="API KEY" description="API KEY DESC"></param>
+		<param name="disable_map" type="radio" default="0" label="DISABLE MAP" description="DISABLE MAP DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+        <param name="@title" type="japaramhelper" label="GENERAL SETTING"  description="GENERAL SETTING DESC" />
+		<param name="to_location" type="text" default="Ha Noi" label="TARGET LOCATION" description="TARGET LOCATION DESC"></param>
+		<param name="target_lat" type="text" default="" label="TARGET LAT" description="TARGET LAT DESC"></param>
+		<param name="target_lon" type="text" default="" label="TARGET LON" description="TARGET LON DESC"></param>
+		<param name="to_location_info" type="textarea" cols="35" rows="4" default="" label="TARGET LOCATION INFO" description="TARGET LOCATION INFO DESC"></param>
+		<param name="from_location" type="text" default="" label="FROM LOCATION" description="FROM LOCATION DESC"></param>
+		<param name="maptype" type="list" default="normal" label="MAP TYPE" description="MAP TYPE DESC">
+			<option value="normal">ROAD MAP</option>
+			<option value="satellite">SATELLITE MAP</option>
+			<option value="hybrid">HYBRID MAP</option>
+			<option value="physical">PHYSICAL MAP</option>
+		</param>
+		<param name="map_width" type="text" default="500" label="MAP WIDTH" description="MAP WIDTH DESC"></param>
+		<param name="map_height" type="text" default="300" label="MAP HEIGHT" description="MAP HEIGHT DESC"></param>
+		<param name="zoom" type="list" default="15" label="ZOOM LEVEL" description="ZOOM LEVEL DESC">
+			<option value="0">SMALLEST</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">LARGEST</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="MAP TYPE SETTING"  description="MAP TYPE SETTING DESC" />
+		<param name="maptype_control_display" type="radio" default="1" label="DISPLAY MAPTYPE CONTROL" description="DISPLAY MAPTYPE CONTROL DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="maptype_control_style" type="list" default="drop_down" label="MAP TYPE CONTROL" description="MAP TYPE CONTROL DESC">
+			<option value="standard">STANDARD</option>
+			<option value="drop_down">DROP DOWN</option>
+			<option value="hierarchical">HIERARCHICAL</option>
+		</param>
+		<param name="maptype_control_position" type="list" default="top_right" label="CONTROL POSITION" description="CONTROL POSITION DESC">
+			<option value="top_right">POSITION TOP RIGHT</option>
+			<option value="top_left">POSITION TOP LEFT</option>
+			<option value="bottom_right">POSITION BOTTOM RIGHT</option>
+			<option value="bottom_left">POSITION BOTTOM LEFT</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="ZOOM TOOLBAR SETTING"  description="ZOOM TOOLBAR SETTING DESC" />
+		<param name="toolbar_control_display" type="radio" default="1" label="DISPLAY ZOOM TOOLBAR" description="DISPLAY ZOOM TOOLBAR DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="toolbar_control_style" type="list" default="small_3d" label="CONTROL STYLE" description="CONTROL STYLE DESC">
+			<option value="small">SMALL</option>
+			<option value="large">LARGE</option>
+			<option value="zoom_only">ZOOM ONLY</option>
+			<option value="small_3d">SMALL 3D</option>
+			<option value="large_3d">LARGE 3D</option>
+		</param>
+		<param name="toolbar_control_position" type="list" default="top_left" label="CONTROL POSITION" description="CONTROL POSITION DESC">
+			<option value="top_right">POSITION TOP RIGHT</option>
+			<option value="top_left">POSITION TOP LEFT</option>
+			<option value="bottom_right">POSITION BOTTOM RIGHT</option>
+			<option value="bottom_left">POSITION BOTTOM LEFT</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="LAYERS SETTING"  description="LAYERS SETTING DESC" />
+		<param name="display_layer" type="radio" default="none" label="DISPLAY LAYER" description="DISPLAY LAYER DESC">
+			<option value="none">NO LAYER</option>
+			<option value="com.panoramio.all">IMAGES</option>
+			<option value="com.youtube.all">YOUTUBE</option>
+			<option value="org.wikipedia.en">WIKIPEDIA</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="POPUP SETTING" description="POPUP SETTING DESC" />
+		<param name="display_popup" type="radio" default="0" label="DISPLAY POPUP" description="DISPLAY POPUP DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="popup_width" type="text" default="640" label="POPUP WIDTH" description="POPUP WIDTH DESC"></param>
+		<param name="popup_height" type="text" default="480" label="POPUP HEIGHT" description="POPUP HEIGHT DESC"></param>
+		<param name="popup_type" type="list" default="highslide" label="POPUP TYPE" description="POPUP TYPE DESC">
+			<option value="global">GLOBAL</option>
+			<option value="fancybox">FANCYBOX</option>
+			<option value="greybox">GREYBOX</option>
+			<option value="highslide">HIGHSLIDE</option>
+			<option value="shadowbox">SHADOWBOX</option>
+			<option value="thickbox">THICKBOX</option>
+			<option value="multibox">MULTIBOX</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="OTHERS SETTING" description="OTHERS SETTING DESC" />
+		<param name="display_scale" type="radio" default="0" label="DISPLAY SCALE" description="DISPLAY SCALE DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="display_overview" type="radio" default="0" label="DISPLAY OVERVIEW MAP" description="DISPLAY OVERVIEW MAP DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		<param name="sensor" type="radio" default="0" label="DENOTING SENSOR USAGE" description="DENOTING SENSOR USAGE DESC">
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		</param>
+		
+        <param name="@title" type="japaramhelper" label="GENERATE CODE"  description="GENERATE CODE DESC" />
+		
+		<param name="list_params" type="japaramhelper" subtype="checkbox" cols="2" description="LIST PARAMS DESC" >
+			<option group="1" description="GENERAL SETTING DESC">GENERAL SETTING</option>
+			<option value="target_lat" description="TARGET LAT DESC">TARGET LAT</option>
+			<option value="target_lon" description="TARGET LON DESC">TARGET LON</option>
+			<option value="to_location" description="TARGET LOCATION DESC">TARGET LOCATION</option>
+			<option value="to_location_info" description="TARGET LOCATION INFO DESC">TARGET LOCATION INFO</option>
+			<option value="from_location" description="FROM LOCATION DESC">FROM LOCATION</option>
+			<option value="maptype" description="MAP TYPE DESC">MAP TYPE</option>
+			<option value="map_width" description="MAP WIDTH DESC">MAP WIDTH</option>
+			<option value="map_height" description="MAP HEIGHT DESC">MAP HEIGHT</option>
+			<option value="zoom" description="ZOOM LEVEL DESC">ZOOM LEVEL</option>
+			<option group="1" description="MAP TYPE SETTING DESC">MAP TYPE SETTING</option>
+			<option value="maptype_control_display" children="maptype_control_style,maptype_control_position" description="DISPLAY MAPTYPE CONTROL DESC">DISPLAY MAPTYPE CONTROL</option>
+			<option value="maptype_control_style" description="MAP TYPE CONTROL DESC">MAP TYPE CONTROL</option>
+			<option value="maptype_control_position" description="CONTROL POSITION DESC">CONTROL POSITION</option>
+			<option group="1" description="ZOOM TOOLBAR SETTING DESC">ZOOM TOOLBAR SETTING</option>
+			<option value="toolbar_control_display" children="toolbar_control_style,toolbar_control_position" description="DISPLAY ZOOM TOOLBAR DESC">DISPLAY ZOOM TOOLBAR</option>
+			<option value="toolbar_control_style" description="CONTROL STYLE DESC">CONTROL STYLE</option>
+			<option value="toolbar_control_position" description="CONTROL POSITION DESC">CONTROL POSITION</option>
+			<option group="1" description="LAYERS SETTING DESC">LAYERS SETTING</option>
+			<option value="display_layer" description="DISPLAY LAYER DESC">DISPLAY LAYER</option>
+			<option group="1" description="POPUP SETTING DESC">POPUP SETTING</option>
+			<option value="display_popup" children="popup_width,popup_height,popup_type" description="DISPLAY POPUP DESC">DISPLAY POPUP</option>
+			<option value="popup_width" description="POPUP WIDTH DESC">POPUP WIDTH</option>
+			<option value="popup_height" description="POPUP HEIGHT DESC">POPUP HEIGHT</option>
+			<option value="popup_type" description="POPUP TYPE DESC">POPUP TYPE</option>
+			<option group="1" description="OTHERS SETTING DESC">OTHERS SETTING</option>
+			<option value="display_scale" description="DISPLAY SCALE DESC">DISPLAY SCALE</option>
+			<option value="display_overview" description="DISPLAY OVERVIEW MAP DESC">DISPLAY OVERVIEW MAP</option>
+			<option value="sensor" description="DENOTING SENSOR USAGE DESC">DENOTING SENSOR USAGE</option>
+		</param>
+		<param name="code_container" type="jamap" subtype="mapcode" cols="60" rows="12" default="{jamap }" description="CODE CONTAINER DESC"></param>
+	</params>
+</install>

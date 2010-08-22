@@ -1,0 +1,128 @@
+.nickel .container .ja-innerdiv{
+	border-bottom: none;
+}
+
+.nickel .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 15px 10px !important;
+}
+
+/* JA Tabs top*/
+.nickel .ja-tabs-title-top {
+	background: none;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title {
+	padding: 0;
+	display: block;
+	left: 10px;
+	top: 0;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li {
+	margin-right: 5px;
+	padding: 0;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: #F6F6F6;
+	border: 1px solid #DDDDDD;
+	font-size: 100%;
+	font-weight: bold !important;
+	padding: 0 10px;
+	margin: 0;
+	letter-spacing: normal;
+	line-height: 27px;
+	text-transform: uppercase;
+	float: left;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: none;
+}
+
+.nickel .ja-tabs-title-top ul li.active h3,
+.nickel .ja-tabs-title-top ul li.firstactive h3,
+.nickel .ja-tabs-title-top ul li.lastactive h3 {
+	background: #FFFFFF;
+	border-bottom: none;
+	line-height: 28px;
+}
+
+/* JA Tabs bottom */
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	padding: 0 !important;
+}
+
+.nickel .ja-tabs-title-bottom {
+	background: none;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	height: 28px;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title {
+	padding: 0;
+	top: -1px;
+	left: 10px;
+	display: block;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li {
+	margin-right: 5px;
+	padding: 0;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: #F6F6F6;
+	border: 1px solid #CCCCCC;
+	font-size: 100%;
+	font-weight: bold !important;
+	padding: 0 10px;
+	margin: 0;
+	letter-spacing: normal;
+	line-height: 27px;
+	text-transform: uppercase;
+	float: left;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.nickel .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: none;
+}
+
+.nickel .ja-tabs-title-bottom ul li.active h3,
+.nickel .ja-tabs-title-bottom ul li.firstactive h3,
+.nickel .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: #FFFFFF;
+	border-top: none;
+	line-height: 28px;
+}
+
+.nickel .ja-tab-panels-bottom {
+	left: 0;
+}

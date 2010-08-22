@@ -1,0 +1,79 @@
+.mona_ii .container .ja-innerdiv{
+	border-bottom: none;
+}
+
+.mona_ii .ja-tabswrap div.ja-tab-content {
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 15px 10px !important;
+	background: #2A4D6B;
+	color: #FFFFFF;
+}
+
+/* JA Tabs top*/
+.mona_ii .ja-tabs-title-top {
+	position: relative;
+	width: 100%;
+	height: 32px !important;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title {
+	display: block;
+	padding: 0;
+	bottom: 0;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li {
+	background: #FFFFFF !important;
+	margin-right: 2px;
+	padding: 0 0 0 10px;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: #FFFFFF;
+	color: #959595;
+	float: left;
+	font-size: 100%;
+	font-weight: bold !important;
+	letter-spacing: normal;
+	line-height: normal;
+	margin: 0;
+	padding: 12px 10px 6px 0;
+	text-transform: uppercase;
+}
+
+* html .mona_ii .ja-tabs-title-top ul.ja-tabs-title li h3,
+*+html .mona_ii .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	padding: 10px 10px 6px 0;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.active,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: #2A4D6B !important;
+}
+
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.mona_ii .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3 {
+	background: #2A4D6B;
+	color: #FFFFFF;
+	border-bottom: none;
+	padding: 12px 10px 6px 0;
+}
+
+* html .mona_ii .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+*+html .mona_ii .ja-tabs-title-top ul.ja-tabs-title li.active h3 {
+	padding: 10px 10px 6px 0;
+}

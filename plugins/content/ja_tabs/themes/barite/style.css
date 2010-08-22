@@ -1,0 +1,250 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.barite .container{
+	background: #f4f6f6 url(bg_tab.gif) bottom repeat-x;
+	border: 1px solid #d3d3d3;
+}
+.kulanite .ja-tab-panels-top{
+	top:20px;
+}
+
+/* module */
+.barite  .ja-tabswrap h3,
+.barite div.module .ja-tabswrap h3 {
+	background: none;
+}
+
+.barite  .ja-tabswrap h3 span,
+.barite div.module .ja-tabswrap h3 span {
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: none;
+	background-color: none;
+	height: auto;
+	line-height: normal;
+	color: #333;
+}
+
+.barite .ja-tabs-panels-top div.ja-tab-content {
+	top:10px;
+}
+
+/* JA Tabs top*/
+.barite .ja-tabs-title-top {
+	height: 41px;
+	background:#d5d7d7 url(grad1.gif) repeat-x bottom;	
+}
+
+.barite .ja-tabs-title-top ul.ja-tabs-title {
+	height: 35px;
+	top: 0;
+	left: 0;
+}
+
+.barite .ja-tabs-title-top ul.ja-tabs-title li {
+	background: none;
+	margin:0;
+}
+
+.barite .ja-tabs-title-top ul.ja-tabs-title li h3,
+.barite .ja-tabs-title-top ul.ja-tabs-title li h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-size: 12px;
+	color: #474747;
+	font-weight: bold;
+	height:35px;
+	line-height:35px;
+	margin: 0;
+	padding: 0 12px;
+	background: none;
+	letter-spacing: normal;
+	*float:left;
+	text-transform: uppercase;
+	font-family: "Tahoma", Arial, sans-serif;
+}
+
+.barite .ja-tabs-title-top ul.ja-tabs-title li.active,
+.barite .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.barite .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background:url(active.gif) center bottom no-repeat;
+	height:41px;
+}
+
+.barite  .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+.barite  .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.barite  .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3 {
+	background-color:#f5f6f7;
+	color: #bc0102;
+	border:#fff solid 1px;
+	border-width:0 1px 0 1px;
+}
+
+.barite #ja-contenet .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.barite div.module .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3{
+	border-left:none;
+}
+
+/* JA Tabs left*/
+.barite .ja-tabs-title-left {
+	background: url(17pxblank.gif) repeat-y right #d5d7d7;
+}
+
+.barite .ja-tabs-title-left ul.ja-tabs-title li {
+	margin:0 1px 0 0;
+	height:41px;
+	background:none;
+}
+
+.barite .ja-tabs-title-left ul.ja-tabs-title {
+	top: 0;
+}
+
+.barite .ja-tabs-title-left ul.ja-tabs-title li h3 {	
+	font-size: 12px;
+	color: #474747;
+	font-weight: bold;
+	line-height:35px;
+	margin: 0;
+	padding: 0 10px;
+	text-align:center;
+	background: none;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-family: "Tahoma", Arial, sans-serif;
+}
+
+.barite .ja-tabs-title-left ul li.active,
+.barite .ja-tabs-title-left ul li.firstactive,
+.barite .ja-tabs-title-left ul li.lastactive {
+	background: url(left-active.gif) no-repeat bottom;
+}
+
+.barite .ja-tabs-title-left ul li.active H3 ,
+.barite .ja-tabs-title-left ul li.firstactive H3,
+.barite .ja-tabs-title-left ul li.lastactive H3 {
+	color: #bc0102;
+}
+
+/* JA Tabs right*/
+.barite .ja-tabs-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.barite .ja-tabs-title-right {
+	background: url(17pxblank2.gif) repeat-y left #d5d7d7;
+}
+
+.barite .ja-tabs-title-right ul.ja-tabs-title {
+	top: 0;
+}
+
+.barite .ja-tabs-title-right ul.ja-tabs-title li {
+	height:41px;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.barite .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-size: 12px;
+	color: #474747;
+	font-weight: bold;
+	line-height:35px;
+	margin: 0;
+	padding: 0 10px;
+	text-align:center;
+	background: none;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-family: "Tahoma", Arial, sans-serif;
+}
+
+.barite .ja-tabs-title-right ul li.active,
+.barite .ja-tabs-title-right ul li.firstactive,
+.barite .ja-tabs-title-right ul li.lastactive {
+	background: url(right-active.gif) no-repeat bottom;
+}
+
+.barite .ja-tabs-title-right ul li.active H3 ,
+.barite .ja-tabs-title-right ul li.firstactive H3,
+.barite .ja-tabs-title-right ul li.lastactive H3 {
+	color: #bc0102;
+}
+
+/* JA Tabs bottom*/
+.barite .ja-tabs-panels-bottom {
+	top: 10px;
+}
+.barite .ja-tabs-title-bottom {
+	height: 41px;
+	position: relative;
+	background:#d5d7d7 url(grad2.gif) repeat-x top;
+}
+
+.barite .ja-tabs-title-bottom ul.ja-tabs-title {
+	height: 41px;
+	top: 0;
+	left: 0;
+	
+}
+
+.barite * html .ja-tabs-title-bottom ul.ja-tabs-title { /*IE 6*/
+	top: 0;
+}
+
+.barite .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: none;
+	margin:0;
+	padding-top:6px;
+}
+
+.barite .ja-tabs-title-bottom ul.ja-tabs-title li h3 {	
+	font-size: 12px;
+	color: #474747;
+	font-weight: bold;
+	height:35px;
+	line-height:35px;
+	margin: 0;
+	padding: 0 12px;
+	background: none;
+	letter-spacing: normal;
+	*float:left;
+	text-transform: uppercase;
+	font-family: "Tahoma", Arial, sans-serif;
+}
+
+.barite .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.barite .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.barite .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(active2.gif) center top no-repeat;
+	height:41px;
+}
+
+.barite .ja-tabs-title-bottom ul li.active h3 ,
+.barite .ja-tabs-title-bottom ul li.firstactive h3,
+.barite .ja-tabs-title-bottom ul li.lastactive h3 {
+	background-color:#f5f6f7;
+	color: #bc0102;
+	border:#fff solid 1px;
+	border-width:0 1px 0 1px;
+}
+
+.barite .ja-tabs-title-bottom ul li.firstactive h3{
+	border-left:none;
+}

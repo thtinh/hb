@@ -1,0 +1,249 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+/* JA Tabs top */
+.labra .ja-tabs-title-top {
+	height: 30px;
+	position: relative;
+	background: #333333;
+}
+
+.labra .ja-tabs-title-top ul.ja-tabs-title {
+	top: 0;
+	left: 0;
+}
+
+.labra .ja-tabs-title-top ul.ja-tabs-title li {
+	height: 28px;
+	margin-right: 4px;
+}
+
+.labra .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	color: #CCCCCC;
+	display: block;
+	float: left;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 0 0 0 5px;
+	letter-spacing: normal;
+	font-size: 100%;
+	background: url(tab.gif) no-repeat left top;
+	text-transform: uppercase;
+}
+
+.labra .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	display: block;
+	float: left;
+	padding: 0 15px 0 10px;
+	height: 30px;
+	line-height: 30px;
+	background: url(tab.gif) no-repeat right top;
+}
+
+.labra .ja-tabs-title-top ul.ja-tabs-title li.active,
+.labra .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.labra .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: none;
+	font-size: 100%;
+	margin-left: 0;
+}
+
+.labra .ja-tabs-title-top ul li.active h3 ,
+.labra .ja-tabs-title-top ul li.firstactive h3,
+.labra .ja-tabs-title-top ul li.lastactive h3 {
+	color: #FFFFFF;
+	background: url(tab-active.gif) no-repeat left top;
+}
+
+.labra .ja-tabs-title-top ul li.active h3 span,
+.labra .ja-tabs-title-top ul li.firstactive h3 span,
+.labra .ja-tabs-title-top ul li.lastactive h3 span {
+	display: block;
+	line-height: 30px;
+	background: url(tab-active.gif) no-repeat right top;
+}
+
+/* JA Tabs left */
+.labra .ja-tabs-title-left {
+	padding: 10px 0;
+	background: url(dot1px.gif) repeat-y right;
+}
+
+.labra .labra .ja-tabs-title-left ul.ja-tabs-title li {
+	margin: 0 1px;
+	background: none;
+	border-bottom: 1px solid #1D1D1D;
+	border-top: 1px solid #404040;
+}
+
+.labra .ja-tabs-title-left ul.ja-tabs-title li h3 {	
+	color: #CCCCCC;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+	line-height: 35px;
+	letter-spacing: normal;
+	font-size: 100%;
+	text-transform: uppercase;
+}
+
+.labra .ja-tabs-title-left ul li.active,
+.labra .ja-tabs-title-left ul li.firstactive,
+.labra .ja-tabs-title-left ul li.lastactive {
+	background: #262626;
+	font-size: 100%;
+	margin-right: 0px;
+	border-bottom: 1px solid #1D1D1D;
+	border-top: 1px solid #404040;
+}
+
+.labra .ja-tabs-title-left ul li.lastactive {
+	border-bottom: 1px solid #333333;
+}
+
+.labra .ja-tabs-title-left ul li.last {
+	border-bottom: 1px solid #404040;
+}
+
+.labra .ja-tabs-title-left ul li.active h3 ,
+.labra .ja-tabs-title-left ul li.firstactive h3,
+.labra .ja-tabs-title-left ul li.lastactive h3 {
+	color: #FF9B14;
+	line-height: 35px;
+}
+
+/* JA Tabs right */
+.labra .ja-tab-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.labra .ja-tabs-title-right {
+	padding: 10px 0;
+	background: url(dot1px.gif) repeat-y left;
+}
+
+.labra .ja-tabs-title-right ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 100%;
+}
+
+* html .labra  .ja-tabs-title-right ul.ja-tabs-title { /*IE 6*/
+	right: -1px;
+}
+
+.labra .ja-tabs-title-right ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+	border-bottom: 1px solid #1D1D1D;
+	border-top: 1px solid #404040;
+}
+
+.labra .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	color: #CCCCCC;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 0 15px 0 0;
+	line-height: 35px;
+	letter-spacing: normal;
+	background: none;
+	font-size: 100%;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.labra .ja-tabs-title-right ul li.active,
+.labra .ja-tabs-title-right ul li.firstactive,
+.labra .ja-tabs-title-right ul li.lastactive {
+	background: #262626;
+	margin-left: 0px;
+	font-size: 100%;
+}
+
+.labra .ja-tabs-title-right ul li.lastactive {
+	border-bottom: 1px solid #333333;
+}
+
+.labra .ja-tabs-title-right ul li.last {
+	border-bottom: 1px solid #404040;
+}
+
+.labra .ja-tabs-title-right ul li.active h3 ,
+.labra .ja-tabs-title-right ul li.firstactive h3,
+.labra .ja-tabs-title-right ul li.lastactive h3 {
+	color: #FF9B14;
+	line-height: 35px;
+}
+
+/* JA Tabs bottom*/
+.labra .ja-tabs-title-bottom {
+	height: 30px;
+	position: relative;
+	background: #333333;
+}
+
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li {
+	height: 30px;
+	margin-right: 4px;
+}
+
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	color: #CCCCCC;
+	display: block;
+	float: left;
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	margin: 0;
+	padding: 0 0 0 5px;
+	line-height: 30px;
+	height: 30px;
+	border-top: none;
+	letter-spacing: normal;
+	background: url(tab-bot.gif) no-repeat left bottom;
+}
+
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	display: block;
+	float: left;
+	padding: 0 15px 0 10px;
+	background: url(tab-bot.gif) no-repeat right bottom;
+}
+
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.labra .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: none;
+	font-size: 100%;
+	margin-left: 0;
+}
+
+.labra .ja-tabs-title-bottom ul li.active h3,
+.labra .ja-tabs-title-bottom ul li.firstactive h3,
+.labra .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #FFFFFF;
+	background: url(tab-active-bot.gif) no-repeat left bottom;
+}
+
+.labra .ja-tabs-title-bottom ul li.active h3 span,
+.labra .ja-tabs-title-bottom ul li.firstactive h3 span,
+.labra .ja-tabs-title-bottom ul li.lastactive h3 span {
+	line-height: 30px;
+	background: url(tab-active-bot.gif) no-repeat right bottom;
+}

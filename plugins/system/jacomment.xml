@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - JA Comment</name>
+	<author>www.JoomlArt.com</author>
+	<creationDate>Dec 2009</creationDate>
+	<copyright>Copyright (C) Copyright © 2005 - 2009 JoomlArt.com. All rights reserved.</copyright>
+	<license>http://www.joomlart.com GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://joomlart.com</authorUrl>
+	<version>1.0.1 Beta</version>
+	<description>System JA Comment</description>	
+	<files>
+		<filename plugin="jacomment">jacomment.php</filename>       
+	</files>	
+	<languages>
+        <language tag="en-GB">en-GB.plg_system_jacomment.ini</language>
+    </languages>
+	<params>
+		<param name="display_comment_link" type="radio" default="1" label="Display comment link" description="Display comment link desc">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="display_comment_count" type="radio" default="1" label="Display comment count" description="Display comment count desc">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+	</params>
+</install>

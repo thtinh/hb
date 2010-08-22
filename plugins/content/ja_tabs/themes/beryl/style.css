@@ -1,0 +1,78 @@
+.beryl .container .ja-innerdiv{
+	border-bottom: none;
+}
+
+.beryl .ja-tabswrap div.ja-tab-content {
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 15px 10px !important;
+}
+
+/* JA Tabs top*/
+.beryl .ja-tabs-title-top {
+	background: url(dot.gif) repeat-x left bottom #FFFFFF;
+	position: relative;
+	width: 100%;
+	height: 32px !important;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title {
+	display: block;
+	left: 10px;
+	padding: 0;
+	bottom: 0;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li {
+	background: url(tab-top-bg.gif) no-repeat top left !important;
+	margin-right: 2px;
+	padding: 0 0 0 10px;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: url(tab-top-bg.gif) no-repeat top right;
+	color: #666666;
+	float: left;
+	font-size: 100%;
+	font-weight: bold !important;
+	letter-spacing: normal;
+	line-height: normal;
+	margin: 0;
+	padding: 12px 10px 5px 0;
+	text-transform: uppercase;
+}
+
+* html .beryl .ja-tabs-title-top ul.ja-tabs-title li h3,
+*+html .beryl .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	padding: 10px 10px 5px 0;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.active,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(tab-top-active.gif) no-repeat top left !important;
+}
+
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.firstactive h3,
+.beryl .ja-tabs-title-top ul.ja-tabs-title li.lastactive h3 {
+	background: url(tab-top-active.gif) no-repeat top right;
+	border-bottom: none;
+	padding: 12px 10px 6px 0;
+}
+
+* html .beryl .ja-tabs-title-top ul.ja-tabs-title li.active h3,
+*+html .beryl .ja-tabs-title-top ul.ja-tabs-title li.active h3 {
+	padding: 10px 10px 6px 0;
+}

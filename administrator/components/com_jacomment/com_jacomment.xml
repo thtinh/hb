@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>JA Comment</name>
+	
+	<creationDate>June 2009</creationDate>
+	<license>Copyrighted Commercial Software.</license>
+	<author>JoomlArt</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.2</version>
+	<description>JA Comment component version 1.0.2</description>
+
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jacomment.php</filename>
+		<filename>router.php</filename>
+		<filename>controller.php</filename>
+
+		<folder>asset</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>themes</folder>
+		<folder>libs</folder>
+	</files>
+
+
+
+	<administration>
+		<menu img="components/com_jacomment/asset/images/jacomment.png">JA Comment</menu>
+		<files folder="admin">
+			<filename>admin.jacomment.php</filename>
+			<filename>controller.php</filename>
+			<filename>toolbar.jacomment.php</filename>
+			<filename>toolbar.jacomment.html.php</filename>
+
+			<folder>asset</folder>
+			<folder>controllers</folder>
+			<folder>installer</folder>		
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>						
+		</files>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_jacomment.ini</language>
+		</languages>
+
+	</administration>
+	
+	
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_jacomment.ini</language>
+	</languages>
+	<install>
+		<sql folder="admin">
+			<file driver="mysql" charset="utf8">installer/sql/install.jacomment.sql</file>
+		</sql>
+	</install>
+
+	<installfile>install.jacomment.php</installfile>
+	
+	<jaupdater>
+        <serviceUrl>
+            http://update.joomlart.com
+        </serviceUrl>
+
+        <tables>
+            <table>#__jacomment_configs</table>
+            <table>#__jacomment_email_templates</table>
+            <table>#__jacomment_items</table>
+			<table>#__jacomment_logs</table>					
+        </tables>
+        
+        <versions folder="admin">
+			<version version="1.0.2">
+            </version>
+			<version version="1.0.1 Beta">
+            </version>
+        	<version version="1.0.0 Beta">				
+            </version>                        			
+        </versions>        
+    </jaupdater>
+	
+	
+</install>

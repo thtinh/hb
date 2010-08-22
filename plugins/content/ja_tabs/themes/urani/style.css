@@ -1,0 +1,231 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.ja-tabswrap {
+	margin-top: -10px;
+}
+
+.urani.ja-tabswrap .container {
+	padding: 0;
+	margin: 0;
+}
+
+.urani.ja-tabswrap div.ja-tab-content {	
+	width: 100%;
+	color: #333333;
+}
+
+.urani ul.ja-tabs-title {
+	margin-left: 20px !important;
+}
+
+.urani.ja-tabswrap div.ja-tab-content div.ja-tab-subcontent {
+	padding: 20px 10px 20px 20px;
+}
+
+/* JA Tabs top*/
+.urani .ja-tabs-title-top {
+	height: 40px;
+	position: relative;
+	width: 100%;
+}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li {
+	background: url(tab-bg.gif) no-repeat left top !important;
+	margin-right: 10px;
+	padding-left: 8px !important;
+}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-size: 100%;
+	font-weight: bold !important;
+	height: 37px;
+	margin: 0 !important;
+	padding-right: 10px !important;
+	color: #c5c5c5 !important;
+	border-bottom: none;
+	background: url(tab-bg.gif) no-repeat right top !important;
+	padding: 0 !important;
+	text-transform: none;
+}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	display: block;
+	height: 37px;
+	padding-right: 10px;
+	line-height: 20px;
+	float: left;
+}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.lasthover {}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li.hover h3,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.firsthover h3,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.lasthover h3 {
+	color: #FFF !important;
+}
+
+.urani .ja-tabs-title-top ul.ja-tabs-title li.active,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.urani .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(tab-active.gif) no-repeat center bottom !important;
+	padding: 0 !important;
+}
+
+.urani .ja-tabs-title-top ul li.active h3 ,
+.urani .ja-tabs-title-top ul li.firstactive h3,
+.urani .ja-tabs-title-top ul li.lastactive h3 {
+	color: #333 !important;
+	background: url(tab-active.gif) no-repeat left top !important;
+	padding-left: 8px !important;
+}
+
+.urani .ja-tabs-title-top ul li.active h3 span,
+.urani .ja-tabs-title-top ul li.firstactive h3 span,
+.urani .ja-tabs-title-top ul li.lastactive h3 span{
+	background: url(tab-active.gif) no-repeat right top !important; 
+}
+
+.urani .ja-tab-panels-top {}
+
+.urani .ja-tab-panels-top .ja-tab-content h3 { 
+	margin-top: 10px !important;
+	color: #333 !important;
+	font-size: 100%;
+}
+
+/* JA Tabs left*/
+.urani .ja-tabs-title-left {
+	position: relative;
+	float: left;
+	height: 100%;
+	background: url(17pxblank.gif) repeat-y right center #F7F7F7;
+}
+
+.urani .ja-tabs-title-left ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.urani .ja-tabs-title-left ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.urani .ja-tabs-title-left ul li.active,
+.urani .ja-tabs-title-left ul li.firstactive,
+.urani .ja-tabs-title-left ul li.lastactive {
+	background: #FFFFFF;
+}
+
+.urani .ja-tabs-title-left ul li.active h3 ,
+.urani .ja-tabs-title-left ul li.firstactive h3,
+.urani .ja-tabs-title-left ul li.lastactive h3 {
+	color: #333333;
+}
+
+
+/* JA Tabs right*/
+.urani .ja-tab-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.urani .ja-tabs-title-right {
+	background: url(17pxblank2.gif) repeat-y left center #F7F7F7;
+}
+
+.urani .ja-tabs-title-right ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.urani .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px 0 25px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.urani .ja-tabs-title-right ul li.active,
+.urani .ja-tabs-title-right ul li.firstactive,
+.urani .ja-tabs-title-right ul li.lastactive {
+	background: #FFFFFF;
+}
+
+.urani .ja-tabs-title-right ul li.active H3 ,
+.urani .ja-tabs-title-right ul li.firstactive H3,
+.urani .ja-tabs-title-right ul li.lastactive H3 {
+	color: #333333;
+}
+
+/* JA Tabs bottom*/
+.urani .ja-tabs-title-bottom {
+	height: 30px;
+	border-top: 1px solid #CCCCCC;
+	position: relative;
+	width: 100%;
+}
+
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	margin-left: 5px;
+	margin-top: -1px;
+}
+
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	font-size: 100%;
+	font-weight: bold !important;
+	line-height: 28px;
+	margin: 0;
+	padding: 0 10px;
+	border: 1px solid #F7F7F7;
+	color: #999999;
+	border-top: none;
+}
+
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.hover,
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.firsthover,
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.lasthover {
+}
+
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.urani .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+.urani .ja-tabs-title-bottom ul li.active h3 ,
+.urani .ja-tabs-title-bottom ul li.firstactive h3,
+.urani .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #333333;
+}

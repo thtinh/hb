@@ -1,0 +1,212 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+
+.ja-tabswrap {
+	margin: 0;
+	padding: 0;
+}
+
+.teline_iii .container { overflow: hidden; position: relative; z-index: 10; }
+
+/* JA Tabs top */
+.teline_iii .container .ja-tabs-title-top {
+	background: #f7f7f7;
+	position: relative;
+	height: 26px;
+	border-bottom: 1px solid #ddd;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title {
+	height: 26px;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li {
+	background: #f7f7f7;
+	border-right: 1px solid #ccc;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0;
+	height: 26px;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-family: Arial, sans-serif;
+	font-size: 92%;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0;
+	padding: 0 10px;
+	text-transform: uppercase;
+	color: #999;
+	border: none;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li.hover {
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li.hover h3 {
+	color: #000;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li.active {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.teline_iii .container .ja-tabs-title-top ul.ja-tabs-title li.active h3 {
+	color: #000;
+	font-weight: bold;
+}
+
+.teline_iii .ja-tab-panels-top { top: 10px; }
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 0 15px 15px;
+}
+
+/* JA Tabs left */
+.teline_iii .ja-tabs-title-left {
+	background: #f7f7f7 none repeat scroll 0%;
+	border-right: 1px solid #cccccc;
+	height: 100%;
+}
+
+.teline_iii .ja-tabs-title-left ul.ja-tabs-title li {
+	background: #ebf2f9 none repeat scroll 0%;
+	border-bottom: 1px solid #cccccc;
+	cursor: pointer;
+	height: 30px;
+	margin: 0pt;
+}
+
+.teline_iii .ja-tabs-title-left ul.ja-tabs-title li h3 {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0pt;
+	padding-left: 3px;
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+
+.teline_iii .ja-tabs-title-left ul li.active,
+.teline_iii .ja-tabs-title-left ul li.firstactive,
+.teline_iii .ja-tabs-title-left ul li.lastactive { background: #ffffff none repeat scroll 0%; }
+
+.teline_iii .ja-tabs-title-left ul li.active H3 ,
+.teline_iii .ja-tabs-title-left ul li.firstactive H3,
+.teline_iii .ja-tabs-title-left ul li.lastactive H3 { background: none; border-bottom: none; color: #006699; }
+
+.teline_iii .ja-tab-panels-left { left: 0px; }
+
+/* JA Tabs right */
+.teline_iii .ja-tabs-title-right {
+	background: #f7f7f7 none repeat scroll 0%;
+	border-left: 1px solid #cccccc;
+	height: 100%;
+}
+
+.teline_iii .ja-tabs-title-right ul.ja-tabs-title li {
+	background: #ebf2f9 none repeat scroll 0%;
+	border-bottom: 1px solid #cccccc;
+	cursor: pointer;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.teline_iii .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0pt;
+	padding-left: 3px;
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+
+.teline_iii .ja-tabs-title-right ul li.active,
+.teline_iii .ja-tabs-title-right ul li.firstactive,
+.teline_iii .ja-tabs-title-right ul li.lastactive { background: #ffffff none repeat scroll 0%; }
+
+.teline_iii .ja-tabs-title-right ul li.active H3 ,
+.teline_iii .ja-tabs-title-right ul li.firstactive H3,
+.teline_iii .ja-tabs-title-right ul li.lastactive H3 { background: none; border-bottom: none; color: #006699; }
+
+.teline_iii .ja-tabs-title-right ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0px;
+	width: 100%;
+}
+
+.teline_iii * html .ja-tabs-title-right ul.ja-tabs-title { right: -1px; /*IE 6*/ }
+
+/* JA Tabs bottom*/
+.teline_iii .ja-tabs-title-bottom {
+	background: #f7f7f7 none repeat scroll 0%;
+	border-top: 1px solid #cccccc;
+	height: 30px;
+	position: relative;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title { top: -1px; }
+
+.teline_iii .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: #ebf2f9 none repeat scroll 0%;
+	border: 1px solid #cccccc;
+	border-top: none;
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin: 0pt 1px;
+}
+
+.teline_iii .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	border-color: #f0f0f0;
+	border-style: solid solid none;
+	border-width: 1px 1px medium;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0pt;
+	padding: 0pt 10px;
+	text-transform: uppercase;
+}
+
+.teline_iii .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.teline_iii .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.teline_iii .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #ffffff none repeat scroll 0%;
+	border-top: 1px solid #ffffff;
+}
+
+.teline_iii .ja-tabs-title-bottom ul li.active h3,
+.teline_iii .ja-tabs-title-bottom ul li.firstactive h3,
+.teline_iii .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: none;
+	border-bottom: none;
+	color: #006699;
+	margin: 0pt;
+	padding: 0pt 10px;
+}

@@ -1,0 +1,129 @@
+.tube .container .ja-innerdiv{
+	border-bottom: none;
+}
+
+.tube .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 15px 10px !important;
+}
+
+/* JA Tabs top*/
+.tube .ja-tabs-title-top {
+	background: #FFFFFF;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title {
+	padding: 0;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title li {
+	margin-right: 2px;
+	padding: 0 0 0 10px;
+	background: url(tabs-l.gif) no-repeat top left !important;
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: url(tabs-r.gif) no-repeat top right;
+	font-size: 100%;
+	font-weight: bold !important;
+	padding: 9px 10px 4px 0;
+	margin: 0;
+	line-height: normal;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	float: left;
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.tube .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.tube .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.tube .ja-tabs-title-top ul.ja-tabs-title li.active,
+.tube .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.tube .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(tabs-active-l.gif) no-repeat top left !important;
+}
+
+.tube .ja-tabs-title-top ul li.active h3,
+.tube .ja-tabs-title-top ul li.firstactive h3,
+.tube .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(tabs-active-r.gif) no-repeat top right;
+	border-bottom: none;
+	padding: 9px 10px 5px 0;
+}
+
+/* JA Tabs bottom */
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	
+}
+
+.tube .ja-tabs-title-bottom {
+	background: #FFFFFF;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	height: 28px;
+}
+
+.tube .ja-tabs-title-bottom ul.ja-tabs-title {
+	padding: 0;
+	top: -1px;
+	left: 0;
+	display: block;
+}
+
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: url(tabs-bl.gif) no-repeat left bottom !important;
+	margin-right: 2px;
+	padding: 0 0 0 10px;
+}
+
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: url(tabs-br.gif) no-repeat right bottom;
+	float: left;
+	font-size: 100%;
+	font-weight: bold !important;
+	letter-spacing: normal;
+	line-height: normal;
+	margin: 0;
+	padding: 9px 10px 4px 0;
+	text-transform: uppercase;
+}
+
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.tube .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(tabs-active-bl.gif) no-repeat left bottom !important;
+}
+
+.tube .ja-tabs-title-bottom ul li.active h3,
+.tube .ja-tabs-title-bottom ul li.firstactive h3,
+.tube .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: url(tabs-active-br.gif) no-repeat right bottom;
+	border-bottom: none;
+	padding: 9px 10px 5px 0;
+}
+
+.tube .ja-tab-panels-bottom {
+	left: 0;
+	background: url(tab-panels-bottom.gif) no-repeat right top;
+}

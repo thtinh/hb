@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install method="upgrade" type="module" version="1.5.0">
+	<name>Phoca Gallery Tree Module</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>18/05/2010</creationDate>
+	<copyright>Jan Pavelka</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<version>2.7.1</version>
+	<description><![CDATA[ 
+       Phoca Gallery Tree Module - displays a tree of categories from Phoca Gallery component<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>  
+      ]]></description>
+	
+	<files>
+		<filename module="mod_phocagallery_tree">index.html</filename>
+		<filename module="mod_phocagallery_tree">mod_phocagallery_tree.php</filename>
+		<filename module="mod_phocagallery_tree">mod_phocagallery_tree.xml</filename>
+		
+		<filename module="mod_phocagallery_tree">assets/index.html</filename>
+		<filename module="mod_phocagallery_tree">assets/dtree.js</filename>
+		<filename module="mod_phocagallery_tree">assets/dtree.css</filename>
+		
+		<filename module="mod_phocagallery_tree">assets/img/index.html</filename>
+		<filename module="mod_phocagallery_tree">assets/img/base.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/empty.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/folder.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/folderopen.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/imgfolder.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/join.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/joinbottom.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/line.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/minus.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/minusbottom.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/nolines_minus.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/nolines_plus.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/page.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/plus.gif</filename>
+		<filename module="mod_phocagallery_tree">assets/img/plusbottom.gif</filename>
+		
+		<filename module="mod_phocagallery_tree">tmpl/index.html</filename>
+		<filename module="mod_phocagallery_tree">tmpl/default.php</filename>	</files>		
+		
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_phocagallery_tree.ini</language>
+	</languages>
+	
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="hide_categories" type="textarea" rows="2" cols="26" default="" label="Hide Categories" description="Hide Categories DESC" />
+		
+		<param name="display_access_category" type="radio" default="0" label="Display Access Categories" description="Display Access Categories DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

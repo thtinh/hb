@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+  <name>VXGAjax</name>
+  <creationDate>July 2010</creationDate>
+  <author>Nguyen Thanh Tinh</author>
+  <authorEmail>thtinh@vxg.vn</authorEmail>
+  <authorUrl>http://www.vxg.vn</authorUrl>
+  <copyright>(C) VXG Ltd 2008 All rights reserved.</copyright>
+  <license>http://www.vxg.vn</license>
+  <version>1.0.0</version>
+  <description>VXGAjax</description>
+  <files>
+    <filename>index.html</filename>
+    <filename>vxgajax.php</filename>
+  </files>
+  <administration>
+    <files>
+      <filename>index.html</filename>
+      <filename>admin.vxgajax.php</filename>
+     </files>
+  </administration>
+</install>

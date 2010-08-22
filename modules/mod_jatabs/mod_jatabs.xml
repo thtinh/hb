@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JA Tabs</name>
+	<author>joomlart.com</author>
+	<creationDate>June 2008</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.5.0</version>
+	<description>Create a ja tab with module, content ...</description>
+	<languages>
+			<language tag="en-GB">en-GB.mod_jatabs.ini</language>
+	</languages>
+	<files>
+	<filename module="mod_jatabs">mod_jatabs.php</filename>
+	<filename module="mod_jatabs">tmpl/default.php</filename>
+	<filename module="mod_jatabs">elements/jalist.php</filename>
+	<filename module="mod_jatabs">elements/position.php</filename>
+	<filename module="mod_jatabs">helper.php</filename>
+	</files>
+	<params group="advanced">
+		
+		<param name="style" type="folderlist" directory="plugins/content/ja_tabs/themes/" default="" label="TAB STYLE" description="TAB STYLE DESC" />
+		<param name="Height" type="text" default="auto" label="HEIGHT:" description="HEIGHT: DESC" />
+		<param name="Width" type="text" default="100%" label="WIDTH:" description="WIDTH: DESC" />
+		<param name="position" type="list" default="0" label="TABS TITLE POSITION" description="TABS TITLE POSITION DESC">
+			<option value="top">TOP</option>
+			<option value="right">RIGHT</option>
+			<option value="bottom">BOTTOM</option>
+			<option value="left">LEFT</option>
+		</param>
+		<param name="tHeight" type="text" default="" label="Tabs title HEIGHT:" description="TABS TITLE HEIGHT: DESC" />
+		<param name="tWidth" type="text" default="" label="Tabs title WIDTH:" description="TABS TITLE WIDTH: DESC" />
+		<param name="animType" type="list" default="0" label="ANIMATION TYPE:" description="ANIMATION TYPE: DESC">
+			<option value="animNone">NO ANIMATION</option>
+			<option value="animMoveHor">MOVE LEFT/RIGHT</option>
+			<option value="animFade">FADE</option>
+			<option value="animMoveVir">MOVE UP/DOWN</option>
+		</param>
+		<param name="mouseType" type="radio" default="click" label="EVENT TYPE :" description="EVENT TYPE : DESC">
+			<option value="click">CLICK</option>
+			<option value="mouseover">MOUSEOVER</option>
+		</param>
+		<param name="ajax" type="radio" default="0" label="USE AJAX :" description="USE AJAX : DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>			
+		</param>
+		<param name="view" type="radio" default="introtext" label="VIEW:" description="VIEW: DESC">
+			<option value="introtext">INTROTEXT</option>
+			<option value="fulltext">FULLTEXT</option>
+		</param>
+		<param name="duration" type="text" default="1000" label="DURATION:" description="DURATION: DESC" />
+		<param name="colors" type="text" size="80" default="" description="ZZZ DESC" />
+	</params>
+	<params addpath="/modules/mod_jatabs/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="" />
+		<param name="type" type="jalist" default="modules" label="TYPE TABS:" description="TYPE TABS: DESC">
+			<option value="">- SELECT TYPE -</option>
+			<option value="modules">MODULES</option>
+			<option value="content">CONTENTS</option>
+			<option value="module">MODULE</option>
+			<option value="articlesIDs">ARTICLES-ID</option>
+			<option value="categoryID">ARTICLES-CATEGORYID</option>
+		</param>
+		<param name="modules-position" type="position" default="" label="SELECT A POSITION" description="SELECT A POSITION DESC" />
+		<param name="module-modulename" type="text" default="mod_search, mod_login" label="LIST MODULE:" description="LIST MODULE: DESC"/> 
+		<param name="articlesIDs-ids" type="text" default="1, 2, 3, 4" label="ARTICLEID LIST:" description="ARTICLEID LIST: DESC"/>
+		<param name="categoryID-catid" type="text" default="10" label="CATEGORY ID:" description="CATEGORY ID: DESC"/>
+		<param name="content-content" type="textarea" cols="50" rows="8" default="[tab title='Title tab 1']This is tab content 1[/tab]
+ [tab title='Title tab 2']This is tab content 2[/tab]
+ [tab title='Title tab 3']This is tab content 3[/tab]
+ [tab title='Title tab 4']This is tab content 4[/tab]
+" label="ENTER CONTENT CODE" description="ENTER CONTENT CODE DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	</params>
+	
+</install>

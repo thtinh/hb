@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>vxg_hb</name>
+	<creationDate>1 July 2010</creationDate>
+	<author>Nguyen Thanh Tinh</author>
+	<authorEmail>thtinh@vxg.vn</authorEmail>
+	<authorUrl>http://www.vxg.vn</authorUrl>
+	<copyright>2010</copyright>
+	<license>GNU</license>
+	<version>1.0.0</version>
+	<description>Template of Hoa Binh Village Website</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/bg-menu.png</filename>
+		<filename>images/bg-menu-1.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/template_rtl.css</filename>
+		<filename>css/editor.css</filename>
+		<filename>css/ieonly.css</filename>
+	</files>
+	<positions>
+		<position>breadcrumbs</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	
+</install>

@@ -1,0 +1,213 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.sanidine .ja-container {
+}
+
+.sanidine .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 10px !important;
+}
+
+/* JA Tabs top*/
+.sanidine .ja-tabs-title-top {
+	background: url(tab-title-bg.gif) no-repeat right top;
+	position: relative;
+	width: 100%;
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title {
+	background: url(tab-title-bg.gif) no-repeat left top;
+	padding: 15px 0 0 20px;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li {
+	background: url(tab-bg.gif) no-repeat left top;
+	margin-right: 5px;
+	padding-left: 10px;
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background: url(tab-bg.gif) no-repeat right top;
+	color: #222222;
+	font-size: 11px;
+	font-weight: bold !important;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px 0 10px;
+	margin: 0;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	background: none;
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.active,
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.sanidine .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	background: url(tab-active-bg.gif) no-repeat left top;
+}
+
+.sanidine .ja-tabs-title-top ul li.active h3,
+.sanidine .ja-tabs-title-top ul li.firstactive h3,
+.sanidine .ja-tabs-title-top ul li.lastactive h3 {
+	background: url(tab-active-bg.gif) no-repeat right top;
+	color: #CCCCCC;
+}
+
+/* JA Tabs left*/
+.sanidine .ja-tabs-title-left {
+	position: relative;
+	float: left;	
+	height: 100%;
+	background: url(17pxblank.gif) repeat-y right #F5F4ED;
+}
+
+.sanidine .ja-tabs-title-left ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.sanidine .ja-tabs-title-left ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.sanidine .ja-tabs-title-left ul li.active,
+.sanidine .ja-tabs-title-left ul li.firstactive,
+.sanidine .ja-tabs-title-left ul li.lastactive {
+	background: url(left-active.gif) no-repeat right #FFFFFF;
+}
+
+.sanidine .ja-tabs-title-left ul li.active H3 ,
+.sanidine .ja-tabs-title-left ul li.firstactive H3,
+.sanidine .ja-tabs-title-left ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+
+/* JA Tabs right*/
+.sanidine .ja-tab-panels-right .ja-tab-subcontent {
+	padding-left: 15px !important;
+}
+
+.sanidine .ja-tabs-title-right {
+	background: url(17pxblank2.gif) repeat-y left #F5F4ED;
+}
+
+.sanidine .ja-tabs-title-right ul.ja-tabs-title li {
+	height: 100%;
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+	background: none;
+}
+
+.sanidine .ja-tabs-title-right ul.ja-tabs-title li h3 {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 10px 0 25px;
+	background: none;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	letter-spacing: normal;
+}
+
+.sanidine .ja-tabs-title-right ul li.active,
+.sanidine .ja-tabs-title-right ul li.firstactive,
+.sanidine .ja-tabs-title-right ul li.lastactive {
+	background: url(right-active.gif) no-repeat left #FFFFFF;
+}
+
+.sanidine .ja-tabs-title-right ul li.active H3 ,
+.sanidine .ja-tabs-title-right ul li.firstactive H3,
+.sanidine .ja-tabs-title-right ul li.lastactive H3 {
+	color: #FA6900;
+}
+
+/* JA Tabs bottom*/
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	padding: 20px 10px 10px !important;
+}
+
+.sanidine .ja-tabs-title-bottom {
+	background: url(tab-bot-title-bg.gif) no-repeat right bottom;
+	position: relative;
+	height: 45px;
+	z-index: 3;
+	width: 100%;
+}
+
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title {
+	background: url(tab-bot-title-bg.gif) no-repeat left bottom;
+	padding: 0 0 15px 20px;
+	top: 0;
+	left: 0;
+}
+
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: url(tab-bot-bg.gif) no-repeat left bottom;
+	margin-right: 5px;
+	padding-left: 10px;
+}
+
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	background: url(tab-bot-bg.gif) no-repeat right bottom;
+	font-size: 11px;
+	font-weight: bold !important;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 20px 0 10px;
+	letter-spacing: normal;
+}
+
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.sanidine .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: url(tab-bot-active-bg.gif) no-repeat left bottom #222222;
+}
+
+.sanidine .ja-tabs-title-bottom ul li.active h3,
+.sanidine .ja-tabs-title-bottom ul li.firstactive h3,
+.sanidine .ja-tabs-title-bottom ul li.lastactive h3 {
+	background: url(tab-bot-active-bg.gif) no-repeat right bottom;
+	color: #FFFFFF;
+}

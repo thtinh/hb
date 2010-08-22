@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>JA Tabs for Joomla! 1.5</name>
+	<author>Joomlart.com</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>Copyright (C) Copyright © 2005 - 2008 JoomlArt.com. All rights reserved.</copyright>
+	<license>http://www.joomlart.com GNU/GPL</license>
+	<authorEmail>info@joomsolutions.com</authorEmail>
+	<authorUrl>http://joomlart.com</authorUrl>
+	<version>1.0</version>
+	<description>Ja Tab for Joomla! 1.5</description>
+	<files>
+		<folder plugin="ja_tabs">ja_tabs</folder>		
+		<filename plugin="ja_tabs">ja_tabs.php</filename>
+	</files>	
+	
+	<params>
+		<param name="style" type="folderlist" directory="plugins/content/ja_tabs/themes/" default="default" label="Default style" description="Select a tab style" />
+	</params>
+</install>

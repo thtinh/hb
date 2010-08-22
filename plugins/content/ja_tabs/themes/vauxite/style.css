@@ -1,0 +1,129 @@
+.vauxite {
+	background:url(bor_br.gif) no-repeat right bottom;
+}
+.vauxite .container {
+	background:url(bor_bl.gif) no-repeat left bottom;
+}
+
+.vauxite .ja-tabswrap div.ja-tab-content {	
+	width: 95%;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 10px !important;
+}
+
+/* JA Tabs top*/
+.vauxite .ja-tabs-title-top {
+	background: url(bor_tr.gif) no-repeat right top;
+	position: relative;
+	width: 100%;
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title {
+	background: url(bor_tl.gif) no-repeat left top;
+	margin:0px;
+	height:30px;
+	bottom:0 !important;
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li {
+	margin-right: 5px;
+	padding: 0;
+	float:left;
+	background:none;
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	font-size: 100%;
+	font-weight: bold !important;
+	line-height: 30px;
+	padding: 0 7px;
+	margin: 0;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	float: left;
+	cursor: pointer;
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li h3 span {
+	
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.active,
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.firstactive,
+.vauxite .ja-tabs-title-top ul.ja-tabs-title li.lastactive {
+	
+}
+
+.vauxite .ja-tabs-title-top ul li.active h3,
+.vauxite .ja-tabs-title-top ul li.firstactive h3,
+.vauxite .ja-tabs-title-top ul li.lastactive h3 {
+	background:url(tabs-left.gif) no-repeat left top;
+
+	
+}
+.vauxite .ja-tabs-title-top ul li.active h3 span,
+.vauxite .ja-tabs-title-top ul li.firstactive h3 span,
+.vauxite .ja-tabs-title-top ul li.lastactive h3 span{
+	display:block;
+	background:url(tabs-right.gif) no-repeat right top;
+	padding-right:10px;
+}
+/* JA Tabs bottom */
+.ja-tab-panels-bottom .ja-tab-content div.ja-tab-subcontent {
+	padding: 20px 10px 10px !important;
+}
+
+.vauxite .ja-tabs-title-bottom {
+	background: #F8F8F8;
+	position: relative;
+	height: 31px;
+	z-index: 3;
+	width: 100%;
+}
+
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title {
+	padding: 0 0 15px 10px;
+	top: 0;
+	left: 0;
+}
+
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li {
+	margin-right: 5px;
+	background: none;
+}
+
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	color: #666666;
+	font-size: 10px;
+	font-weight: bold !important;
+	line-height: 25px;
+	margin: 0;
+	padding: 0 10px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li h3 span {
+	background: none !important;
+}
+
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.vauxite .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border: 1px solid #E0E0E0;
+	border-top: none;
+}
+
+.vauxite .ja-tabs-title-bottom ul li.active h3,
+.vauxite .ja-tabs-title-bottom ul li.firstactive h3,
+.vauxite .ja-tabs-title-bottom ul li.lastactive h3 {
+	color: #D7025F;
+}

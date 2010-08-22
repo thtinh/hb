@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5">
+	<name>mod_contactUs</name>
+	<author>hanghang</author>
+	<createDate>may 10 2010</createDate>
+	<license>GPL</license>
+	<authorEmail>hanghienhau@gmail.com</authorEmail>
+	<version>1.5.0</version>
+	<description>module contact us</description>
+	<files>
+		<filename module="mod_contactUs">mod_contactUs.php</filename>
+		<filename module="mod_contactUs">css/mod_contactUs.css</filename>
+		<filename module="mod_contactUs">tmpl/default.php</filename>
+		<filename module="mod_contactUs">img/bg_gui.png</filename>
+		<filename module="mod_contactUs">img/bg_cancel.png</filename>
+		<filename module="mod_contactUs">js/formcheck/formcheck.js</filename>
+		<filename module="mod_contactUs">js/formcheck/lang/en.js</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/formcheck.css</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/ajax-loader.gif</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/b.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/bl.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/br.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/c.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/close.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/l.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/r.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/t.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/tl.png</filename>
+		<filename module="mod_contactUs">js/formcheck/theme/classic/img/tr.png</filename>	
+	</files>
+        <params>
+            <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+        </params>
+
+</install>
+
+
+
+
+
+
+
+

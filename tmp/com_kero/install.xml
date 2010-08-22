@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>kero</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2010-01-20</creationDate>
+	<author>Nguyen Thanh Tinh</author>
+	<authorEmail>thtinh@vxg.com</authorEmail>
+	<authorUrl>http://www.vxg.vn</authorUrl>
+	<copyright>VXG Ltd.</copyright>
+	<license>Commercial</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Provide a form for submitting messages online</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>kero.php</filename>
+		<filename>assets/date-en-GB.js</filename>
+		<filename>assets/index.html</filename>
+		<filename>assets/quote.css</filename>
+		<filename>assets/quote.js</filename>
+		<filename>assets/validate.css</filename>
+		<filename>assets/validate.js</filename>
+		<filename>assets/images/loading.gif</filename>
+                <filename>assets/images/btnSubmit_bg.gif</filename>
+		<filename>models/kero.php</filename>
+		<filename>views/kero/index.html</filename>
+		<filename>views/kero/view.html.php</filename>
+                <filename>views/kero/view.raw.php</filename>
+		<filename>views/kero/tmpl/index.html</filename>
+		<filename>views/kero/tmpl/default.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+        <administration>
+		<!-- Administration Menu Section -->
+		<files folder="admin">		
+			<filename>index.html</filename>
+		
+		</files>
+	</administration>
+</install>
