@@ -14,6 +14,7 @@ include('../blueprint/screen.css');
 /* template css files */
 include('template.css');
 include('mod_contactUs.css');
+include('mod_sponsors_list.css');
 include('dropdown.css');
 include('editor.css');
 

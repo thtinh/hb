@@ -28,113 +28,119 @@ jimport( 'joomla.application.component.controller' );
 class AjaxController extends JController {
 
     function getSponsorList() {
-        require_once(JPATH_COMPONENT.DS.'sponsorshelper.php');       
+        require_once(JPATH_COMPONENT.DS.'sponsorshelper.php');
         return array();
+    }
+    function getContentCategory($catid=0) {
+        require_once (JPATH_SITE.DS.'components'.DS.'com_content'.DS.'helpers'.DS.'route.php');
+        $catid = (!$catid) ? JRequest::getVar('catid') : $catid;
+        $limit = 8;
+
+        $limitstart = JRequest::getVar('limitstart',0);
+        $db	=& JFactory::getDBO();
+        //dieu kien la phai lay bai viet publish
+        $where = $this->_getWhereContentByCat($db,$catid);
+        //lay dieu kien cho order by co hit hoac khong co hit va sap xep bai viet theo thu tu giam dan
+        $ordering = $this->_getOrdering($mostview);
+        //lay query trong ham getQueryContent ra
+        $query = $this->_getQueryContent();
+
+        $query = $query . $where .' ORDER BY '. $ordering;
+
+       
+        $db->setQuery($query, $limitstart, 0);
+        //function getIDetails se tra ra mot mang row co cac link,title,introtext,image
+        $rows = $this->_getDetails($db);
+        jimport('joomla.html.pagination');
+        $pagination = new JPagination(count($rows), $limitstart, $limit);
+        
+        $result = array();
+        $result["content"] = $rows;
+        $result["pagination"] = $pagination;
+        return $result;
+    }
+    private function _getOrdering($mostview) {
+        // Ordering
+        if($mostview == 1)
+            $ordering = 'a.hits DESC';
+        else
+            $ordering = 'a.title ASC, a.created ASC';
+
+        return $ordering;
+    }
+    private function _getCatId($catid) {
+        if ($catid) {
+            $ids = explode( ',', $catid );//cắt chuỗi, cứ thấy dấu phẩy là tách ra
+            JArrayHelper::toInteger( $ids );//chuyển nguyên mảng $ids sang kiểu số int
+            $catCondition = ' AND (cc.id=' . implode( ' OR cc.id=', $ids ) . ')';
+        }
+        return ($catid ? $catCondition : '');
+    }
+    private function _getDetails(&$db) {
+        $rows = $db->loadObjectList();
+        $rc = count($rows);
+     
+        for($i = 0;$i < $rc; $i++) {
+            
+            //hien thi du'ng ca'c ky tu dac biet trong html
+            $rows[$i]->title = htmlspecialchars($rows[$i]->title);
+            $rows[$i]->link = JRoute::_(ContentHelperRoute::getArticleRoute($rows[$i]->slug,$rows[$i]->catslug,$rows[$i]->sectionid));
+            $introtext = strip_tags($rows[$i]->introtext);
+            //$rows[$i]->introtext = preg_replace("/{[^}]*}/","",$rows[$i]->introtext);
+            $rows[$i]->introtext = $introtext;
+            $rows[$i]->showmore = JRoute::_(ContentHelperRoute::getCategoryRoute($rows[$i]->catid,$rows[$i]->sectionid));
+        }
+
+        return $rows;
+    }
+     //function nay du`ng de lay query ra
+    private function _getQueryContent() {
+        $query = 'SELECT a.*,cc.image AS image,' .
+                ' CASE WHEN CHAR_LENGTH(a.alias) THEN CONCAT_WS(":", a.id, a.alias) ELSE a.id END as slug,'.
+                ' CASE WHEN CHAR_LENGTH(cc.alias) THEN CONCAT_WS(":", cc.id, cc.alias) ELSE cc.id END as catslug'.
+                ' FROM #__content AS a' .
+                //' LEFT JOIN #__content_frontpage AS f ON f.content_id = a.id'.
+                ' INNER JOIN #__categories AS cc ON cc.id = a.catid' .
+                ' INNER JOIN #__sections AS s ON s.id = a.sectionid' ;
+
+        return $query;
+
+    }
+    private function _getWhereContentByCat(&$db,$catid) {
+        $user		=& JFactory::getUser();
+        $aid		= $user->get('aid', 0);
+        $contentConfig = &JComponentHelper::getParams( 'com_content' );
+        $access		= !$contentConfig->get('show_noauth');
+
+        $nullDate	= $db->getNullDate();
+        $date =& JFactory::getDate();
+        $now = $date->toMySQL();
+        //lay cate id ma nguoi dung nhap bo vao trong cau query
+        $cateid = $this->_getCatId($catid);
+
+        $where	=' WHERE a.state = 1'. ' AND ( a.publish_up = '.$db->Quote($nullDate).' OR a.publish_up <= '.$db->Quote($now).' )'
+                . ' AND ( a.publish_down = '.$db->Quote($nullDate).' OR a.publish_down >= '.$db->Quote($now).' )'
+                .' AND s.id > 0' .
+                ($access ? ' AND a.access <= ' .(int) $aid. ' AND cc.access <= ' .(int) $aid. ' AND s.access <= ' .(int) $aid : '').
+                $cateid.
+                //' AND f.content_id IS NULL '.
+                ' AND s.published = 1' .
+                ' AND cc.published = 1' ;
+
+        return $where;
     }
     function display() {
         $result = null;
         switch ($this->getTask()) {
             //index.php?option=com_contact&task=category&id=0&Itemid=4
             case 'SponsorList':
-                $result = $this->getSponsorList();
+                $result = $this->getContentCategory();
                 break;
             case 'ToBeAdvised':
                 break;
         }
-        echo $result;
-    }
-    /**
-     * Validates some inputs based on component configuration
-     *
-     * @param Object	$contact	JTable Object
-     * @param String	$email		Email address
-     * @param String	$subject	Email subject
-     * @param String	$body		Email body
-     * @return Boolean
-     * @access protected
-     * @since 1.5
-     */
-    function _validateInputs( $contact, $email, $subject, $body ) {
-        global $mainframe;
-
-        $session =& JFactory::getSession();
-
-        // Get params and component configurations
-        $params		= new JParameter($contact->params);
-        $pparams	= &$mainframe->getParams('com_contact');
-
-        // check for session cookie
-        $sessionCheck 	= $pparams->get( 'validate_session', 1 );
-        $sessionName	= $session->getName();
-        if  ( $sessionCheck ) {
-            if ( !isset($_COOKIE[$sessionName]) ) {
-                $this->setError( JText::_('ALERTNOTAUTH') );
-                return false;
-            }
-        }
-
-        // Determine banned e-mails
-        $configEmail	= $pparams->get( 'banned_email', '' );
-        $paramsEmail	= $params->get( 'banned_mail', '' );
-        $bannedEmail 	= $configEmail . ($paramsEmail ? ';'.$paramsEmail : '');
-
-        // Prevent form submission if one of the banned text is discovered in the email field
-        if(false === $this->_checkText($email, $bannedEmail )) {
-            $this->setError( JText::sprintf('MESGHASBANNEDTEXT', JText::_('Email')) );
-            return false;
-        }
-
-        // Determine banned subjects
-        $configSubject	= $pparams->get( 'banned_subject', '' );
-        $paramsSubject	= $params->get( 'banned_subject', '' );
-        $bannedSubject 	= $configSubject . ( $paramsSubject ? ';'.$paramsSubject : '');
-
-        // Prevent form submission if one of the banned text is discovered in the subject field
-        if(false === $this->_checkText($subject, $bannedSubject)) {
-            $this->setError( JText::sprintf('MESGHASBANNEDTEXT',JText::_('Subject')) );
-            return false;
-        }
-
-        // Determine banned Text
-        $configText		= $pparams->get( 'banned_text', '' );
-        $paramsText		= $params->get( 'banned_text', '' );
-        $bannedText 	= $configText . ( $paramsText ? ';'.$paramsText : '' );
-
-        // Prevent form submission if one of the banned text is discovered in the text field
-        if(false === $this->_checkText( $body, $bannedText )) {
-            $this->setError( JText::sprintf('MESGHASBANNEDTEXT', JText::_('Message')) );
-            return false;
-        }
-
-        // test to ensure that only one email address is entered
-        $check = explode( '@', $email );
-        if ( strpos( $email, ';' ) || strpos( $email, ',' ) || strpos( $email, ' ' ) || count( $check ) > 2 ) {
-            $this->setError( JText::_( 'You cannot enter more than one email address', true ) );
-            return false;
-        }
-
-        return true;
+        echo json_encode($result);
     }
 
-    /**
-     * Checks $text for values contained in the array $array, and sets error message if true...
-     *
-     * @param String	$text		Text to search against
-     * @param String	$list		semicolon (;) seperated list of banned values
-     * @return Boolean
-     * @access protected
-     * @since 1.5.4
-     */
-    function _checkText($text, $list) {
-        if(empty($list) || empty($text)) return true;
-        $array = explode(';', $list);
-        foreach ($array as $value) {
-            $value = trim($value);
-            if(empty($value)) continue;
-            if ( JString::stristr($text, $value) !== false ) {
-                return false;
-            }
-        }
-        return true;
-    }
+   
 }

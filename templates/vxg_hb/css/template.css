@@ -188,7 +188,7 @@ a:hover{text-decoration: underline;}
 #album p{margin-bottom: 5px;}
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
-.moduletable_contact h3, .moduletable_sponsor h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
+.moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
                        color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
 }
 .contentpaneopen #map{padding: 0px 10px;}

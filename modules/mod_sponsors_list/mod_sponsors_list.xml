@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Sponsors List</name>
+    <author>Nguyen Thanh Tinh</author>
+    <creationDate>Aug 2010</creationDate>
+    <copyright>Copyright (C) 2005 - 2010 VXG Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@vxg.vn</authorEmail>
+    <authorUrl>www.vxg.vn</authorUrl>
+    <version>1.5.0</version>
+    <description>Sponsors List</description>
+    <files>
+        <filename module="mod_sponsors_list">mod_sponsors_list.php</filename>
+        <filename module="mod_sponsors_list">mod_sponsors_list.xml</filename>
+        <filename module="mod_sponsors_list">helper.php</filename>
+        <filename module="mod_sponsors_list">tmpl/default.php</filename>
+    </files>
+    <params>
+        <param name="catid" type="text" default="" label="Category ID" description="Enter Category ID, for example 1,2,4,5" />
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+    </params>
+
+</install>
