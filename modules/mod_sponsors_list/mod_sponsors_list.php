@@ -20,6 +20,7 @@ $catid = $params->get("catid",0);
 $result = $helper->getContentCategory($catid);
 $pagination = $result["pagination"];
 $sponsorslist = $result["content"];
-
 $doc =& JFactory::getDocument();
+$doc->addScript('templates/vxg_hb/js/mod_sponsors_list.js');
+
 require(JModuleHelper::getLayoutPath('mod_sponsors_list'));

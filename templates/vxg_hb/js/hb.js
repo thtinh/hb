@@ -1,4 +1,4 @@
-function strip(html)
+function stripwtf(html)
 {
    var tmp = document.createElement("DIV");
    tmp.innerHTML = html;

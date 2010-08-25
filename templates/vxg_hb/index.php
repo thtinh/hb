@@ -9,6 +9,9 @@ include_once 'templateconfig.php';
 $document =& JFactory::getDocument();
 $document->setTitle($webtitle." - ".$document->title);
 
+//Framework CSS
+$document->addStyleSheet("templates/vxg_hb/css/style.php",'text/css',"screen");
+$document->addStyleSheet("templates/vxg_hb/blueprint/print.css",'text/css',"print");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,11 +22,6 @@ $document->setTitle($webtitle." - ".$document->title);
 
         <jdoc:include type="head" />
 
-        <!-- Framework CSS -->
-
-        <link rel="stylesheet" href="<?php echo $this->baseurl;?>/templates/vxg_hb/blueprint/print.css" type="text/css" media="print" />
-
-        <link rel="stylesheet" href="<?php echo $this->baseurl;?>/templates/vxg_hb/css/style.php" type="text/css" media="screen, projection" />
 
         <!--[if IE]><link rel="stylesheet" href="<?php echo $this->baseurl;?>/templates/vxg_hb/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 
