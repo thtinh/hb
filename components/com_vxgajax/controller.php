@@ -48,7 +48,7 @@ class AjaxController extends JController {
         $query = $query . $where .' ORDER BY '. $ordering;
 
        
-        $db->setQuery($query, $limitstart, 0);
+        $db->setQuery($query, $limitstart, $limit);
         //function getIDetails se tra ra mot mang row co cac link,title,introtext,image
         $rows = $this->_getDetails($db);
         jimport('joomla.html.pagination');
