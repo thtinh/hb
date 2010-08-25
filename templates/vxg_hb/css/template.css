@@ -231,7 +231,7 @@ p.counter{text-align: center}
 #paging_heart .pl-a{color:#F0386C;border-color: #F0386C;background-color: #FFF}
 #paging_heart .pl-i {border-color: #F0386C;color: #fff;background-color:#F0386C}
 .blog_heart p.counter{color:#F0386C;margin-bottom: 30px;}
-._sponsorlist{text-align: right!important}
+._sponsorlist{text-align: right!important;margin-right:0px}
 
 #paging_souvenir .pl-a, ._sponsorlist a.pl{color:#1ABDEC;border-color: #1ABDEC;background-color: #FFF}
 #paging_souvenir .pl-i, ._sponsorlist a.pl-a, ._sponsorlist a.pl:hover{border-color: #1ABDEC;color: #fff;background-color:#1ABDEC}
