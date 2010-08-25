@@ -98,6 +98,8 @@ window.addEvent('domready', function(){
         divDescription.injectAfter($('picture'));
     };
     var loadAlbum = function(id){
+        $$('.album-left').removeClass('active');
+        $(id+'-album').addClass('active');
         var url = 'index.php?option=com_phocagallery&view=category&id='+id+'&format=json';
         var request = new Json.Remote(url, {
             onComplete: function(jsonObj) {

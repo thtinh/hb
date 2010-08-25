@@ -170,6 +170,7 @@ a:hover{text-decoration: underline;}
 #album-left ul li{background:url('../images/arrow-bt.png') no-repeat left 10px;font-weight:normal; padding:5px 0px 5px;padding-left:12px;border-bottom:1px dotted #c3e7f2;}
 #album-left ul li.last{font-weight:normal;border-bottom:0px}
 #album-left ul li a {color:#385057; text-decoration:none;}
+#album-left ul li.active a{color: #DF7016;}
 
 #album-content{padding-right:10px}
 #album-content #title{color:#19b7e4; font-weight:bold; padding:5px 0px;}
@@ -231,7 +232,7 @@ p.counter{text-align: center}
 #paging_heart .pl-a{color:#F0386C;border-color: #F0386C;background-color: #FFF}
 #paging_heart .pl-i {border-color: #F0386C;color: #fff;background-color:#F0386C}
 .blog_heart p.counter{color:#F0386C;margin-bottom: 30px;}
-._sponsorlist{text-align: right!important;margin-right:0px}
+._sponsorlist{text-align: right!important;margin-right:5px}
 
 #paging_souvenir .pl-a, ._sponsorlist a.pl{color:#1ABDEC;border-color: #1ABDEC;background-color: #FFF}
 #paging_souvenir .pl-i, ._sponsorlist a.pl-a, ._sponsorlist a.pl:hover{border-color: #1ABDEC;color: #fff;background-color:#1ABDEC}
