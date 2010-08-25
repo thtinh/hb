@@ -3,7 +3,7 @@
 .sponsorslist-wrap img{float:left;}
 .sponsorslist-wrap .left{float: left; width:205px;border-right: 1px solid #bde4ee}
 .sponsorslist-wrap .right{float: right;width:200px}
-.sponsorslist-wrap .sponsorslist{margin-top: 30px;}
+.sponsorslist-wrap .sponsorslist{margin-top: 30px;height: 110px;margin-bottom: 10px;}
 .sponsorslist-wrap a{color:#385057;}
 .sponsorslist ul{margin:0;padding:0;list-style:none;}
 .sponsorslist li{padding:5px 0;}

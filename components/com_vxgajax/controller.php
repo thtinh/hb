@@ -53,7 +53,7 @@ class AjaxController extends JController {
         //function getIDetails se tra ra mot mang row co cac link,title,introtext,image
         $rows = $this->_getDetails($db);
         jimport('joomla.html.pagination');
-        $pagination = new JPagination(_getListCount($query,$db), $limitstart, $limit);
+        $pagination = new JPagination($this->_getListCount($query,$db), $limitstart, $limit);
 
         $result = array();
         $result["content"] = $rows;

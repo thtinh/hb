@@ -45,26 +45,28 @@ window.addEvent('domready', function(){
         
         for (var i=0;i<paging['pages.total'];i++){
             if (i+1==currentPage){
-                el = new Element('span',{
-                    'class':'pl pl-i'
+                el = new Element('a',{
+                    'class':'pl pl-a'
+                    
                 });
                 el.setHTML(i+1);
             }
             else{
                 el = new Element('a',{
-                    'class':'pl pl-a',
-                    'href' : '#'
+                    'class':'pl'
+                    
                 });
                 el.setHTML(i+1);       
             }
             el.injectInside(divPaging);
         }
    
-        $$('#pagination .pl').each(function (el,index){
+        $$('#pagination a').each(function (el,index){
             el.addEvent('click',function(e){
                 e = new Event(e).stop();
                 loadSponsorsList(limit*index);
-                this.toggleClass('pl-a');
+                $$('#pagination a').removeClass("pl-a");
+                 el.addClass("pl-a");
             });
             i++;
         });
