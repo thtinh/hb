@@ -1,0 +1,224 @@
+10
+
+dir
+0
+svn://192.168.1.250/hb/language/en-GB
+svn://192.168.1.250
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5ee4e36e-f7f4-f647-8180-49171c549df1
+
+en-GB.com_user.ini
+file
+
+
+
+add
+
+en-GB.com_media.ini
+file
+
+
+
+add
+
+en-GB.plg_search_sections.ini
+file
+
+
+
+add
+
+en-GB.mod_archive.ini
+file
+
+
+
+add
+
+en-GB.mod_related_items.ini
+file
+
+
+
+add
+
+en-GB.mod_random_image.ini
+file
+
+
+
+add
+
+en-GB.xml
+file
+
+
+
+add
+
+en-GB.mod_syndicate.ini
+file
+
+
+
+add
+
+en-GB.com_mailto.ini
+file
+
+
+
+add
+
+en-GB.com_frontpage.ini
+file
+
+
+
+add
+
+en-GB.mod_online.ini
+file
+
+
+
+add
+
+en-GB.com_banners.ini
+file
+
+
+
+add
+
+en-GB.com_contact.ini
+file
+
+
+
+add
+
+en-GB.ignore.php
+file
+
+
+
+add
+
+en-GB.plg_system_debug.ini
+file
+
+
+
+add
+
+en-GB.mod_footer.ini
+file
+
+
+
+add
+
+en-GB.mod_stats.ini
+file
+
+
+
+add
+
+en-GB.mod_phocagallery_menu.ini
+file
+
+
+
+add
+
+en-GB.ini
+file
+
+
+
+add
+
+en-GB.mod_feed.ini
+file
+
+
+
+add
+
+en-GB.tpl_beez.ini
+file
+
+
+
+add
+
+en-GB.mod_search.ini
+file
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+en-GB.plg_search_weblinks.ini
+file
+
+
+
+add
+
+en-GB.mod_poll.ini
+file
+
+
+
+add
+
+en-GB.mod_login.ini
+file
+
+
+
+add
+
+en-GB.com_phocagallery.ini
+file
+
+
+
+add
+
+en-GB.plg_content_vote.ini
+file
+
+
+
+add
+

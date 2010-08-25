@@ -1,0 +1,301 @@
+10
+
+dir
+0
+svn://192.168.1.250/hb/plugins/editors/tinymce/jscripts/tiny_mce/plugins
+svn://192.168.1.250
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5ee4e36e-f7f4-f647-8180-49171c549df1
+
+media
+dir
+
+
+
+add
+
+insertdatetime
+dir
+
+
+
+add
+
+pagebreak
+dir
+
+
+
+add
+
+noneditable
+dir
+
+
+
+add
+
+inlinepopups
+dir
+
+
+
+add
+
+tinybrowser
+dir
+
+
+
+add
+
+example
+dir
+
+
+
+add
+
+iespell
+dir
+
+
+
+add
+
+emotions
+dir
+
+
+
+add
+
+compat2x
+dir
+
+
+
+add
+
+save
+dir
+
+
+
+add
+
+advhr
+dir
+
+
+
+add
+
+safari
+dir
+
+
+
+add
+
+tabfocus
+dir
+
+
+
+add
+
+_template
+dir
+
+
+
+add
+
+layer
+dir
+
+
+
+add
+
+advimage
+dir
+
+
+
+add
+
+preview
+dir
+
+
+
+add
+
+directionality
+dir
+
+
+
+add
+
+visualchars
+dir
+
+
+
+add
+
+zoom
+dir
+
+
+
+add
+
+devkit
+dir
+
+
+
+add
+
+cleanup
+dir
+
+
+
+add
+
+table
+dir
+
+
+
+add
+
+autosave
+dir
+
+
+
+add
+
+advlink
+dir
+
+
+
+add
+
+print
+dir
+
+
+
+add
+
+flash
+dir
+
+
+
+add
+
+nonbreaking
+dir
+
+
+
+add
+
+fullpage
+dir
+
+
+
+add
+
+style
+dir
+
+
+
+add
+
+searchreplace
+dir
+
+
+
+add
+
+fullscreen
+dir
+
+
+
+add
+
+spellchecker
+dir
+
+
+
+add
+
+contextmenu
+dir
+
+
+
+add
+
+template
+dir
+
+
+
+add
+
+paste
+dir
+
+
+
+add
+
+xhtmlxtras
+dir
+
+
+
+add
+
+bbcode
+dir
+
+
+
+add
+

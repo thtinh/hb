@@ -1,0 +1,203 @@
+10
+
+dir
+0
+svn://192.168.1.250/hb/libraries/joomla
+svn://192.168.1.250
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5ee4e36e-f7f4-f647-8180-49171c549df1
+
+event
+dir
+
+
+
+add
+
+mail
+dir
+
+
+
+add
+
+session
+dir
+
+
+
+add
+
+language
+dir
+
+
+
+add
+
+filesystem
+dir
+
+
+
+add
+
+filter
+dir
+
+
+
+add
+
+error
+dir
+
+
+
+add
+
+methods.php
+file
+
+
+
+add
+
+config.php
+file
+
+
+
+add
+
+factory.php
+file
+
+
+
+add
+
+installer
+dir
+
+
+
+add
+
+plugin
+dir
+
+
+
+add
+
+import.php
+file
+
+
+
+add
+
+application
+dir
+
+
+
+add
+
+cache
+dir
+
+
+
+add
+
+database
+dir
+
+
+
+add
+
+environment
+dir
+
+
+
+add
+
+html
+dir
+
+
+
+add
+
+registry
+dir
+
+
+
+add
+
+base
+dir
+
+
+
+add
+
+template
+dir
+
+
+
+add
+
+utilities
+dir
+
+
+
+add
+
+document
+dir
+
+
+
+add
+
+client
+dir
+
+
+
+add
+
+user
+dir
+
+
+
+add
+

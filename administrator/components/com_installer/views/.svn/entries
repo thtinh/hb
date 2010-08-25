@@ -1,0 +1,84 @@
+10
+
+dir
+0
+svn://192.168.1.250/hb/administrator/components/com_installer/views
+svn://192.168.1.250
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5ee4e36e-f7f4-f647-8180-49171c549df1
+
+plugins
+dir
+
+
+
+add
+
+default
+dir
+
+
+
+add
+
+components
+dir
+
+
+
+add
+
+install
+dir
+
+
+
+add
+
+languages
+dir
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+templates
+dir
+
+
+
+add
+
