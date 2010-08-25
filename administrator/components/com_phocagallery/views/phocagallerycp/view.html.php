@@ -33,9 +33,9 @@ class PhocaGalleryCpViewPhocaGallerycp extends JView
 	}
 	
 	function _setToolbar() {
-		JToolBarHelper::title( JText::_( 'Phoca Gallery Control Panel' ), 'phoca' );
+		JToolBarHelper::title( JText::_( 'Gallery Control Panel' ), 'category' );
 		JToolBarHelper::preferences('com_phocagallery', '460');
-		JToolBarHelper::help( 'screen.phocagallery', true );
+		
 	}
 }
 ?>

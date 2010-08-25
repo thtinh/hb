@@ -369,18 +369,14 @@
 
 	<!-- Administration -->
 	<administration>
-		<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu.png" link="option=com_phocagallery">Phoca Gallery</menu>
+		<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu.png" link="option=com_phocagallery">Gallery</menu>
 		<submenu>
 			<menu img="components/com_phocagallery/assets/images/icon-16-pg-control-panel.png" link="option=com_phocagallery">Control Panel</menu>
 			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-gal.png" link="option=com_phocagallery&amp;view=phocagallerys">Images</menu>
 			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-cat.png" link="option=com_phocagallery&amp;view=phocagallerycs">Categories</menu>
-			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-theme.png" link="option=com_phocagallery&amp;view=phocagalleryt">Themes</menu>
-			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-vote.png" link="option=com_phocagallery&amp;view=phocagalleryra">Category Rating</menu>
-			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-vote-img.png" link="option=com_phocagallery&amp;view=phocagalleryraimg">Image Rating</menu>
 			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-comment.png" link="option=com_phocagallery&amp;view=phocagallerycos">Category Comments</menu>
 			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-comment-img.png" link="option=com_phocagallery&amp;view=phocagallerycoimgs">Image Comments</menu>
-			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-users.png" link="option=com_phocagallery&amp;view=phocagalleryusers">Users</menu>
-			<menu img="components/com_phocagallery/assets/images/icon-16-pg-menu-info.png" link="option=com_phocagallery&amp;view=phocagalleryin">Info</menu>
+	
 		</submenu>
 
 		<!-- Administration Main File Copy Section -->
