@@ -27,7 +27,7 @@
 /* JA Tabs top*/
 .hb .ja-tab-panels-top {
 	background: url("footer-bg.png") repeat-x bottom #54D2F6;
-        min-height: 385px !important;
+        min-height: 400px !important;
 	border-top: none;
 	width: auto;
 }
