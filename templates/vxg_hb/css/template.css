@@ -3,7 +3,8 @@ img{border:0}
 
 a{cursor: pointer;text-decoration: none;}/*phai co' ba`n tay 0_o*/
 a:hover{text-decoration: underline;}
-
+a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:0 5px;
+       -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
 .curve{-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;}
 .lightcurve{-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;}
 .top-curve{-moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0;border-radius:10px 10px 0 0}
@@ -79,22 +80,6 @@ a:hover{text-decoration: underline;}
 #footer-l,#footer-r,#footer-l a{}
 
 #footer-r{text-align:right}
-
-
-
-/*Services*/
-
- .hdr-subpage{height:23px;line-height:22px;padding-left:6px;text-transform:uppercase;color:#fff;
-
-            font-weight:bold;overflow:hidden;background:url(../images/bx-hdr-subpage.png) no-repeat;margin-top: 5px;}
-
-.bdy-subpage img{margin:8px 8px 8px 0px;float:left}
-
-.dv-text ul{padding-left: 98px;list-style-image: url(../images/dot.png);color: #3a0000;}
-
-.dv-text ul li{margin-bottom:2px;}
-
-.dv-text p{text-align: justify;}
 
 /*Section View*/
 .article_row{clear: both;border-bottom: 1px dotted #cdcdcd;overflow: hidden;}
@@ -243,3 +228,6 @@ p.counter{text-align: center}
 #sbox-content{background-color: transparent !important;}
 #sbox-overlay{background:url("../images/clouds.png") repeat-y scroll 50% 0 #9EBFE4;}
 #sbox-btn-close{top:-5px;right: -5px}
+
+/*Thu Vien Anh - Video Clip - Frontpage*/
+.ja-tabswrap.hb{padding-left:5px;}
