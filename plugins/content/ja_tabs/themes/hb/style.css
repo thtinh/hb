@@ -1,0 +1,134 @@
+/*
+# ------------------------------------------------------------------------
+# JA Rasite - Stable - Version 1.0 - Licence Owner JA115884
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.hb ul.ja-tabs-title li h3 {
+	font-weight: normal !important;
+	line-height: 29px;
+	font-size:13px !important;
+}
+
+.hb .ja-tab-subcontent {
+	padding: 0px 10px !important;
+      
+        
+}
+.hb .ja-tab-subcontent p{
+	overflow: hidden;
+}
+
+/* JA Tabs top*/
+.hb .ja-tab-panels-top {
+	background: url("footer-bg.png") repeat-x bottom #54D2F6;
+        min-height: 385px !important;
+	border-top: none;
+	width: auto;
+}
+
+.hb .ja-tabs-title-top {
+	border-bottom: 1px solid #54d2f6;
+	height: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.hb .ja-tabs-title-top ul.ja-tabs-title li {
+	
+	border: 1px solid #54d2f6;
+	border-bottom: none;
+	margin-right: 5px;
+        padding-left:30px;
+}
+
+.hb .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	
+	border-bottom: none;
+	color:#fff;
+	margin: 0;
+	padding: 0 10px;
+}
+.hb .ja-tabs-title-top ul.ja-tabs-title li.first{margin-left: 20px;background: url('home-album-bt.png') no-repeat #30b6db;}
+.hb .ja-tabs-title-top ul.ja-tabs-title li.first.active{background-color: #54d2f6;}
+
+.hb .ja-tabs-title-top ul.ja-tabs-title li.last{background: url('home-video-bt.png') no-repeat #30b6db;}
+.hb .ja-tabs-title-top ul.ja-tabs-title li.last.active{background-color: #54d2f6;}
+
+.hb .ja-tabs-title-top ul.ja-tabs-title li.hover,
+.hb .ja-tabs-title-top ul.ja-tabs-title li.firsthover,
+.hb .ja-tabs-title-top ul.ja-tabs-title li.lasthover {
+}
+
+.hb .ja-tabs-title-top ul.ja-tabs-title li.active,
+.hb .ja-tabs-title-top ul.ja-tabs-title li.first.active,
+.hb .ja-tabs-title-top ul.ja-tabs-title li.last.active {
+	
+	border: 1px solid #54d2f6;
+	border-bottom: none;
+}
+
+.hb .ja-tabs-title-top ul li.active h3 ,
+.hb .ja-tabs-title-top ul li.firstactive h3,
+.hb .ja-tabs-title-top ul li.lastactive h3 {
+	border: 1px solid #54d2f6;
+        background-color: #54d2f6;
+	border-bottom: none;
+	color: #fff;
+}
+
+/* JA Tabs bottom*/
+.hb .ja-tab-panels-bottom {
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+	border-bottom: 0;
+	left: 0;
+	width: auto;
+}
+
+.hb .ja-tabs-title-bottom {
+	border-top: 1px solid #D5D5D5;
+	height: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li {
+	background: #000000;
+	border: 1px solid #D5D5D5;
+	margin-top: -1px;
+}
+
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li h3 {
+	border: 1px solid #000000;
+	border-top: none;
+	color: #656565;
+	margin: 0;
+	padding: 0 5px;
+}
+
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.hover,
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.firsthover,
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.lasthover {
+}
+
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.active,
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.firstactive,
+.hb .ja-tabs-title-bottom ul.ja-tabs-title li.lastactive {
+	background: #FFFFFF;
+	border: 1px solid #D5D5D5;
+	border-top: 1px solid #FFFFFF;
+}
+
+.hb .ja-tabs-title-bottom ul li.active h3 ,
+.hb .ja-tabs-title-bottom ul li.firstactive h3,
+.hb .ja-tabs-title-bottom ul li.lastactive h3 {
+	border: 1px solid #FFFFFF;
+	border-top: none;
+	color: #656565;
+}
