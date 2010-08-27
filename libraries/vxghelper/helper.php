@@ -792,7 +792,7 @@ class helper {
         if($mostview == 1)
             $ordering = 'a.hits DESC';
         else
-            $ordering = 'a.modified DESC, a.created DESC';
+            $ordering = 'a.created DESC, a.modified DESC';
 
         return $ordering;
     }

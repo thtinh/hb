@@ -106,14 +106,16 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .sectiontable .filter{background: url(../images/search-bg.png) no-repeat;width:380px;height: 53px;margin: 10px 0px 0px 90px;}
 .sectiontable .filter input{margin:15px 5px 15px 15px;border:2px solid #ced3c5;width: 260px;}
 .sectiontable .btnSearch {background:transparent url(../images/btnSearch-bg.gif) no-repeat;font-size: 11px;text-transform:uppercase;font-weight: bold;color: #6e9d40;padding:5px 5px 5px 20px;}
-/*Right Modules*/
-.moduletable_news, .moduletable_right{margin: 10px 10px 0 0;}
+/*Modules*/
+.moduletable_news, .moduletable_right, .moduletable_souvenir{margin: 10px 10px 0 0;}
 .moduletable_news{background: url('../images/icon-news.png') no-repeat top left;}
-.moduletable_news h3{line-height: 1.4em;margin: 0 0 0 10px;padding-left:15px;color: #3d5a8e;border-bottom: solid 2px #1fdbe9;font-size: 14px;}
+.moduletable_souvenir{background: url("../images/icon-title-page.png") no-repeat top left;}
+.moduletable_news h3, .moduletable_souvenir h3{line-height: 1.4em;margin: 0 0 0 10px;padding-left:15px;color: #3d5a8e;border-bottom: solid 2px #1fdbe9;font-size: 14px;}
 #news-list{list-style: none;margin:0px;padding:0px;}
 #news-list a{color:#3d5a8e;text-decoration: none;font-weight: bold;}
 #news-list li{border-bottom: 1px dotted #ccc;padding: 10px 0;clear:both;}
 #news-list img{float:left;margin-right:5px;padding:2px;border:1px solid #ccc;}
+
 
 /*Sponsors*/
 
@@ -222,7 +224,7 @@ p.counter{text-align: center}
 #paging_souvenir .pl-a, ._sponsorlist a.pl{color:#1ABDEC;border-color: #1ABDEC;background-color: #FFF}
 #paging_souvenir .pl-i, ._sponsorlist a.pl-a, ._sponsorlist a.pl:hover{border-color: #1ABDEC;color: #fff;background-color:#1ABDEC}
 .blog_souvenir p.counter{color:#1ABDEC;margin-bottom: 30px;}
-
+.moduletable_souvenir{margin-left:10px;}
 /*Modal dialog*/
 #sbox-window{background-color: transparent !important;padding: 0px;}
 #sbox-content{background-color: transparent !important;}
@@ -230,4 +232,7 @@ p.counter{text-align: center}
 #sbox-btn-close{top:-5px;right: -5px}
 
 /*Thu Vien Anh - Video Clip - Frontpage*/
-.ja-tabswrap.hb{padding-left:5px;}
+.article img{width: 640px;height: 270px;}
+.moduletablehb{margin-left:10px;}
+#ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
+#ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
