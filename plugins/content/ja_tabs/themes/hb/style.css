@@ -16,13 +16,9 @@
 }
 
 .hb .ja-tab-subcontent {
-	padding: 0px 10px !important;
-      
-        
+	padding: 10px !important;
 }
-.hb .ja-tab-subcontent p{
-	overflow: hidden;
-}
+
 
 /* JA Tabs top*/
 .hb .ja-tab-panels-top {
@@ -31,7 +27,7 @@
 	border-top: none;
 	width: auto;
 }
-
+.hb .ja-tab-panels-top p{margin:0 !important;padding:0 !important}
 .hb .ja-tabs-title-top {
 	border-bottom: 1px solid #54d2f6;
 	height: 30px;
@@ -40,7 +36,7 @@
 }
 
 .hb .ja-tabs-title-top ul.ja-tabs-title li {
-	
+
 	border: 1px solid #54d2f6;
 	border-bottom: none;
 	margin-right: 5px;
@@ -48,7 +44,7 @@
 }
 
 .hb .ja-tabs-title-top ul.ja-tabs-title li h3 {
-	
+
 	border-bottom: none;
 	color:#fff;
 	margin: 0;
@@ -68,7 +64,7 @@
 .hb .ja-tabs-title-top ul.ja-tabs-title li.active,
 .hb .ja-tabs-title-top ul.ja-tabs-title li.first.active,
 .hb .ja-tabs-title-top ul.ja-tabs-title li.last.active {
-	
+
 	border: 1px solid #54d2f6;
 	border-bottom: none;
 }
