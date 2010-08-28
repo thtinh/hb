@@ -69,6 +69,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 
 /*Content*/
 #content table{max-width: 670px !important;}
+.contentpaneopen_introduction #idTextPanel{padding-left:5px;}
 
 /*Footer*/
 #wrapper-footer{height: 128px;}
@@ -81,31 +82,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 
 #footer-r{text-align:right}
 
-/*Section View*/
-.article_row{clear: both;border-bottom: 1px dotted #cdcdcd;overflow: hidden;}
-.contentheading{margin-bottom: 5px;}
 
-/*Category: Article List View*/
-.sectiontableheader{background: url(../images/qa-bg.gif) no-repeat;width: 601px;height:31px;}
-.sectiontableheader .heading-title a{color:#6e9d40;font-weight: bold}
-.sectiontableheader .heading-title {float:left;padding:7px 0px 7px 0px;}
-.sectiontable {margin: 20px 0px 0px 40px;}
-.sectiontable a{color: #1b1b1b;}
-.sectiontable img{display: none;}
-.sectiontable .padding10 a{padding-left: 10px;}
-.sectiontable .padding20 a{padding-left: 20px;}
-.sectiontable .padding30 a{padding-left: 30px;}
-.sectiontable .padding40 a{padding-left: 40px;}
-.sectiontable .padding50 a{padding-left: 50px;}
-.sectiontable .row{float:left;}
-.sectiontable .sectiontableentry1, .sectiontable .sectiontableentry2{clear:both;padding: 5px 0px 5px 0px; overflow: hidden;width: 601px;border-bottom: 1px dotted #cdcdcd}
-.sectiontable .sectiontableentry1:hover, .sectiontable .sectiontableentry2:hover{background-color: #e8f3d2;}
-
-.sectiontable .btnSubmit {background: url(../images/btnSubmit_bg.gif) no-repeat;padding: 3px 11px 3px 11px;margin: -20px 70px 0px 0px;float:right;}
-.sectiontable .btnSubmit a{text-transform:uppercase;font-weight: bold;color: white;}
-.sectiontable .filter{background: url(../images/search-bg.png) no-repeat;width:380px;height: 53px;margin: 10px 0px 0px 90px;}
-.sectiontable .filter input{margin:15px 5px 15px 15px;border:2px solid #ced3c5;width: 260px;}
-.sectiontable .btnSearch {background:transparent url(../images/btnSearch-bg.gif) no-repeat;font-size: 11px;text-transform:uppercase;font-weight: bold;color: #6e9d40;padding:5px 5px 5px 20px;}
 /*Modules*/
 .moduletable_news, .moduletable_right, .moduletable_souvenir{margin: 10px 10px 0 0;}
 .moduletable_news{background: url('../images/icon-news.png') no-repeat top left;}
@@ -150,8 +127,10 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
                              background: url('../images/bx-hdr-blue.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
 .moduletable_right.finder .search_right{padding:10px;overflow: hidden}
 .moduletable_right.finder{border: 1px solid #19b7e4}
+#year, #illness, #txtSearch{width : 238px;padding:0;margin:0}
 #searchForm .search_button{background: url(../images/btnSearch-bg.png) no-repeat;padding: 3px 15px 3px 0px;float:right;border:none;color:#fff;width:74px;height: 25px}
-#illness, #year, #txtSearch  {width:238px;padding:0px;}
+.search_submit{overflow: hidden;margin-top: 10px}
+
 /* Album */
 #album-menu ul {list-style:none;margin-right:10px; padding-right:0px; height:35px;}
 #album-menu ul li { padding:10px; background-color: #f2f2f2; float:right;}

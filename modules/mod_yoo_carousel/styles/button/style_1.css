@@ -1,0 +1,93 @@
+/* (C) 2007 YOOtheme.com */
+
+div.button div.yoo-carousel {}
+
+/* tabs */
+/* top */
+div.button div.yoo-carousel div.top { 
+	position: relative;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+div.button div.yoo-carousel div.top ul.tabs { 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div.button div.yoo-carousel div.top ul.tabs li { background: url(styles/button/images/tab.png) 0 0 no-repeat; }
+
+div.button div.yoo-carousel div.top ul.tabs li a {	
+	padding: 0px 25px 0px 10px;
+	background: url(styles/button/images/tab.png) 100% -35px no-repeat;	
+	cursor: pointer;
+	text-decoration: none;
+	color: #555555;
+}
+
+div.button div.yoo-carousel div.top ul.tabs li a span {
+	padding: 0px 5px 0px 5px;
+	height: 35px;
+	line-height: 35px;
+	overflow: hidden;
+	background: url(styles/button/images/tab.png) 0 -70px repeat-x;
+}
+
+div.button div.yoo-carousel div.top ul.tabs li:hover { background-position: 0 -105px; }
+div.button div.yoo-carousel div.top ul.tabs li:hover a { background-position: 100% -140px; }
+div.button div.yoo-carousel div.top ul.tabs li:hover a span { background-position: 0 -175px; }
+
+div.button div.yoo-carousel div.top ul.tabs li.selected { background-position: 0 -210px; }
+div.button div.yoo-carousel div.top ul.tabs li.selected a { background-position: 100% -245px; }
+div.button div.yoo-carousel div.top ul.tabs li.selected a span { background-position: 0 -280px; }
+
+div.button div.yoo-carousel div.top ul.tabs li:hover a span,
+div.button div.yoo-carousel div.top ul.tabs li.selected a span {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+/* frame */
+div.button div.yoo-carousel div.frame-t1 { background: url(styles/button/images/frame_corners.png) 0 0 no-repeat; }
+
+div.button div.yoo-carousel div.frame-t2 {
+	padding: 0px 5px 0px 5px;
+	background: url(styles/button/images/frame_corners.png) 100% -5px no-repeat;
+}
+
+div.button div.yoo-carousel div.frame-t3 {
+	height: 5px;
+	background: url(styles/button/images/frame_corners.png) 0 -10px repeat-x;
+	overflow: hidden;
+}
+
+div.button div.yoo-carousel div.frame-b1 { background: url(styles/button/images/frame_corners.png) 0 -15px no-repeat; }
+
+div.button div.yoo-carousel div.frame-b2 {
+	padding: 0px 7px 0px 7px;
+	background: url(styles/button/images/frame_corners.png) 100% -22px no-repeat;
+}
+
+div.button div.yoo-carousel div.frame-b3 {
+	height: 7px;
+	background: url(styles/button/images/frame_corners.png) 0 -29px repeat-x;
+	overflow: hidden;
+}
+
+
+/* scroller */
+div.button div.yoo-carousel div.frame { background: url(styles/button/images/frame_edges.png) 0 0 repeat-y; }
+
+div.button div.yoo-carousel div.frame-container-1 {
+	padding: 0px 5px 0px 5px;
+	background: url(styles/button/images/frame_edges.png) 100% 0 repeat-y;
+}
+
+div.button div.yoo-carousel div.frame-container-2 {
+	background: #ffffff url(styles/button/images/frame_corners.png) 0 -36px repeat-x;
+	overflow: hidden;
+}
+
+/* article */
+div.button div.yoo-carousel .article {	padding: 15px 10px 10px 10px; }
