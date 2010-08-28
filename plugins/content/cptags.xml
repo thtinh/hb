@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Custom Properties Tags Plugin</name>
+	<author>Andrea Forghieri</author>
+	<creationDate>2009-03-01</creationDate>
+	<copyright>(C) 2009 Solidsystem. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@solidsystem.it</authorEmail>
+	<authorUrl>www.solidsystem.it</authorUrl>
+	<version>1.98.1</version>
+	<description>
+		Adds Custom Properties tags to content items.
+	</description>
+	<files>
+		<filename plugin="cptags">cptags.php</filename>
+	</files>
+	<params>
+		<param name="tags_position" type="list" default="0"
+			label="Tags position"
+			description="Sets the position of the tags in the article. If set to 'Custom' , the plugin will replace {cptags} in the article with the tags. Default: bottom.">
+			<option value="0">Bottom</option>
+			<option value="1">Top</option>
+			<option value="2">Custom</option>
+		</param>
+		<param name="tag_in_meta" type="radio" default="1"
+			label="Append tag to meta keywords"
+			description="If Yes, tags are appended to meta keywords. Default: Yes.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

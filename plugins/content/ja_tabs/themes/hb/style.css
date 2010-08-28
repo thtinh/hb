@@ -16,13 +16,11 @@
 }
 
 .hb .ja-tab-subcontent {
-	padding: 0px 10px !important;
+	padding: 10px !important;
       
         
 }
-.hb .ja-tab-subcontent p{
-	overflow: hidden;
-}
+.hb .ja-tab-subcontent p{margin : 0;padding : 0}
 
 /* JA Tabs top*/
 .hb .ja-tab-panels-top {

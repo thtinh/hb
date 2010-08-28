@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Custom Properties Searchbox</name>
+  <creationDate>2009-03-18</creationDate>
+  <author>Andrea Forghieri</author>
+  <copyright>(C) 2009 Solidsystem. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>info@solidsystem.it</authorEmail>
+  <authorUrl>www.solidsystem.it</authorUrl>
+  <version>1.98.2</version>
+  <description>This module shows the Custom Properties search box.
+  It works in combination with Custom Properties component.
+  </description>
+  <files>
+    <filename module="mod_cpsearch">mod_cpsearch.php</filename>
+    <filename>index.html</filename>
+    <filename>css/cpsearch.css</filename>
+  </files>
+  <languages>
+    <language tag="en-GB">en-GB.mod_cpsearch.ini</language>
+    <language tag="it-IT">it-IT.mod_cpsearch.ini</language>
+    <language tag="fr-FR">fr-FR.mod_cpsearch.ini</language>
+    <language tag="sv-SE">sv-SE.mod_cpsearch.ini</language>
+  </languages>
+  <params>
+    <param name="bind_to_ce" type="text" default="" label="Bind to content element" description="Search only within this content element. If a wrong content elements name is give, the search will be performed on standard content items only. Leave empty to search all content elements"/>
+    <param name="bind_to_section" type="text" default="" label="Bind to section(s)" description="Comma separated list of sections to search. If left blank it will search all sections. Note that this parameter do not override the parameter in the component configuration." />
+    <param name="itemid" type="text" default="" label="ItemId" description="Force this Itemid."/>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="Module class suffix" description="CSS class suffix for the module." />
+    <param name="layout_type" type="radio" default="0" label="Layout type" description="Table layout or div layout. Default: table.">
+      <option value="0">Table</option>
+      <option value="1">Div</option>
+    </param>
+    <param name="use_cpsearch_stylesheet" type="radio" default="1" label="Use cpsearch stylesheet" description="Yes: use the cpsearch CSS style sheet">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_checkbox_fieldname" type="radio" default="0" label="Show Checkbox Field Name" description="Show / hide the field name for checkbox fields">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="checkbox_label_pos" type="radio" default="right" label="Checkbox Label Position" description="Position of the label in checkbox.">
+      <option value="left">Left</option>
+      <option value="right">Right</option>
+    </param>
+    <param name="select_label_pos" type="radio" default="inside" label="Select Label Position" description="Position of field name for select box. Inside sets the first option as field name, with no value.">
+      <option value="above">Above</option>
+      <option value="inside">Inside</option>
+    </param>
+	<param name="textfield_label_pos" type="radio" default="before" label="Text Search Label Position" description="Position of field name for text search type fields.">
+		<option value="before">Before</option>
+		<option value="after">After</option>
+	</param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="text_search" type="radio" default="0" label="Search by text." description="Add a text search box.">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="auto_submit" type="radio" default="0" label="Auto submit" description="Submit the form when a selection is made. If set to yes, search button is not displayed. Default: No">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="text" type="text" default="" label="Text" description="The text that appears in the search text box, if left blank it will load _SEARCH_BOX from your language file" />
+  </params>
+
+</install>

@@ -4,7 +4,7 @@ img{border:0}
 a{cursor: pointer;text-decoration: none;}/*phai co' ba`n tay 0_o*/
 a:hover{text-decoration: underline;}
 a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:0 5px;
-       -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
+         -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
 .curve{-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;}
 .lightcurve{-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;}
 .top-curve{-moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0;border-radius:10px 10px 0 0}
@@ -121,7 +121,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 
 .bannergroup_sponsor{clear: left;}
 .banneritem_sponsor{margin:20px 0px 20px 40px;width:160px;float:left;height: 110px;border:1px solid #ccc;
-                   -moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;                
+                    -moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;
 }
 .banneritem_sponsor img{margin:auto;display:block;}
 .moduletable_sponsor .clr{clear: both;}
@@ -132,6 +132,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .custom-tip {color: #000;width: 130px;z-index: 13000;}
 .custom-title {font-weight: bold;font-size: 11px;margin: 0;color: #3E4F14;padding: 8px 8px 4px;background: #C3DF7D;border-bottom: 1px solid #B5CF74;}
 .custom-text {font-size: 11px;padding: 4px 8px 8px;background: #CFDFA7;}
+
 /*Sponsor module with carousel effect*/
 .carousel_right{position: relative;overflow:hidden;border: 1px solid #f6a854;}
 .carousel_right .carousel_header{text-transform: uppercase;padding:5px;background: url('../images/bx-hdr.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
@@ -144,7 +145,13 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .carouselitem_right img{display:block;margin:auto;}
 #carousel_content{width: 14400px;position: relative;overflow: hidden;margin: 0 10px;}
 
-
+/*Search (finder) module*/
+.moduletable_right.finder h3{text-transform: uppercase;padding:5px;margin:0px;
+                             background: url('../images/bx-hdr-blue.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
+.moduletable_right.finder .search_right{padding:10px;overflow: hidden}
+.moduletable_right.finder{border: 1px solid #19b7e4}
+#searchForm .search_button{background: url(../images/btnSearch-bg.png) no-repeat;padding: 3px 15px 3px 0px;float:right;border:none;color:#fff;width:74px;height: 25px}
+#illness, #year, #txtSearch  {width:238px;padding:0px;}
 /* Album */
 #album-menu ul {list-style:none;margin-right:10px; padding-right:0px; height:35px;}
 #album-menu ul li { padding:10px; background-color: #f2f2f2; float:right;}
@@ -177,7 +184,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
 .moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
-                       color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
+                                                                              color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
 }
 .contentpaneopen #map{padding: 0px 10px;}
 .contentpaneopen #information{padding: 0px 5px; }

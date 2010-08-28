@@ -6,7 +6,7 @@ $count = 0;
     <?php foreach ($rows as $row) :  ?>
     <li>
         <?php if($showthumbnail && ($row->images !="")) : ?><img width="60" src="images/stories/<?php $row->images; ?>" alt="<?php echo $row->title; ?>"><?php endif; ?>
-        <a href="<?php echo $row->link; ?>"><?php echo $row->title; ?></a><br/>
+        <?php if($showtitle) : ?><a href="<?php echo $row->link; ?>"><?php echo $row->title ; ?></a><br/><?php endif; ?>
         <span class="news-intro"><?php echo ($trimtext==0) ? $row->introtext : $contentHelper->cutString($row->introtext,$trimtext); ?></span>
     </li>
     <?php endforeach; ?>

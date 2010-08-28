@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Custom Properties Installer</name>
+	<creationDate>2008-06-09</creationDate>
+	<author>Andrea Forghieri</author>
+	<copyright>(C) 2009 Solidsystem. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@solidsystem.it</authorEmail>
+	<authorUrl>www.solidsystem.it</authorUrl>
+	<version>1.98.3.3</version>
+	<description>This component lets you add custom properties to contents items.</description>
+	<files>
+		<filename>admin.zip</filename>
+		<filename>com.zip</filename>
+		<filename>btn.zip</filename>
+		<filename>bot.zip</filename>
+		<filename>search_bot.zip</filename>
+		<filename>search.zip</filename>
+		<filename>cloud.zip</filename>
+	</files>
+	<installfile>install.customproperties.php</installfile>
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_customproperties/images/customproperties.png"
+			controller="cpanel"
+			task="about">Custom Properties</menu>
+		<submenu>
+			<menu
+				img="components/com_customproperties/images/editcp.png"
+				controller="fields">Manage Custom Properties</menu>
+			<menu
+				img="components/com_customproperties/images/assign.png"
+				controller="assign">Assign Custom Properties</menu>
+
+			<menu img="components/com_customproperties/images/controlpanel.png"
+				controller="utilities">Utilities</menu>
+
+			<menu img="components/com_customproperties/images/config.png"
+				controller="cpanel"
+				task="configure">Config</menu>
+			<menu
+				img="components/com_customproperties/images/customproperties.png"
+				controller="cpanel"
+				task="about">About</menu>
+		</submenu>
+	</administration>
+</install>
