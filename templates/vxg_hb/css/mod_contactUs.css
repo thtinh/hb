@@ -8,7 +8,7 @@
 input[type="text"]{height:20px;line-height:1.6;padding:4px 5px 4px;text-shadow:0 1px 1px #ccc;}
 input[id="title"]{width: 550px;}
 textarea[id="description"]{width:550px;margin-left:70px;padding:4px 5px 4px;height: 200px;}
-input[type="text"]:focus, textarea[id="description"]:focus{border:2px solid #19b7e4 !important;outline-width:0;background: #eafafe}
+input[type="text"]:focus, textarea[id="description"]:focus, select:focus{border:2px solid #19b7e4 !important;outline-width:0;background: #eafafe}
 input[id="name"], input[id="email"], input[id="textCaptcha"]{width: 240px !important;}
 input[id="name"]{margin-right:20px !important;}
 input[id="btnSubmit"]{background:transparent url(../images/bg_gui.png) no-repeat;height:32px;width:87px;border:0 none;text-shadow:0 1px 1px #666;

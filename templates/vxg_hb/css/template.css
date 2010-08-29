@@ -70,7 +70,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 /*Content*/
 #content table{max-width: 670px !important;}
 .contentpaneopen_introduction #idTextPanel{padding-left:5px;}
-
+div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 /*Footer*/
 #wrapper-footer{height: 128px;}
 
@@ -127,9 +127,11 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
                              background: url('../images/bx-hdr-blue.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
 .moduletable_right.finder .search_right{padding:10px;overflow: hidden}
 .moduletable_right.finder{border: 1px solid #19b7e4}
-#year, #illness, #txtSearch{width : 238px;padding:0;margin:0}
+#year, #illness{width : 238px;padding:5px;margin:0;}
+#txtSearch{width: 228px;height: 16px}
 #searchForm .search_button{background: url(../images/btnSearch-bg.png) no-repeat;padding: 3px 15px 3px 0px;float:right;border:none;color:#fff;width:74px;height: 25px}
 .search_submit{overflow: hidden;margin-top: 10px}
+#searchForm label{margin: 5px;display:block;}
 
 /* Album */
 #album-menu ul {list-style:none;margin-right:10px; padding-right:0px; height:35px;}
@@ -222,3 +224,4 @@ p.counter{text-align: center}
 .moduletablehb{margin-left:10px;}
 #ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
 #ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
+

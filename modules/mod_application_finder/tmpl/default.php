@@ -6,18 +6,18 @@ defined('_JEXEC') or die('Restricted access');
     <div class="search">
         <form id="searchForm" name="searchForm" action="index.php" method="get" onsubmit="return doSearch();">
             <div class="search_field_1">
-                <div class="field_label">Loại dị tật</div>
+                <label for="illness">Loại dị tật</label>
                 <?php echo $lists['illness'];?>
             </div>
 
             <div class="search_field_2">
-                <div class="field_label">Năm sinh</div>
+                <label for="year">Năm sinh</label>
                 <?php echo $lists['year']; ?>
             </div>
 
             <div class="text_search">
-                <div class="field_label">Từ khóa</div>
-                <input id="txtSearch" type="text" class="inputbox" name="searchword" value="">
+                <label for="txtSearch">Từ khóa</label>
+                <input id="txtSearch" type="text" class="inputbox lightcurve lightshadow" name="searchword" value="">
             </div>
 
             <div class="search_submit">

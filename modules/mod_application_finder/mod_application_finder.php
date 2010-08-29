@@ -13,7 +13,7 @@ $database->setQuery( $query );
 $illnesslist = array_merge( $illness_html, $database->loadObjectList() );
 $selectedIllness = "";
 $javascript = 'onchange="document.searchForm.cp_application.value = this.options[this.options.selectedIndex].value;"';
-$lists['illness']= JHTML::_('select.genericlist',$illnesslist,'illness', 'class="inputbox" size="1" '. $javascript, 'value', 'text', $selectedIllness);
+$lists['illness']= JHTML::_('select.genericlist',$illnesslist,'illness', 'class="inputbox lightcurve lightshadow" size="1" '. $javascript, 'value', 'text', $selectedIllness);
 
 $fieldid = 2;
 $query = "SELECT DISTINCT name as value, label as text FROM #__custom_properties_values as v WHERE field_id = $fieldid";
@@ -22,7 +22,7 @@ $year_html[] = JHTML::_('select.option',  '', '-' );
 $selectedYear = "";
 $yearlist = array_merge( $year_html, $database->loadObjectList() );
 $javascript = 'onchange="document.searchForm.cp_product.value = this.options[this.options.selectedIndex].value;"';
-$lists['year']= JHTML::_('select.genericlist',$yearlist,'year', 'class="inputbox" size="1" '. $javascript, 'value', 'text', $selectedYear);
+$lists['year']= JHTML::_('select.genericlist',$yearlist,'year', 'class="inputbox lightcurve lightshadow" size="1" '. $javascript, 'value', 'text', $selectedYear);
 $lists['year'] =  html_entity_decode($lists['year']);
 require(JModuleHelper::getLayoutPath('mod_application_finder'));
 
