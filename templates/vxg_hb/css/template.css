@@ -1,8 +1,8 @@
 body{color:#385057;background:#1abdec;}
 img{border:0}
 
-a{cursor: pointer;text-decoration: none;}/*phai co' ba`n tay 0_o*/
-a:hover{text-decoration: underline;}
+a{cursor: pointer;text-decoration: none;color:#DF7016;}/*phai co' ba`n tay 0_o*/
+a:hover{text-decoration: underline;color:#DF7016}
 a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:0 5px;
          -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
 .curve{-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;}
@@ -225,3 +225,11 @@ p.counter{text-align: center}
 #ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
 #ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
 
+/**/
+h2.contentheading_news, h2.contentheading_news a{color:#1ABDEC;padding-left:115px;font-size: 13px;font-weight: bold;}
+.article_row_news img{position: relative;top:-25px;padding:0;margin:0}
+.article_row_news p{padding:0;margin:0}
+.article_row_news{margin-left:10px;padding:15px 0;border-bottom: 1px dotted #ccc}
+.article_separator, .row_separator_news{display: none;clear: both}
+table.contentpaneopen_news{margin-left:10px}
+table.contentpaneopen_news .title-page{margin:0}

@@ -72,7 +72,7 @@ JHTML::_('behavior.modal');
         $rowcount = (int) $introcount / $colcount;
         $ii = 0;
         for ($y = 0; $y < $rowcount && $i < $this->total; $y++) : ?>
-    <div class="article_row last<?php echo $this->params->get('pageclass_sfx'); ?>">
+    <div class="article_row<?php echo $this->params->get('pageclass_sfx'); ?>">
                 <?php for ($z = 0; $z < $colcount && $ii < $introcount && $i < $this->total; $z++, $i++, $ii++) : ?>
         <div class="article_column column<?php echo $z + 1; ?> cols<?php echo $colcount; ?>" >
                         <?php $this->item =& $this->getItem($i, $this->params);
