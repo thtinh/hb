@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="editors-xtd">
+	<name>Button - Custom Properties Tags</name>
+	<author>Andrea Forghieri</author>
+	<creationDate>2009-03-01</creationDate>
+	<copyright>(C) 2009 Solidsystem. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@solidsystem.it</authorEmail>
+	<authorUrl>www.solidsystem.it</authorUrl>
+	<version>1.98</version>
+	<description>Adds a CP tags button under the editor. Works with Custom Properties.</description>
+	<files>
+		<filename plugin="cptags">cptags.php</filename>
+	</files>
+	<params />
+</install>

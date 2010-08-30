@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<contentelement type="customproperties" ordering="5" active="1">
+	<name>phocacategory</name>
+	<author>Andrea Forghieri</author>
+	<version>1.0</version>
+	<description>Content Element for phoca gallery Category</description>
+
+
+  	<content_table required="1">
+  		<table name="table"			required="1">phocagallery_categories</table>
+  		<field name="label" 		type="text"			required="1">Photo Category</field>
+  		<field name="id" 			type="fieldname"	required="1">id</field>
+  		<field name="title" 		type="fieldname"	required="1">title</field>
+  		<field name="title_alias"	type="fieldname"	required="0">alias</field>
+  		<field name="sectionid" 	type="fieldname"	required="0"></field>
+  		<field name="catid" 		type="fieldname"	required="0"></field>
+  		<field name="created" 		type="fieldname"	required="0">date</field>
+  		<field name="introtext" 	type="fieldname"	required="1">description</field>
+  		<field name="fulltext" 		type="fieldname"	required="0"></field>
+  		<field name="state" 		type="fieldname"	required="1">published</field>
+  		<field name="access" 		type="fieldname"	required="0"></field>
+  		<field name="publish_up" 	type="fieldname"	required="0"></field>
+  		<field name="publish_down" 	type="fieldname"	required="0"></field>
+  		<!-- if images is set, images_dir is required -->
+  		<field name="images" 		type="fieldname"	required="0">image</field>
+  		<field name="images_dir" 	type="text" 		required="0">images/stories</field>
+  		<field name="ordering" 		type="fieldname"	required="0">ordering</field>
+  		<!--  following pars are ues to put together the url to open the detail view
+  		of the content item
+  		e.g. option=com_content&task=view&id=<replaced with id>
+  		Joomla 1.5 supports the view model, so it is avisable tu use 'href_view' instead of href_task
+  		-
+  		slug links generates links as id:title-alias
+  		 -->
+  		<field name="href_option" 	type="text" 		required="1">com_phocagallery</field>
+  		<field name="href_task" 	type="text" 		required="0"></field>
+  		<field name="href_view" 	type="text" 		required="1">category</field>
+  		<field name="href_id" 		type="text" 		required="1">id</field>
+        <field name="slug_links" 	type="text" 		required="0"></field>
+  	</content_table>
+
+	<!--  required fields of category table , are required only if category table exists -->
+	<category required="0">
+  		<table name="table"					required="1"></table>
+  		<field name="cat_table_id"			type="fieldname"	required="1"></field>
+  		<field name="cat_table_title"		type="fieldname"	required="1"></field>
+  		<field name="cat_table_published"	type="fieldname"	required="0"></field>
+  		<!-- Link to a section table. It can be a combination of a table and a field,
+  		 or a string to filter the category id with -->
+  		<field name="cat_parent_section_table"	type="table"		required="0"></field>
+  		<field name="cat_parent_section_field"	type="fieldname"	required="0"></field>
+  		<field name="cat_section_filter"		type="text"	required="0"></field>
+	</category>
+
+	<!--  required fields of section table , are required only if section table exists -->
+	<section required="0">
+ 		<table name="table"					required="1"></table>
+  		<field name="sec_table_id"			type="fieldname"	required="1"></field>
+  		<field name="sec_table_title"		type="fieldname"	required="1"></field>
+  		<field name="sec_table_published"	type="fieldname"	required="0"></field>
+	</section>
+
+</contentelement>

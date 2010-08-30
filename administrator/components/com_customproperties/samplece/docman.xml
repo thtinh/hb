@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<contentelement type="customproperties"  ordering="1" active="1">
+	<name>docman</name>
+	<author>Andrea Forghieri</author>
+	<version>1.0</version>
+	<description>Content Element for Docman</description>
+
+
+  	<content_table required="1">
+  		<table name="table"			required="1">docman</table>
+  		<field name="label" 		type="text"			required="1">Document</field>
+  		<field name="id" 			type="fieldname"	required="1">id</field>
+  		<field name="title" 		type="fieldname"	required="1">dmname</field>
+  		<field name="title_alias"	type="fieldname"	required="0"></field>
+  		<field name="sectionid" 	type="fieldname"	required="0"></field>
+  		<field name="catid" 		type="fieldname"	required="0">catid</field>
+  		<field name="created" 		type="fieldname"	required="0">dmdate_published</field>
+  		<field name="introtext" 	type="fieldname"	required="1">dmdescription</field>
+  		<field name="fulltext" 		type="fieldname"	required="0"></field>
+  		<field name="state" 		type="fieldname"	required="1">published</field>
+  		<field name="access" 		type="fieldname"	required="0">access</field>
+  		<field name="publish_up" 	type="fieldname"	required="0"></field>
+  		<field name="publish_down" 	type="fieldname"	required="0"></field>
+  		<!-- if images is set, images_dir is required -->
+  		<field name="images" 		type="fieldname"	required="0"></field>
+  		<field name="images_dir" 	type="text" 		required="0"></field>
+  		<field name="ordering" 		type="fieldname"	required="0"></field>
+  		<field name="href_option" 	type="text" 		required="1">com_docman</field>
+  		<field name="href_task" 	type="text" 		required="1">doc_details</field>
+  		<field name="href_id"	 	type="text" 		required="1">gid</field>
+  	</content_table>
+
+
+	<!--  required fields of category table , are required only if category table exists -->
+	<category required="0">
+  		<table name="table"					required="1">categories</table>
+  		<field name="cat_table_id"			type="fieldname"	required="1">id</field>
+  		<field name="cat_table_title"		type="fieldname"	required="1">title</field>
+  		<field name="cat_table_published"	type="fieldname"	required="0">published</field>
+  		<!-- Link to a section table. It can be a combination of a table and a field,
+  		 or a string to filter the category id with -->
+  		<field name="cat_parent_section_table"	type="table"		required="0"></field>
+  		<field name="cat_parent_section_field"	type="fieldname"	required="0">section</field>
+  		<field name="cat_section_filter"		type="text"	required="0">com_docman</field>
+	</category>
+
+	<!--  required fields of section table , are required only if section table exists -->
+	<section required="0">
+ 		<table name="table"					required="1"></table>
+  		<field name="sec_table_id"			type="fieldname"	required="1"></field>
+  		<field name="sec_table_title"		type="fieldname"	required="1"></field>
+  		<field name="sec_table_published"	type="fieldname"	required="0"></field>
+	</section>
+
+</contentelement>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Custom Properties:Values</name>
+  <author>Andrea Forghieri</author>
+  <version>1.90</version>
+  <description>Definition for the Custom Properties component</description>
+  <reference>
+  	<table name="custom_properties_values">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="label" translate="1">Label</field>
+  	</table>
+  </reference>
+  <translationfilters>
+	  <cpfield>field_id</cpfield>
+  </translationfilters>
+</joomfish>

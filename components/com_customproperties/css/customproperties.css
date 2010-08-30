@@ -1,0 +1,80 @@
+/**
+* Custom Properties for Joomla! 1.5.x
+* @package Custom Properties
+* @subpackage Component
+* @version 1.98
+* @revision $Revision: 1.2 $
+* @author Andrea Forghieri
+* @copyright (C) Andrea Forghieri, www.solidsystem.it
+* @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2
+*/
+
+div.cp_ce_label{
+	color: #888;
+}
+
+div.cp_result{
+	border-top : 1px dotted silver;
+	padding : 8px 0;
+}
+div.cp_title{
+	font-size : 120%;
+	font-weight: bold;
+}
+div.cp_title a,
+div.cp_tags a{
+	text-decoration : none;
+}
+div.cp_title a:hover{
+	text-decoration : underline;
+}
+div.cp_image{
+	float : left;
+	margin : 0 4px 4px 0;
+}
+div.cp_tags{
+	font-size : 94%;
+	clear : both;
+}
+div.cp_tags .cp_tag{
+	padding : 0 .25em;
+}
+div.cp_tags .cp_tag a{
+	padding : 2px;
+}
+div.cp_tags a:hover{
+	background : #CCC;
+}
+div.cp_tags span.cp_tag+span.cp_tag{
+	border-left : 1px solid silver;
+}
+
+/* Frontend tagging */
+div.header{
+	padding : 10px;
+	font-size : 22px;
+	color : #0b55c4;
+}
+div.cp_info{
+	padding : 5px 10px;
+	font-size : 12px;
+}
+div.cp_navbar{
+	margin : 4px 0;
+	background :#CCC;
+	padding : 4px 10px;
+}
+div.cp_field{
+	float : left;
+	border : 1px solid #888;
+	padding : 2px;
+	margin : 4px;
+	font-size : 11px;
+}
+div.cp_field_label{
+	font-weight : bold;
+	color : white;
+	background : #800;
+	margin :0 ;
+	padding :4px;
+}

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+
+	<name>Custom Properties</name>
+	<creationDate>2009-06-20</creationDate>
+	<author>Andrea Forghieri</author>
+	<copyright>(C) 2007 Solidsystem. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@solidsystem.it</authorEmail>
+	<authorUrl>www.solidsystem.it</authorUrl>
+	<version>1.98.3.3</version>
+	<description>
+		This component lets you add custom properties (tags) to contents
+		items.
+	</description>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install.customproperties.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>uninstall.customproperties.php</uninstallfile>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>customproperties.php</filename>
+		<filename>helper.php</filename>
+		<filename>router.php</filename>
+
+		<filename>css/customproperties.css</filename>
+
+		<filename>images/index.html</filename>
+
+		<filename>models/index.html</filename>
+		<filename>models/search.php</filename>
+
+		<filename>sef_ext/index.html</filename>
+		<filename>sef_ext/com_customproperties.php</filename>
+
+		<filename>views/index.html</filename>
+		<filename>views/show/index.html</filename>
+		<filename>views/show/view.html.php</filename>
+		<filename>views/show/tmpl/index.html</filename>
+		<filename>views/show/tmpl/default.php</filename>
+	</files>
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Site Main Language File Copy Section -->
+	<languages folder="site">
+		<language tag="en-GB">en-GB.com_customproperties.ini</language>
+		<language tag="es-ES">es-ES.com_customproperties.ini</language>
+		<language tag="fr-FR">es-ES.com_customproperties.ini</language>
+		<language tag="hr-HR">hr-HR.com_customproperties.ini</language>
+		<language tag="it-IT">it-IT.com_customproperties.ini</language>
+		<language tag="mk-MK">mk-MK.com_customproperties.ini</language>
+		<language tag="nl-NL">nl-NL.com_customproperties.ini</language>
+		<language tag="pt-PT">pt-PT.com_customproperties.ini</language>
+		<language tag="ru-RU">ru-RU.com_customproperties.ini</language>
+		<language tag="sr-RS">sr-RS.com_customproperties.ini</language>
+		<language tag="sv-SE">sv-SE.com_customproperties.ini</language>
+	</languages>
+
+	<administration>
+
+		<!-- Administration Menu Section -->
+		<menu
+			img="components/com_customproperties/images/customproperties.png"
+			controller="cpanel"
+			task="about">
+			Custom Properties
+		</menu>
+		<submenu>
+			<menu
+				img="components/com_customproperties/images/editcp.png"
+				controller="fields">
+				Manage Custom Properties
+			</menu>
+			<menu
+				img="components/com_customproperties/images/assign.png"
+				controller="assign">
+				Assign Custom Properties
+			</menu>
+			<menu img="components/com_customproperties/images/controlpanel.png"
+				controller="utilities">
+				Utilities
+			</menu>
+			<menu img="components/com_customproperties/images/config.png"
+				controller="cpanel"
+				task="configure">
+				Config
+			</menu>
+			<menu
+				img="components/com_customproperties/images/customproperties.png"
+				controller="cpanel"
+				task="about">
+				About
+			</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.customproperties.php</filename>
+			<filename>contentelement.class.php</filename>
+			<filename>cp_config.php</filename>
+			<filename>helper.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+
+			<filename>contentelements/index.html</filename>
+
+			<filename>controllers/index.html</filename>
+			<filename>controllers/assign.php</filename>
+			<filename>controllers/cpanel.php</filename>
+			<filename>controllers/fields.php</filename>
+			<filename>controllers/utilities.php</filename>
+			<filename>controllers/tagging.php</filename>
+
+			<filename>css/cp_admin.css</filename>
+
+			<filename>images/index.html</filename>
+			<filename>images/assign.png</filename>
+			<filename>images/config.png</filename>
+			<filename>images/controlpanel.png</filename>
+			<filename>images/customproperties.png</filename>
+			<filename>images/editcp.png</filename>
+			<filename>images/icon-32-add_link.png</filename>
+			<filename>images/icon-32-delete_link.png</filename>
+			<filename>images/icon-32-replace_link.png</filename>
+			<filename>images/icon-32-view_link.png</filename>
+			<filename>images/icon-48-assign.png</filename>
+			<filename>images/icon-48-field-add.png</filename>
+			<filename>images/j_button2_cptags.png</filename>
+			<filename>images/logocp.jpg</filename>
+
+			<filename>includes/index.html</filename>
+			<filename>includes/customproperties.js</filename>
+
+			<filename>jfcontentelements/index.html</filename>
+			<filename>jfcontentelements/custom_properties_fields.xml</filename>
+			<filename>jfcontentelements/custom_properties_values.xml</filename>
+			<filename>jfcontentelements/translationCpfieldFilter.php</filename>
+
+			<filename>models/index.html</filename>
+			<filename>models/assign.php</filename>
+			<filename>models/config.php</filename>
+			<filename>models/content.php</filename>
+			<filename>models/cpfield.php</filename>
+			<filename>models/cpfields.php</filename>
+
+			<filename>samplece/index.html</filename>
+			<filename>samplece/booklibrary.xml</filename>
+			<filename>samplece/content.xml</filename>
+			<filename>samplece/docman.xml</filename>
+			<filename>samplece/phocacategory.xml</filename>
+			<filename>samplece/phocagallery.xml</filename>
+			<filename>samplece/weblinks.xml</filename>
+
+			<filename>tables/index.html</filename>
+			<filename>tables/cpfield.php</filename>
+			<filename>tables/cpvalue.php</filename>
+
+			<filename>views/index.html</filename>
+
+			<filename>views/assign/index.html</filename>
+			<filename>views/assign/view.html.php</filename>
+			<filename>views/assign/tmpl/index.html</filename>
+			<filename>views/assign/tmpl/default.php</filename>
+
+			<filename>views/cpanel/index.html</filename>
+			<filename>views/cpanel/view.html.php</filename>
+			<filename>views/cpanel/tmpl/index.html</filename>
+			<filename>views/cpanel/tmpl/default.php</filename>
+			<filename>views/cpanel/tmpl/about.php</filename>
+
+			<filename>views/cpfields/index.html</filename>
+			<filename>views/cpfields/view.html.php</filename>
+			<filename>views/cpfields/tmpl/index.html</filename>
+			<filename>views/cpfields/tmpl/default.php</filename>
+			<filename>views/cpfields/tmpl/edit.php</filename>
+
+			<filename>views/tagging/index.html</filename>
+			<filename>views/tagging/view.html.php</filename>
+			<filename>views/tagging/tmpl/index.html</filename>
+			<filename>views/tagging/tmpl/default.php</filename>
+
+			<filename>views/utilities/index.html</filename>
+			<filename>views/utilities/view.html.php</filename>
+			<filename>views/utilities/tmpl/index.html</filename>
+			<filename>views/utilities/tmpl/checkdirs.php</filename>
+			<filename>views/utilities/tmpl/contentelements.php</filename>
+			<filename>views/utilities/tmpl/default.php</filename>
+
+		</files>
+
+		<!-- Administration Language File Copy Section -->
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_customproperties.ini</language>
+		</languages>
+
+	</administration>
+</install>

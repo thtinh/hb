@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+  <name>Custom Properties Tags Cloud</name>
+  <creationDate>2008-03-18</creationDate>
+  <author>Andrea Forghieri</author>
+  <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+  <authorEmail>info@solidsystem.it</authorEmail>
+  <authorUrl>www.solidsystem.it</authorUrl>
+  <version>1.98.3.3</version>
+  <description>
+    This module shows a tags cloud based on Custom Properties's tags frequency.
+    The font size depends on tag popularity. The more the tags the bigger the font.
+    To customize the look edit file cpcloud.css in module directory or define
+    CSS classes from cpcloud1 to cpcloud5 in your template stylesheet.
+  </description>
+  <files>
+    <filename module="mod_cpcloud">mod_cpcloud.php</filename>
+    <filename>index.html</filename>
+    <filename>css/index.html</filename>
+    <filename>css/cpcloud.css</filename>
+  </files>
+  <params>
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling"/>
+    <param name="tags_sorting" type="list" default="0" label="Tags sorting" description="Sorting.">
+      <option value="0">Don't sort</option>
+      <option value="1">Alpha</option>
+      <option value="2">Random</option>
+    </param>
+    <param name="tags_threshold" type="text" default="" label="Tags count threshold " description="Show tags when their number is equal or greater than threshold. Leave empty to show all tags"/>
+    <param name="use_cpcloud_stylesheet" type="radio" default="1" label="Use cpcloud stylesheet" description="Yes: use the cpcloud CSS style sheet">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="bind_to_ce" type="text" default="" label="Bind to content element" description="Generate the cloud from this content element only. If a wrong content elements name is provide, the search will be performed on standard content items only. Leave empty to search all content elements"/>
+    <param name="bind_to_section" type="text" default="" label="Bind to section(s)" description="Comma separated list of sections to generate the cloud from. Leave empty to use all sections"/>
+    <param name="itemid" type="text" default="" label="ItemId" description="Force this Itemid."/>
+  </params>
+
+</install>

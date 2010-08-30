@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<contentelement type="customproperties" ordering="4" active="1">
+	<name>booklibrary</name>
+	<author>Andrea Forghieri</author>
+	<version>1.0</version>
+	<description>Content Element for Book Library</description>
+
+
+  	<content_table required="1">
+  		<table name="table"			required="1">booklibrary</table>
+  		<field name="label" 		type="text"			required="1">Books</field>
+  		<field name="id" 			type="fieldname"	required="1">id</field>
+  		<field name="title" 		type="fieldname"	required="1">title</field>
+  		<field name="title_alias"	type="fieldname"	required="0"></field>
+  		<field name="sectionid" 	type="fieldname"	required="0"></field>
+  		<field name="catid" 		type="fieldname"	required="0">catid</field>
+  		<field name="created" 		type="fieldname"	required="0">date</field>
+  		<field name="introtext" 	type="fieldname"	required="1">comment</field>
+  		<field name="fulltext" 		type="fieldname"	required="0"></field>
+  		<field name="state" 		type="fieldname"	required="1">published</field>
+  		<field name="access" 		type="fieldname"	required="0"></field>
+  		<field name="publish_up" 	type="fieldname"	required="0"></field>
+  		<field name="publish_down" 	type="fieldname"	required="0"></field>
+  		<!-- if images is set, images_dir is required -->
+  		<field name="images" 		type="fieldname"	required="0">imageURL</field>
+  		<!--  if the images field store the complete path relative to the site url, image_dir = /
+  		e.g. value stored in fied = component/com_component_name/images/ -->
+  		<field name="images_dir" 	type="text" 		required="0">/</field>
+  		<field name="ordering" 		type="fieldname"	required="0">ordering</field>
+  		<field name="href_option" 	type="text" 		required="1">com_booklibrary</field>
+  		<field name="href_task" 	type="text" 		required="1">view</field>
+  		<field name="href_id" 		type="text" 		required="1">id</field>
+  	</content_table>
+
+	<category required="0">
+  		<table name="table"					required="1">categories</table>
+  		<field name="cat_table_id"			type="fieldname"	required="1">id</field>
+  		<field name="cat_table_title"		type="fieldname"	required="1">title</field>
+  		<field name="cat_table_published"	type="fieldname"	required="0">published</field>
+  		<!-- Link to a section table. It can be a combination of a table and a field OR
+  		 a field and string to filter the category id with -->
+  		<field name="cat_parent_section_table"	type="table"		required="0"></field>
+  		<field name="cat_parent_section_field"	type="fieldname"	required="0">section</field>
+  		<field name="cat_section_filter"		type="text"	required="0">com_booklibrary</field>
+	</category>
+
+	<section required="0">
+ 		<table name="table"					required="1"></table>
+  		<field name="sec_table_id"			type="fieldname"	required="1"></field>
+  		<field name="sec_table_title"		type="fieldname"	required="1"></field>
+  		<field name="sec_table_published"	type="fieldname"	required="0"></field>
+	</section>
+
+</contentelement>
