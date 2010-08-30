@@ -1,161 +1,0 @@
-10
-
-dir
-0
-svn://192.168.1.250/hb/libraries/openid/Auth/OpenID
-svn://192.168.1.250
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5ee4e36e-f7f4-f647-8180-49171c549df1
-
-URINorm.php
-file
-
-
-
-add
-
-FileStore.php
-file
-
-
-
-add
-
-CryptUtil.php
-file
-
-
-
-add
-
-Interface.php
-file
-
-
-
-add
-
-SReg.php
-file
-
-
-
-add
-
-Nonce.php
-file
-
-
-
-add
-
-KVForm.php
-file
-
-
-
-add
-
-DumbStore.php
-file
-
-
-
-add
-
-Server.php
-file
-
-
-
-add
-
-BigMath.php
-file
-
-
-
-add
-
-SQLStore.php
-file
-
-
-
-add
-
-Discover.php
-file
-
-
-
-add
-
-SQLiteStore.php
-file
-
-
-
-add
-
-ServerRequest.php
-file
-
-
-
-add
-
-PostgreSQLStore.php
-file
-
-
-
-add
-
-MySQLStore.php
-file
-
-
-
-add
-
-index.html
-file
-
-
-
-add
-
-Message.php
-file
-
-
-
-add
-
-PAPE.php
-file
-
-
-
-add
-

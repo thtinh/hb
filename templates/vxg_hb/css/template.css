@@ -4,7 +4,7 @@ img{border:0}
 a{cursor: pointer;text-decoration: none;}/*phai co' ba`n tay 0_o*/
 a:hover{text-decoration: underline;}
 a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:0 5px;
-       -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
+         -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
 .curve{-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;}
 .lightcurve{-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;}
 .top-curve{-moz-border-radius: 10px 10px 0 0;-webkit-border-radius: 10px 10px 0 0;border-radius:10px 10px 0 0}
@@ -69,7 +69,8 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 
 /*Content*/
 #content table{max-width: 670px !important;}
-
+.contentpaneopen_introduction #idTextPanel{padding-left:5px;}
+div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 /*Footer*/
 #wrapper-footer{height: 128px;}
 
@@ -81,45 +82,23 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 
 #footer-r{text-align:right}
 
-/*Section View*/
-.article_row{clear: both;border-bottom: 1px dotted #cdcdcd;overflow: hidden;}
-.contentheading{margin-bottom: 5px;}
 
-/*Category: Article List View*/
-.sectiontableheader{background: url(../images/qa-bg.gif) no-repeat;width: 601px;height:31px;}
-.sectiontableheader .heading-title a{color:#6e9d40;font-weight: bold}
-.sectiontableheader .heading-title {float:left;padding:7px 0px 7px 0px;}
-.sectiontable {margin: 20px 0px 0px 40px;}
-.sectiontable a{color: #1b1b1b;}
-.sectiontable img{display: none;}
-.sectiontable .padding10 a{padding-left: 10px;}
-.sectiontable .padding20 a{padding-left: 20px;}
-.sectiontable .padding30 a{padding-left: 30px;}
-.sectiontable .padding40 a{padding-left: 40px;}
-.sectiontable .padding50 a{padding-left: 50px;}
-.sectiontable .row{float:left;}
-.sectiontable .sectiontableentry1, .sectiontable .sectiontableentry2{clear:both;padding: 5px 0px 5px 0px; overflow: hidden;width: 601px;border-bottom: 1px dotted #cdcdcd}
-.sectiontable .sectiontableentry1:hover, .sectiontable .sectiontableentry2:hover{background-color: #e8f3d2;}
-
-.sectiontable .btnSubmit {background: url(../images/btnSubmit_bg.gif) no-repeat;padding: 3px 11px 3px 11px;margin: -20px 70px 0px 0px;float:right;}
-.sectiontable .btnSubmit a{text-transform:uppercase;font-weight: bold;color: white;}
-.sectiontable .filter{background: url(../images/search-bg.png) no-repeat;width:380px;height: 53px;margin: 10px 0px 0px 90px;}
-.sectiontable .filter input{margin:15px 5px 15px 15px;border:2px solid #ced3c5;width: 260px;}
-.sectiontable .btnSearch {background:transparent url(../images/btnSearch-bg.gif) no-repeat;font-size: 11px;text-transform:uppercase;font-weight: bold;color: #6e9d40;padding:5px 5px 5px 20px;}
-/*Right Modules*/
-.moduletable_news, .moduletable_right{margin: 10px 10px 0 0;}
+/*Modules*/
+.moduletable_news, .moduletable_right, .moduletable_souvenir{margin: 10px 10px 0 0;}
 .moduletable_news{background: url('../images/icon-news.png') no-repeat top left;}
-.moduletable_news h3{line-height: 1.4em;margin: 0 0 0 10px;padding-left:15px;color: #3d5a8e;border-bottom: solid 2px #1fdbe9;font-size: 14px;}
+.moduletable_souvenir{background: url("../images/icon-title-page.png") no-repeat top left;}
+.moduletable_news h3, .moduletable_souvenir h3{line-height: 1.4em;margin: 0 0 0 10px;padding-left:15px;color: #3d5a8e;border-bottom: solid 2px #1fdbe9;font-size: 14px;}
 #news-list{list-style: none;margin:0px;padding:0px;}
 #news-list a{color:#3d5a8e;text-decoration: none;font-weight: bold;}
 #news-list li{border-bottom: 1px dotted #ccc;padding: 10px 0;clear:both;}
 #news-list img{float:left;margin-right:5px;padding:2px;border:1px solid #ccc;}
 
+
 /*Sponsors*/
 
 .bannergroup_sponsor{clear: left;}
 .banneritem_sponsor{margin:20px 0px 20px 40px;width:160px;float:left;height: 110px;border:1px solid #ccc;
-                   -moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;                
+                    -moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;
 }
 .banneritem_sponsor img{margin:auto;display:block;}
 .moduletable_sponsor .clr{clear: both;}
@@ -130,6 +109,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .custom-tip {color: #000;width: 130px;z-index: 13000;}
 .custom-title {font-weight: bold;font-size: 11px;margin: 0;color: #3E4F14;padding: 8px 8px 4px;background: #C3DF7D;border-bottom: 1px solid #B5CF74;}
 .custom-text {font-size: 11px;padding: 4px 8px 8px;background: #CFDFA7;}
+
 /*Sponsor module with carousel effect*/
 .carousel_right{position: relative;overflow:hidden;border: 1px solid #f6a854;}
 .carousel_right .carousel_header{text-transform: uppercase;padding:5px;background: url('../images/bx-hdr.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
@@ -142,6 +122,16 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .carouselitem_right img{display:block;margin:auto;}
 #carousel_content{width: 14400px;position: relative;overflow: hidden;margin: 0 10px;}
 
+/*Search (finder) module*/
+.moduletable_right.finder h3{text-transform: uppercase;padding:5px;margin:0px;
+                             background: url('../images/bx-hdr-blue.png') no-repeat transparent;color:#fff;font-size: 14px;font-weight: bold;width:auto;}
+.moduletable_right.finder .search_right{padding:10px;overflow: hidden}
+.moduletable_right.finder{border: 1px solid #19b7e4}
+#year, #illness{width : 238px;padding:5px;margin:0;}
+#txtSearch{width: 228px;height: 16px}
+#searchForm .search_button{background: url(../images/btnSearch-bg.png) no-repeat;padding: 3px 15px 3px 0px;float:right;border:none;color:#fff;width:74px;height: 25px}
+.search_submit{overflow: hidden;margin-top: 10px}
+#searchForm label{margin: 5px;display:block;}
 
 /* Album */
 #album-menu ul {list-style:none;margin-right:10px; padding-right:0px; height:35px;}
@@ -175,7 +165,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
 .moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
-                       color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
+                                                                              color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
 }
 .contentpaneopen #map{padding: 0px 10px;}
 .contentpaneopen #information{padding: 0px 5px; }
@@ -222,7 +212,7 @@ p.counter{text-align: center}
 #paging_souvenir .pl-a, ._sponsorlist a.pl{color:#1ABDEC;border-color: #1ABDEC;background-color: #FFF}
 #paging_souvenir .pl-i, ._sponsorlist a.pl-a, ._sponsorlist a.pl:hover{border-color: #1ABDEC;color: #fff;background-color:#1ABDEC}
 .blog_souvenir p.counter{color:#1ABDEC;margin-bottom: 30px;}
-
+.moduletable_souvenir{margin-left:10px;}
 /*Modal dialog*/
 #sbox-window{background-color: transparent !important;padding: 0px;}
 #sbox-content{background-color: transparent !important;}
@@ -230,4 +220,8 @@ p.counter{text-align: center}
 #sbox-btn-close{top:-5px;right: -5px}
 
 /*Thu Vien Anh - Video Clip - Frontpage*/
-.ja-tabswrap.hb{padding-left:5px;}
+.article img{width: 640px;height: 270px;}
+.moduletablehb{margin-left:10px;}
+#ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
+#ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
+

@@ -792,7 +792,7 @@ class helper {
         if($mostview == 1)
             $ordering = 'a.hits DESC';
         else
-            $ordering = 'a.modified DESC, a.created DESC';
+            $ordering = 'a.created DESC, a.modified DESC';
 
         return $ordering;
     }
@@ -817,7 +817,8 @@ class helper {
             //hien thi du'ng ca'c ky tu dac biet trong html
             $rows[$i]->title = htmlspecialchars($rows[$i]->title);
             $rows[$i]->link = JRoute::_(ContentHelperRoute::getArticleRoute($rows[$i]->slug,$rows[$i]->catslug,$rows[$i]->sectionid));
-            $introtext = strip_tags($rows[$i]->introtext);
+            $introtext = strip_tags($rows[$i]->introtext,'<br/>');
+            //$introtext = $rows[$i]->introtext;
             //$rows[$i]->introtext = preg_replace("/{[^}]*}/","",$rows[$i]->introtext);
             $rows[$i]->introtext = $introtext;
             $rows[$i]->showmore = JRoute::_(ContentHelperRoute::getCategoryRoute($rows[$i]->catid,$rows[$i]->sectionid));

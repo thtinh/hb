@@ -12,6 +12,7 @@ $document->setTitle($webtitle." - ".$document->title);
 //Framework CSS
 $document->addStyleSheet("templates/vxg_hb/css/style.php",'text/css',"screen");
 $document->addStyleSheet("templates/vxg_hb/blueprint/print.css",'text/css',"print");
+$document->addScript("templates/vxg_hb/js/hb.js");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -19,7 +20,7 @@ $document->addStyleSheet("templates/vxg_hb/blueprint/print.css",'text/css',"prin
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 
     <head>
-
+        
         <jdoc:include type="head" />
 
 
@@ -84,7 +85,7 @@ $document->addStyleSheet("templates/vxg_hb/blueprint/print.css",'text/css',"prin
                             <?php endif; ?>
                             <?php if ($this->countModules('left')) : ?>
                             <div id="left">
-                                <jdoc:include type="modules" name="left" />
+                                <jdoc:include type="modules" name="left" style="withtitle"/>
                             </div>
                             <?php endif; ?>
                             <jdoc:include type="message" />

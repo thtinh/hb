@@ -153,4 +153,6 @@ switch ($style) {
 $document =& JFactory::getDocument();
 $document->addStyleSheet($module_base . 'mod_yoo_carousel.css.php');
 $document->addScript($module_base . 'mod_yoo_carousel.js');
-echo "<script type=\"text/javascript\">\n// <!--\nwindow.addEvent('domready', function(){ $javascript });\n// -->\n</script>\n";
+$script = "window.addEvent('domready', function(){ $javascript });";
+$document->addScriptDeclaration($script);
+

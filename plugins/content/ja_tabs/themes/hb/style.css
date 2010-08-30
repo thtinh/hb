@@ -17,7 +17,12 @@
 
 .hb .ja-tab-subcontent {
 	padding: 10px !important;
+
 }
+      
+        
+.hb .ja-tab-subcontent p{margin : 0;padding : 0}
+
 
 
 /* JA Tabs top*/
