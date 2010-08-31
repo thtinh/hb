@@ -10,6 +10,140 @@
    TODO customize this sample style
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
-.textstyle1{color:#19b7e4;}
-.textstyle2{color:#385057;}
+p{margin-bottom:5px}
+.bignumber {
+	background: url(../images/bignumber.gif) no-repeat top left;
+	color: #fff;
+	display: block;
+	float: left;
+	font: bold 23px/normal Arial, sans-serif;
+	margin-right: 8px;
+	padding: 8px 9px 9px 10px;
+}
+.caption{background:none repeat scroll 0 0 #FFFFFF;border:1px solid #19b7e4;}
+.dropcap:first-letter{color: #414141;display: block;float: left;font: 50px/40px Georgia, Times, serif;padding: 4px 8px 0 0;}
+.dropcap{overflow: hidden;}
 .email, .email a{color: #DF7016;text-decoration: none}
+h4{color:#1ABDEC;font-weight: bold;font-weight: 13px}
+.hb1{color:#19b7e4;}
+.hb2{color:#385057;}
+.highlight {
+	color: #3d3d3d;
+	background: #ececec;
+	font-weight: bold;
+	padding: 3px 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.img_caption img, .img-desc img {
+    background:none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #19b7e4;
+}
+.legend-title {
+	background: #FFF;
+	display: block;
+	font-size: 100%;
+	float: left;
+	font-weight: bold;
+	left: 7px;
+	margin: 0;
+	padding: 0 3px;
+	position: absolute;
+	top: -10px;
+}
+
+.legend {
+	border: 1px solid #CCCCCC;
+	margin: 20px 0;
+	padding: 0 10px;
+	position: relative;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+table.greystripes {
+	border: 1px solid #D9D9D9;
+	color: #404040;
+	background: #FFFFFF;
+	border-collapse: collapse;
+}
+
+table.greystripes caption {
+	padding: 6px 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+table.greystripes td, table.greystripes th {
+	border: 1px dashed #E5E5E5;
+	padding: 5px 10px;
+}
+
+table.greystripes thead th {
+	border: 1px solid #595959;
+	border-bottom: 2px solid #000000;
+	background: #404040;
+	color: #FFFFFF;
+	font-size: 1.1em;
+}
+
+table.greystripes tbody th, table.greystripes tbody td {
+	text-align: left;
+	vertical-align: top;
+}
+
+table.greystripes tbody tr.odd {
+	background: #F2F2F2;
+}
+
+table.greystripes tbody tr:hover {
+	background: #E5E5E5;
+}
+
+table.greystripes tbody tr:hover th, table.greystripes tbody tr.odd:hover th {
+	background: #E5E5E5;
+}
+
+table.greystripes tfoot th, table.greystripes tfoot td {
+	border: none;
+	padding: 4px 10px;
+	background-color: #D9D9D9;
+	color: #000000;
+	font-size: 1.1em;
+}
+
+table.greystripes tfoot td {
+	text-align: right;
+}
+.textshadow{text-shadow:0 2px 5px rgba(0, 0, 0, 0.2)}
+/* Check list */
+ul.checklist {
+	list-style: none;
+}
+
+ul.checklist li {
+	background: url(../images/checklist.png) no-repeat 4px 5px !important;
+	padding: 0 0 0 22px !important;
+}
+/* Star list */
+ul.star {
+	list-style: none;
+}
+
+ul.star li {
+	background: url(../images/star.png) no-repeat 2px 0 !important;
+	padding: 0 0 0 22px !important;
+}
+
+/* List arrow */
+ul.arrow {
+	list-style: none;
+}
+
+ul.arrow li {
+	background: url(../images/arrow.png) no-repeat 5px 5px;
+	padding: 0 0 0 22px;
+}

@@ -1,8 +1,8 @@
 body{color:#385057;background:#1abdec;}
 img{border:0}
 
-a{cursor: pointer;text-decoration: none;}/*phai co' ba`n tay 0_o*/
-a:hover{text-decoration: underline;}
+a{cursor: pointer;text-decoration: none;color:#DF7016;}/*phai co' ba`n tay 0_o*/
+a:hover{text-decoration: underline;color:#DF7016}
 a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:0 5px;
          -moz-box-shadow: 1px 2px 3px #228ba9;-webkit-box-shadow: 1px 2px 3px #228ba9;box-shadow: 1px 2px 3px #228ba9;}
 .curve{-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;}
@@ -11,7 +11,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .bottom-curve{-moz-border-radius: 0 0 10px 10px;-webkit-border-radius: 0 0 10px 10px;border-radius: 0 0 10px 10px}
 .shadow{-moz-box-shadow: 5px 5px 10px #333;-webkit-box-shadow: 5px 5px 10px #333;box-shadow: 5px 5px 10px #333;}
 .lightshadow{-moz-box-shadow: 1px 2px 3px #ccc;-webkit-box-shadow: 1px 2px 3px #ccc;box-shadow: 1px 2px 3px #ccc;}
-
+.textshadow{text-shadow:0 2px 5px rgba(0, 0, 0, 0.2)}
 .container{margin: 10px auto;border-color: #fff;background-color: #fff}
 #logo-wrapper{text-align: center;margin-top: 10px;}
 #logo{position: relative;z-index: 900;}
@@ -34,6 +34,7 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 #breadcrumbs {margin:0 0 10px 10px;}
 #breadcrumbs a{color:#DF7016;}
 #breadcrumbs span{color:#1ABDEC;}
+#breadcrumbs img{position: relative;top:3px}
 /*Caption fixes*/
 
 .img_caption{margin:1em auto}
@@ -57,19 +58,24 @@ a.button{background-color: #228ba9;padding : 10px;color:#fff;float:right;margin:
 .contentpaneopen img.caption{padding:4px;border:1px solid #ccc;background:#fff}
 
 .contentpaneopen h2{font-size:14px;font-weight:bold;margin-bottom:5px}
-
-#content .createdate{display:none}
-
-.blog{margin-top:10px}
-
-.blog .contentpaneopen{margin-bottom:0}
-
-.blog .contentpagetitle{font-size:18px;}
-
-
 /*Content*/
 #content table{max-width: 670px !important;}
-.contentpaneopen_introduction #idTextPanel{padding-left:5px;}
+#content .createdate{display:none}
+#content, #content table {margin-left: auto;margin-right:auto}
+#content h2.contentheading_news, h2.contentheading_news a{color:#1ABDEC;padding-left:115px;font-size: 13px;font-weight: bold;}
+#content .article_row_news img{position: relative;top:-25px;padding:0;margin-right:10px !important}
+#content .article_row_news p{padding:0;margin:0}
+#content .article_row_news{margin-left:10px;padding:15px 0;border-bottom: 1px dotted #ccc}
+#content .article_separator, .row_separator_news{clear: both}
+#content table.contentpaneopen_news, #content table.contentpaneopen_history{margin-left:10px}
+#content table.contentpaneopen_news .title-page, #content table.contentpaneopen_history .title-page{margin:0}
+#content a.readon_news{float:right;}
+#content table.contentpaneopen_history .moduletable-history{margin-left:-5px}
+#content table.contentpaneopen_introduction #idTextPanel{padding-left:5px;}
+.blog{margin-top:10px}
+.blog .contentpaneopen{margin-bottom:0}
+.blog .contentpagetitle{font-size:18px;}
+
 div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 /*Footer*/
 #wrapper-footer{height: 128px;}
@@ -140,12 +146,15 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #album-menu ul li.active{font-weight:bold; background-color:#26dcea;}
 #album-menu ul li.active a{color:#fff}
 
-#album-left{background:url('../images/album-sukien-bg.jpg') no-repeat 10px 0;position: relative;z-index: 1000}
+#album-left{position: relative;z-index: 1000}
 #album-left ul {list-style:none;margin-top:0px; margin-left:5px; padding-top:165px; padding-left:20px; overflow:hidden;  width:307px; height:484px;}
 #album-left ul li{background:url('../images/arrow-bt.png') no-repeat left 10px;font-weight:normal; padding:5px 0px 5px;padding-left:12px;border-bottom:1px dotted #c3e7f2;}
 #album-left ul li.last{font-weight:normal;border-bottom:0px}
 #album-left ul li a {color:#385057; text-decoration:none;}
 #album-left ul li.active a{color: #DF7016;}
+.anh-su-kien{background:url('../images/album-sukien-bg.jpg') no-repeat 10px 0;}
+.anh-hoat-dong{background:url('../images/album-hoatdong-bg.jpg') no-repeat 10px 0;}
+.anh-truyen-thong{background:url('../images/album-truyenthong-bg.jpg') no-repeat 10px 0;}
 
 #album-content{padding-right:10px}
 #album-content #title{color:#19b7e4; font-weight:bold; padding:5px 0px;}
@@ -164,8 +173,9 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #album p{margin-bottom: 5px;}
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
-.moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3{background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
-                                                                              color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
+.moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3, .moduletable_hbnews h3{
+    background: url(../images/contact-title-bg.png) transparent no-repeat;width: 172px;height:33px;
+    color:#FFF;text-transform:uppercase;font-size: 12px;padding:9px;margin:0px;text-shadow:0 1px 1px #666
 }
 .contentpaneopen #map{padding: 0px 10px;}
 .contentpaneopen #information{padding: 0px 5px; }
@@ -187,8 +197,9 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #content .blog_souvenir{background:url(../images/luuniem-mid-bg.jpg) repeat-y left top; width:655px; margin-left:10px;  padding-top:10px;}
 #content #souvenir_bottom{background:url(../images/luuniem-bt-bg.jpg) no-repeat left; width:655px; height:68px; margin-left:10px;}
 #content .blog_souvenir #idTextPanel{line-height:1.5;padding-top:15px}
-#content .blog_souvenir .article_row {border-bottom:1px dotted #b7d1d9;margin-left: 20px;margin-right: 40px;}
-
+#content .blog_souvenir .article_row_souvenir {border-bottom:1px dotted #b7d1d9;margin-left: 20px;margin-right: 40px;padding:10px 0}
+#content .article_row_souvenir .article_separator{display:none}
+#content .article_row_souvenir .row_separator_souvenir{display: none}
 
 /*Common*/
 .title-page{background:url(../images/icon-title-page.png) no-repeat;margin-left : 5px;}
@@ -197,7 +208,7 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 
 /*Pagination*/
 p.counter{text-align: center}
-.pagination {margin-left:auto;margin-right:auto;margin-top:10px;padding:5px 0;text-align:center;}
+.pagination {width:650px !important;margin-left:auto;margin-right:auto;margin-top:10px;padding:5px 0;text-align:center;}
 .pl-a {color:#1ABDEC;}
 .pagination span.pl-i, .pagination a {font-size:11px;font-weight:bold;}
 .pagination span.pl-i, .pagination a, .pagination a:visited {border:1px solid #CCCCCC;margin-left:3px;padding:2px 7px;text-decoration:none;}
@@ -225,3 +236,9 @@ p.counter{text-align: center}
 #ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
 #ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
 
+/*Hoa Binh Section News*/
+.moduletable_hbnews{clear:both;margin-bottom: 30px;border-bottom: 1px dotted #ccc}
+.moduletable_hbnews #leadingnews img{float:left}
+.moduletable_hbnews #leadingnews a.newstitle{float:left}
+.moduletable_hbnews #leadingnews .news-intro{text-align: justify}
+.moduletable_hbnews ul{padding: 5px 0 0 165px}

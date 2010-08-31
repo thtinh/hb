@@ -68,6 +68,7 @@
 #navbar ul li ul li {
 	margin-right: 0px;
 	border-right: 0px solid #869A9F;
+        color: #fff
 }
 
 
@@ -98,12 +99,6 @@
 
 }
 
-#navbar ul li ul li a:link,
-#navbar ul li ul li a:visited
- {
-	color: #df7016;
-
-}
 
 #navbar ul li ul li a:hover,
 #navbar ul li.active ul li a:hover {
@@ -124,6 +119,7 @@
 #navbar li li a span{
 	border:0;
 	padding:0;
+        
 }
 	
 #navbar ul ul a {
@@ -212,6 +208,11 @@
 #navbar li li:hover {
 	background: #dc9330;
 	margin:0;
+ 
+}
+#navbar li li:hover a{
+	
+        color:#fff;
 }
 
 /* HIDE OTHER LISTS FROM IE */

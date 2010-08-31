@@ -9,6 +9,14 @@ $document = & JFactory::getDocument();
 $document->addScript(JURI::base() . '/templates/vxg_hb/js/iCarousel.js');
 $document->addScript(JURI::base() . '/templates/vxg_hb/js/json_remote.js');
 
+/*Hardcode ! i know it's bad but i'm too lazy to do anything good :( */
+$selectedBackground = "";
+switch ((int)$selectedCategory){
+  case 1: $selectedBackground = "anh-hoat-dong";break;
+  case 2: $selectedBackground = "anh-su-kien";break;
+  case 3: $selectedBackground = "anh-truyen-thong";break;
+  default:$selectedBackground = "anh-su-kien";break;
+}
 //$selectedCategory = split(":", $selectedCategory);
 // All categories -------------------------------------------------------
 $query = 'SELECT cc.title AS text, cc.id AS id, cc.parent_id as parentid, cc.alias as alias, cc.access as access, cc.accessuserid as accessuserid'
@@ -45,7 +53,7 @@ foreach ($categories as $value) {
         </div>
     </div>
 <?php endif; ?>
-    <div id ="album-left" class="span-9 clearfix">
+    <div id ="album-left" class="<?=$selectedBackground?> span-9 clearfix">
         <ul>
 <?php foreach ($childCategories as $mycategory) : ?>
 <?php if ($mycategory->parentid != 0): ?>
