@@ -118,7 +118,11 @@ table.greystripes tfoot th, table.greystripes tfoot td {
 table.greystripes tfoot td {
 	text-align: right;
 }
+<<<<<<< HEAD
 .textshadow{text-shadow:0 2px 5px rgba(0, 0, 0, 0.2)}
+=======
+
+>>>>>>> ac88740c6ba07d77215e49e4aff340529c9b4faf
 /* Check list */
 ul.checklist {
 	list-style: none;

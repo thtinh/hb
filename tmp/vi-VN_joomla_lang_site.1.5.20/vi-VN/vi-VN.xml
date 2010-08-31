@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="1.5" client="site">
+   <tag>vi-VN</tag>
+   <name>Vietnamese-VN</name>
+   <version>1.5.20</version>
+   <creationDate>2010-07-20</creationDate>
+   <author>Joomla Viet Nam Translation Team</author>
+   <authorUrl>http://joomlaviet.org</authorUrl>
+   <authorEmail>banquantri@joomlaviet.org</authorEmail>
+   <copyright>Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved</copyright>
+   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+   <description>Vienamese language site pack for Joomla</description>
+   <metadata>
+       <name>Vietnamese-VN</name>
+       <tag>vi-VN</tag>
+       <rtl>0</rtl>
+       <locale>vi_VN.utf8, vi_VN.UTF-8, vi_VN.UTF-8@asia, vietnamese, vi_VN</locale>
+       <winCodePage>utf-8</winCodePage>
+       <backwardLang>vietnamese</backwardLang>
+       <pdfFontName>freesans</pdfFontName>
+  </metadata>
+
+  <params />
+</metafile> 

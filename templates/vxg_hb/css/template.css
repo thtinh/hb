@@ -236,9 +236,21 @@ p.counter{text-align: center}
 #ImageTextBg{background-color:#c6edf9;height:50px;top:220px;opacity:0.5;position:absolute;width:640px;}
 #ImageText{overflow:hidden;position:relative;top:-45px;left:10px;color:#fff}
 
+
 /*Hoa Binh Section News*/
 .moduletable_hbnews{clear:both;margin-bottom: 30px;border-bottom: 1px dotted #ccc}
 .moduletable_hbnews #leadingnews img{float:left}
 .moduletable_hbnews #leadingnews a.newstitle{float:left}
 .moduletable_hbnews #leadingnews .news-intro{text-align: justify}
 .moduletable_hbnews ul{padding: 5px 0 0 165px}
+
+/**/
+h2.contentheading_news, h2.contentheading_news a{color:#1ABDEC;padding-left:115px;font-size: 13px;font-weight: bold;}
+.article_row_news img{position: relative;top:-25px;padding:0;margin-right:10px !important}
+.article_row_news p{padding:0;margin:0}
+.article_row_news{margin-left:10px;padding:15px 0;border-bottom: 1px dotted #ccc}
+.article_separator, .row_separator_news{clear: both}
+table.contentpaneopen_news{margin-left:10px}
+table.contentpaneopen_news .title-page{margin:0}
+a.readon_news{float:right;}
+
