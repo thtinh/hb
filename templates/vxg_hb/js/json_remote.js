@@ -68,7 +68,7 @@ window.addEvent('domready', function(){
     };
     var addImage = function(image) { 
         pic = $("picture");
-        divDescription = $("description");
+        divDescription = $("photodescription");
         if($defined(divDescription))
             pic.empty();
         else 
@@ -81,12 +81,9 @@ window.addEvent('domready', function(){
             divDescription.empty();
         else 
             divDescription = new Element('div',{
-                id:'description'
+                id:'photodescription'
             });
         
-        
-        
-   
         var img = new Element('img', {
             'src': image.link,
             'style' : 'max-width:450px;max-height:340px'

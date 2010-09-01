@@ -79,17 +79,16 @@ foreach ($categories as $value) {
                     
                 </div>
                 <div id="album-thumbnail">
+                    <div id="next" style="float:right">
+                        <img src="<?= JURI::base() . '/templates/vxg_hb/images' ?>/next-bt.jpg" />
+                    </div>
                     <div id="back" style="float:left">
                         <img src="<?= JURI::base() . '/templates/vxg_hb/images' ?>/back-bt.jpg" />
-                    </div>
-
-                    <div id="next" style="float:left">
-                        <img src="<?= JURI::base() . '/templates/vxg_hb/images' ?>/next-bt.jpg" />
                     </div>
             </div>
 
         </div>
-        <br /> <br /><br /><br /><br /><br /><br />
+        
     </div>
 
 </div>
