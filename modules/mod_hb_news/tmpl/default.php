@@ -2,6 +2,7 @@
 defined('_JEXEC') or die('Restricted access');
 $count = 0;
 ?>
+<h3><a style="color:inherit" href="<?=$rows[0]->showmore?>"><?php echo (empty($module->title) ? "&nbsp;" : $module->title); ?></a></h3>
 <div id="leadingnews">
     <img width="150" src="images/stories/<?=$rows[0]->images; ?>" alt="<?= $rows[0]->title; ?>">
     <a class="newstitle" href="<?= $rows[0]->link; ?>"><?= $rows[0]->title ; ?></a><br/>
