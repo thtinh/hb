@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Kid</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2010-09-01</creationDate>
+	<author>Nguyen Thanh Tinh</author>
+	<authorEmail>thtinh@vxg.com</authorEmail>
+	<authorUrl>http://www.vxg.vn</authorUrl>
+	<copyright>VXG Ltd.</copyright>
+	<license>Commercial</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Kid Component - Hoa Binh Village's kids information</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>kid.php</filename>
+		<filename>index.html</filename>
+		
+
+                <filename>models/kid.php</filename>
+                <filename>models/search.php</filename>
+                
+
+                <filename>views/index.html</filename>
+                <filename>views/kid/index.html</filename>
+		<filename>views/kid/view.html.php</filename>
+
+
+		<filename>views/kid/tmpl/index.html</filename>
+		<filename>views/kid/tmpl/default.php</filename>
+                <filename>views/kid/tmpl/form.php</filename>
+                <filename>views/kid/tmpl/default_result.php</filename>
+                <filename>views/kid/tmpl/default_noresult.php</filename>
+                <filename>views/kid/tmpl/search_footer.php</filename>
+                <filename>views/kid/tmpl/search_form.php</filename>
+
+                
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>	
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link="option=com_kid">Kid Directory</menu>                
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+
+			<filename>kid.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>controller.php</filename>
+			<filename>controllers/kid.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>models/kids.php</filename>
+			<filename>models/kid.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/kid.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/kid/view.html.php</filename>
+			<filename>views/kid/tmpl/form.php</filename>
+			<filename>views/kid/index.html</filename>
+			<filename>views/kid/tmpl/index.html</filename>
+
+			<filename>views/kids/view.html.php</filename>
+			<filename>views/kids/index.html</filename>
+			<filename>views/kids/tmpl/default.php</filename>
+			<filename>views/kids/tmpl/index.html</filename>
+
+                        
+		</files>		
+	</administration>
+</install>
