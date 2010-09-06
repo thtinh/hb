@@ -23,7 +23,7 @@ class KidController extends JController {
      * @access	public
      */
     function display() {
-        //JRequest::setVar('view', 'Kids');
+        JRequest::setVar('view', 'Kids');
         parent::display();
     }
 

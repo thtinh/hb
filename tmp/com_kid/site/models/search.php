@@ -1,6 +1,6 @@
 <?php
 /**
- * Staff Model for Staff Component
+ * Kid Model for Kid Component
  *
  * @package    Joomla.Tutorials
  * @subpackage Components
@@ -14,15 +14,15 @@ defined('_JEXEC') or die();
 jimport( 'joomla.application.component.model' );
 
 /**
- * Staff Model
+ * Kid Model
  *
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class StaffModelSearch extends JModel {
+class KidModelSearch extends JModel {
     /**
-     * Gets the Staff
-     * @return string The Staff to be displayed to the user
+     * Gets the Kid
+     * @return string The Kid to be displayed to the user
      */
 
     var $_pagination = null;
@@ -95,12 +95,12 @@ class StaffModelSearch extends JModel {
     function _buildQuery(){
         $searchword = $this->_searchword;
         switch ($this->_searchType){
-            case "name" : return "select distinct s.* from #__staff s, #__division_staffs ds, #__division d
-                where s.id = ds.staff_id and d.id = ds.division_id and s.name like '%$searchword%'";break;
-            case "email": return "select distinct s.* from #__staff s, #__division_staffs ds, #__division d
-                where s.id = ds.staff_id and d.id = ds.division_id and s.email like '%$searchword%'";break;
-            case "division" : return "select distinct d.* from #__staff s, #__division_staffs ds, #__division d
-where s.id = ds.staff_id and d.id = ds.division_id and d.name like '%$searchword%'";break;
+            case "name" : return "select distinct s.* from #__Kid s, #__division_Kids ds, #__division d
+                where s.id = ds.Kid_id and d.id = ds.division_id and s.name like '%$searchword%'";break;
+            case "email": return "select distinct s.* from #__Kid s, #__division_Kids ds, #__division d
+                where s.id = ds.Kid_id and d.id = ds.division_id and s.email like '%$searchword%'";break;
+            case "division" : return "select distinct d.* from #__Kid s, #__division_Kids ds, #__division d
+where s.id = ds.Kid_id and d.id = ds.division_id and d.name like '%$searchword%'";break;
             default : return "";
         }
     }

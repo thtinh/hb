@@ -30,7 +30,7 @@ class KidModelKid extends JModel {
 
         global $mainframe, $option;
         // Get pagination request variables
-        $limit = 15;
+        $limit = 5;
         $limitstart = JRequest::getVar('limitstart', 0, '', 'int');
 
         // In case limit has been changed, adjust it
@@ -45,6 +45,9 @@ class KidModelKid extends JModel {
         $this->setState('filter_order', $filter_order);
         $this->setState('filter_order_Dir', $filter_order_Dir);
 
+    }
+    function getLimit(){
+        return $this->getState('limit');
     }
     function getLimitstart(){
         return $this->getState('limitstart');
@@ -97,7 +100,7 @@ class KidModelKid extends JModel {
         $query = $this->_buildQuery(). $this->_buildContentOrderBy();
         $this->total = $this->_getListCount($query);
 
-        $db->setQuery($query,$this->limitstart,$this->limit);
+        $db->setQuery($query,$this->getLimitstart(),$this->getLimit());
         $data = $db->loadObjectList();
 
         return $data;

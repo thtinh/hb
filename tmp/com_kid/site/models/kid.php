@@ -1,6 +1,6 @@
 <?php
 /**
- * Staff Model for Staff Component
+ * Kid Model for Kid Component
  *
  * @package    Joomla.Tutorials
  * @subpackage Components
@@ -14,12 +14,12 @@ defined('_JEXEC') or die();
 jimport( 'joomla.application.component.model' );
 jimport('joomla.html.pagination');
 /**
- * Staff Model
+ * Kid Model
  *
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class StaffModelStaff extends JModel {
+class KidModelKid extends JModel {
 
     var $_total = null;
     var $_pagination = null;
@@ -30,7 +30,7 @@ class StaffModelStaff extends JModel {
 
         global $mainframe, $option;
         // Get pagination request variables
-        $limit = 15;
+        $limit = 5;
         $limitstart = JRequest::getVar('limitstart', 0, '', 'int');
 
         // In case limit has been changed, adjust it
@@ -46,21 +46,14 @@ class StaffModelStaff extends JModel {
         $this->setState('filter_order_Dir', $filter_order_Dir);
 
     }
+    function getLimit(){
+        return $this->getState('limit');
+    }
     function getLimitstart(){
         return $this->getState('limitstart');
     }
     function _buildQuery() {
-        $di_id = JRequest::getVar( 'di_id', 0, '', 'int' );
-        $de_id = JRequest::getVar( 'de_id', 0, '', 'int' );
-
-        if ($di_id != 0 and $de_id == 0) {
-            $query = 'select distinct s.* from (#__staff s,#__division_staffs ds1,#__division_staffs ds2) where s.id = ds1.staff_id and s.id = ds2.staff_id '.
-                    'and ds1.division_id='.$di_id;
-        }
-        else if ($de_id != 0) {
-            $query = 'select distinct s.* from (#__staff s,#__division_staffs ds1,#__division_staffs ds2) where s.id = ds1.staff_id and s.id = ds2.staff_id '.
-                    'and ds1.division_id='.$di_id.' and ds2.division_id='.$de_id;
-        }
+        $query = "select k.* from #__kid k";
         return $query;
     }
     function _buildContentOrderBy() {
@@ -69,12 +62,14 @@ class StaffModelStaff extends JModel {
         $orderby = '';
         $filter_order     = $this->getState('filter_order');
         $filter_order_Dir = $this->getState('filter_order_Dir');
-
+       
         /* Error handling is never a bad thing*/
+        //this is to ensure vietnamese's name will be sorted correctly
         if(!empty($filter_order) && !empty($filter_order_Dir) ) {
-            $orderby = ' ORDER BY '.$filter_order.' '.$filter_order_Dir;
+            $orderby = ' ORDER BY k.'.$filter_order.' COLLATE utf8_unicode_ci '.$filter_order_Dir;
         }
-
+       
+        
         return $orderby;
     }
     
@@ -97,54 +92,29 @@ class StaffModelStaff extends JModel {
         return $this->_pagination;
     }
     /**
-     * Gets the Staff
-     * @return string The Staff to be displayed to the user
+     * Gets the Kid
+     * @return string The Kid to be displayed to the user
      */
-    function getStaffs() {
+    function getKids() {
         $db =& JFactory::getDBO();
-        $query = 'SELECT * FROM #__staff';
+        $query = $this->_buildQuery(). $this->_buildContentOrderBy();
         $this->total = $this->_getListCount($query);
-        $db->setQuery($query,$this->limitstart,$this->limit);
+
+        $db->setQuery($query,$this->getLimitstart(),$this->getLimit());
         $data = $db->loadObjectList();
 
         return $data;
     }
 
-    function getStaff() {
+    function getKid() {
         $cid = JRequest::getVar( 'cid', 0, '', 'int' );
         $db =& JFactory::getDBO();
-        $query = 'SELECT * FROM #__staff where id='.$cid;
+        $query = 'SELECT * FROM #__Kid where id='.$cid;
         $db->setQuery($query);
         $data = $db->loadObject();
         return $data;
     }
-    function getStaffDepartment() {
-        $cid = JRequest::getVar( 'cid', 0, '', 'int' );
+    
+   
 
-        $db =& JFactory::getDBO();
-        $query = 'select distinct d.name from #__division d, #__division_staffs ds, #__division_map m
-where d.id = ds.division_id and d.parent = 0 and ds.staff_id ='.$cid;
-        $db->setQuery($query);
-        $data = $db->loadResult();
-        return $data;
-    }
-    function getStaffDivision() {
-        $cid = JRequest::getVar( 'cid', 0, '', 'int' );
-        $db =& JFactory::getDBO();
-        $query = 'select distinct d.name from #__division d, #__division_staffs ds, #__division_map m
-where d.id = ds.division_id and d.parent = 1 and ds.staff_id ='.$cid;
-        $db->setQuery($query);
-        $data = $db->loadResult();
-        return $data;
-    }
-
-    function getStaffsByDivision() {
-        // if data hasn't already been obtained, load it
-        if (empty($this->_data)) {
-            $query = $this->_buildQuery();
-            $query .= $this->_buildContentOrderBy();
-            $this->_data = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));
-        }
-        return $this->_data;
-    }
 }

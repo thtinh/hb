@@ -33,15 +33,15 @@ class KidController extends JController {
     }
 
     function search() {
-        
+
     }
 
     function display_Kids() {
-        
+
     }
 
     function display_Kids_by() {
-        
+
     }
 
     function display() {
@@ -62,7 +62,12 @@ class KidController extends JController {
         $model = $this->getModel('Kid');
         $view = & $this->getView('Kid', 'html');
         $view->setModel($model, true);
-        $view->setLayout('form');
+        $view->setLayout('detail');
+        global $mainframe; //wtf ????
+        $app = & JFactory::getApplication();
+        $pathway = & $app->getPathway(); // get the pathway object we want to modify
+        /* manually add breadcrumbs, to delete if duplicate */
+        $pathway->addItem('Kid Detail', 'index.php?option=com_kid&view=kid');
         $view->displayDetail();
     }
 
@@ -71,9 +76,8 @@ class KidController extends JController {
         $view = & $this->getView('Kid', 'json');
         $view->setModel($model, true);
         $view->display();
-        
-    }
 
+    }
 }
 
 ?>

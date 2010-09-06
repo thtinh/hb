@@ -31,7 +31,7 @@
 
 		<filename>views/kid/tmpl/index.html</filename>
 		<filename>views/kid/tmpl/default.php</filename>
-                <filename>views/kid/tmpl/form.php</filename>
+                <filename>views/kid/tmpl/detail.php</filename>
                 <filename>views/kid/tmpl/default_result.php</filename>
                 <filename>views/kid/tmpl/default_noresult.php</filename>
                 <filename>views/kid/tmpl/search_footer.php</filename>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Staff entry point file for Staff Component
- * 
+ *
  * @package    Joomla.Tutorials
  * @subpackage Components
  * @link http://dev.joomla.org/component/option,com_jd-wiki/Itemid,31/id,tutorials:components/

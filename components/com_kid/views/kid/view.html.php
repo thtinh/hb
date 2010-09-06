@@ -19,10 +19,23 @@ jimport('joomla.html.pagination');
 class KidViewKid extends JView {
 
     function display($tpl = null, $pagination = null) {
+
+        $pageNav = $this->get('Pagination');
         $data = $this->get( 'Kids' );
-    
-        $this->assignRef('items', $data);
+        $this->assignRef('kids', $data);
         $this->assign('pageNav', $pageNav);
+        parent::display($tpl);
+    }
+    function displayDetail($tpl = null, $pagination = null) {
+        global $mainframe;
+
+        $pageNav = $this->get('Pagination');
+        $data = $this->get( 'Kid' );
+        $dispatcher	=& JDispatcher::getInstance();
+  
+   
+        $this->assignRef('plugin', $results);
+        $this->assignRef('kid', $data);
         parent::display($tpl);
     }
 

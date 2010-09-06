@@ -1,48 +1,31 @@
 <?php
 // no direct access
 defined('_JEXEC') or die('Restricted access');
-
+require_once (JPATH_SITE.DS.'libraries'.DS.'vxghelper'.DS.'helper.php');
+$contentHelper = new helper();
 JHTML::_('behavior.modal');
 ?>
 <style type="text/css">
-
-    #kid-directory div.row.odd{background-color: #e7fafe}
+    #kid-directory div.row{overflow: hidden}
+    #kid-directory div.row.even{background-color: #e7fafe}
     #panel-left {margin-left: auto;margin-right: auto;text-align: center;}
-    #panel-left img{min-width: 80px;max-width: 100px;padding:3px;border: 1px solid #ccc;background-color: #fff}
-    #panel-left a{padding: 10px 30px}
+    #panel-left img{min-width: 80px;max-width: 100px;padding:3px;border: 1px solid #ccc;background-color: #fff;margin: 0 30px;}
+    #panel-left a{padding: 10px 20px;/*to be changed if the name has more than 1 word*/}
 
 </style>
 <div id="kid-directory" class="span-17">
-    <div class="row odd">
+    <?php for ($i = 0;$i<count($this->kids);$i++) :?>
+    <div class="row <?= ($i%2 !=0) ? "odd" : "even"?>">
         <div id="panel-left" class="span-6">
-            <a class="title" href="#">Dummy name</a>
+            <a class="title" href="index.php?option=com_kid&task=display_detail&cid=<?= $this->kids[$i]->id; ?>"><?= $this->kids[$i]->name; ?></a>
             <img class="lightcurve lightshadow" src="/hb/images/stories/joomla-dev_cycle.png" alt="avatar" title="this is kid's picture"/>
         </div>
         <div id="panel-right" class="span-11 last">
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa.</p>
-            <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, p
-                ellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-            </p>
+            <b>Illness:</b><?= $this->kids[$i]->illness ?><br/>
+            <?= '<p>'.$contentHelper->cutString($this->kids[$i]->text, 500).'</p>' ?>
         </div>
         <span class="clearfix">&nbsp;</span>
     </div>
-    <div class="row even">
-        <div id="panel-left" class="span-6">
-            <a class="title" href="#">Dummy name</a>
-            <img class="lightcurve lightshadow" src="/hb/images/stories/joomla-dev_cycle.png" alt="avatar" title="this is kid's picture"/>
-        </div>
-        <div id="panel-right" class="span-11 last">
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa.</p>
-            <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, p
-                ellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-                eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
-            </p>
-        </div>
-        <span class="clearfix">&nbsp;</span>
-    </div>
+    <?php endfor; ?>
+    <div class="pagination"><?= $this->pageNav->getListFooter();?></div>
 </div>
