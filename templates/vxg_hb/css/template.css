@@ -166,11 +166,12 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #album-content #album-thumbnail #thumbnail ul li.active{margin:20px 10px; border:2px solid #26dcea; height:62px; width:82px; float:left;}
 #album-content #thumbnail{width:530px;position: relative;height: 86px;overflow: hidden;}
 #album-content #picture{margin-top:20px;  text-align:center; }
-#album-content #picture img{border:2px solid #d3cece;max-width: 450px;max-height: 340px}
+#album-content #picture img{border:2px solid #d3cece;max-width: 510px;max-height: 510px}
 #album-content #photodescription{width:450px; padding:5px 0px; margin:0 65px;}
 #thumbnail-content .album-thumbnail{width:82px;height:62px}
 #album {background:url("../images/album-bg.jpg") no-repeat left bottom;overflow:hidden;height: 790px;}
 #album p{margin-bottom: 5px;}
+
 /*Contact*/
 .moduletable_contact{padding-left:5px;}
 .moduletable_contact h3, .moduletable_sponsor h3, .moduletable_sponsorlist h3, .moduletable_hbnews h3{
@@ -254,3 +255,12 @@ table.contentpaneopen_news{margin-left:10px}
 table.contentpaneopen_news .title-page{margin:0}
 a.readon_news{float:right;}
 
+/*Kid*/
+#kid-directory div.row{overflow: hidden;margin-left:10px}
+#kid-directory div.row.even{background-color: #e7fafe}
+#panel-left {margin-left: auto;margin-right: auto;text-align: center;}
+#panel-left img{min-width: 80px;max-width: 100px;padding:3px;border: 1px solid #ccc;background-color: #fff;margin: 0 30px;}
+#panel-left a{padding: 10px 20px;/*to be changed if the name has more than 1 word*/}
+#kid-directory{line-height: 2em;margin-top:5px;}
+#kid-info img{float:right;width: 150px;margin-left:10px;}
+#kid-info, #kid-description{margin-left:10px;}

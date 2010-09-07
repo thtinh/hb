@@ -53,7 +53,7 @@ class KidController extends JController {
         $app = & JFactory::getApplication();
         $pathway = & $app->getPathway(); // get the pathway object we want to modify
         /* manually add breadcrumbs, to delete if duplicate */
-        //$pathway->addItem('Kid Directory', 'index.php?option=com_kid&view=kid');
+        $pathway->addItem('Kid Directory', 'index.php?option=com_kid&view=kid');
         //default view
         $view->display();
     }
@@ -67,7 +67,7 @@ class KidController extends JController {
         $app = & JFactory::getApplication();
         $pathway = & $app->getPathway(); // get the pathway object we want to modify
         /* manually add breadcrumbs, to delete if duplicate */
-        $pathway->addItem('Chi tiết', 'index.php?option=com_kid&view=kid');
+        $pathway->addItem('Kid Detail', 'index.php?option=com_kid&view=kid');
         $view->displayDetail();
     }
 
@@ -76,6 +76,7 @@ class KidController extends JController {
         $view = & $this->getView('Kid', 'json');
         $view->setModel($model, true);
         $view->display();
+
     }
 }
 

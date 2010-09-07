@@ -60,14 +60,14 @@ window.addEvent('domready', function(){
             
     };
     var addAlbumInfo = function (catInfo){
-        intro = $('intro');
+        var intro = $('intro');
         intro.empty();
         
         if ($defined(catInfo[0]))
             intro.setHTML(catInfo[0].albumDescription);
     };
     var addImage = function(image) { 
-        pic = $("picture");
+        var pic = $("picture");
         divDescription = $("photodescription");
         if($defined(divDescription))
             pic.empty();
@@ -86,7 +86,7 @@ window.addEvent('domready', function(){
         
         var img = new Element('img', {
             'src': image.link,
-            'style' : 'max-width:450px;max-height:340px'
+            'style' : 'max-width:510px;max-height:510px'
             
         }).injectInside(pic);
         pic.injectAfter($('album-thumbnail'));
@@ -128,7 +128,9 @@ window.addEvent('domready', function(){
     $('album-left').getElement('li').addClass('active');
     id = $('album-left').getElement('li').id.toInt();
     loadAlbum(id);
-
+    $('content').getElements('a[title=Phoca.cz]').each(function(el){
+        el.getParent().remove();
+    });  
 });
 
 

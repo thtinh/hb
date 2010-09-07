@@ -259,7 +259,7 @@ class PhocaGalleryViewCategories extends JView
 		}
 		
 		
-		$tmpl['tl'] = '<div style="text-align: center; color: rgb(211, 211, 211);">Powered by <a href="http://www.phoca.cz" style="text-decoration: none;" target="_blank" title="Phoca.cz">Phoca</a> <a href="http://www.phoca.cz/phocagallery" style="text-decoration: none;" target="_blank" title="Phoca Gallery">Gallery</a></div>';
+		//$tmpl['tl'] = '<div style="text-align: center; color: rgb(211, 211, 211);">Powered by <a href="http://www.phoca.cz" style="text-decoration: none;" target="_blank" title="Phoca.cz">Phoca</a> <a href="http://www.phoca.cz/phocagallery" style="text-decoration: none;" target="_blank" title="Phoca Gallery">Gallery</a></div>';
 		
 		if ($display_categories_geotagging == 1) {
 		

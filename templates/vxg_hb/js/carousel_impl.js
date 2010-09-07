@@ -9,7 +9,7 @@ window.addEvent("domready", function() {
         },
         animation: {
             type: "scroll",
-            duration: 1000,
+            duration: 700,
             amount: 1
         }
     });
