@@ -17,7 +17,7 @@ defined('_JEXEC') or die('Restricted access');
 
             <div class="text_search">
                 <label for="txtSearch">Từ khóa</label>
-                <input id="txtSearch" type="text" class="inputbox lightcurve lightshadow" name="searchword" value="">
+                <input id="txtSearch" type="text" class="inputbox <?=$css_class?>" name="searchword" value="">
             </div>
 
             <div class="search_submit">

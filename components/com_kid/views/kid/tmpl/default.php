@@ -20,7 +20,7 @@ JHTML::_('behavior.mootools');
         </div>
         <div id="panel-right" class="span-11 last">
             <b>Illness:</b><?= $this->kids[$i]->illness ?><br/>
-                <?= '<p>'.$contentHelper->cutString($this->kids[$i]->text, 500).'</p>' ?>
+                <?= '<p>'.$contentHelper->cutString($this->kids[$i]->text, 350).'</p>' ?>
         </div>
         <span class="clearfix">&nbsp;</span>
     </div>

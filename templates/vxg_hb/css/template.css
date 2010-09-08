@@ -168,7 +168,7 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #album-content #picture{margin-top:20px;  text-align:center; }
 #album-content #picture img{border:2px solid #d3cece;max-width: 510px;max-height: 510px}
 #album-content #photodescription{width:450px; padding:5px 0px; margin:0 65px;}
-#thumbnail-content .album-thumbnail{width:82px;height:62px}
+#thumbnail-content .album-thumbnail img{width:82px;height:62px}
 #album {background:url("../images/album-bg.jpg") no-repeat left bottom;overflow:hidden;height: 790px;}
 #album p{margin-bottom: 5px;}
 
