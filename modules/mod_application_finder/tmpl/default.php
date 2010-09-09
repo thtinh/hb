@@ -24,13 +24,12 @@ defined('_JEXEC') or die('Restricted access');
                 <input type="submit" value="Tìm" class="search_button">
             </div>
 
-            <input id="option" type="hidden" name="option" value="com_customproperties"/>
-            <input type="hidden" name="view" value="show"/>
-            <input type="hidden" name="task" value="show"/>
+            <input id="option" type="hidden" name="option" value="com_kid"/>
+
             <input type="hidden" name="layout" value="default"/>
             <input type="hidden" value="search" name="task">
-            <input type="hidden" name="cp_application" value="" />
-            <input type="hidden" name="cp_product" value="" />
+            <input type="hidden" name="cp_illness" value="" />
+            <input type="hidden" name="cp_year" value="" />
             <input type="hidden" name="limit" value="5" />
             <input type="hidden" name="Itemid" value="<?php echo $itemid;?>"/>
 
@@ -45,7 +44,7 @@ $script .= "    document.searchForm.option.value = 'com_search';  ";
 $script .= "    document.searchForm.method = \"post\";  ";
 $script .= "  }  ";
 $script .= "  else {  ";
-$script .= "    document.searchForm.option.value = 'com_customproperties';  ";
+$script .= "    document.searchForm.option.value = 'com_kid';  ";
 $script .= "    document.searchForm.method = \"get\";  ";
 $script .= "  }  ";
 $script .= "  document.searchForm.submit();  ";

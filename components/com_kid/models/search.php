@@ -24,23 +24,12 @@ class KidModelSearch extends JModel {
      * Gets the Kid
      * @return string The Kid to be displayed to the user
      */
-
-    var $_pagination = null;
-
-    var $limit, $limitstart;
-    var $_data = null;
     var $_total = null;
-    var $_searchAreas = null;
-    var $_searchword = null;
-    var $_searchType = null;
-    
-    function getSearchWord(){
-        return $this->_searchword;
-    }
-    function getSearchType() {
-        return $this->_searchType;
-    }
-    function __construct(){
+    var $_pagination = null;
+    var $_data = null;
+    var $_filterillness = null;
+    var $_filteryear = null;
+    function __construct() {
         parent::__construct();
 
         global $mainframe, $option;
@@ -54,19 +43,62 @@ class KidModelSearch extends JModel {
         $this->setState('limit', $limit);
         $this->setState('limitstart', $limitstart);
 
-        $this->_searchType = JRequest::getWord('searchtype','name');
-        $this->_searchword = urldecode(JRequest::getString('searchword'));
+        $this->_filterillness     = $mainframe->getUserStateFromRequest(  $option.'cp_illness', 'cp_application', 'name', 'cmd' );
+        $this->_filteryear = $mainframe->getUserStateFromRequest( $option.'cp_product', 'cp_year', 'name', 'cmd' );
+
+        $this->setState('illness', $this->_filterillness);
+        $this->setState('year', $this->_filteryear);
 
     }
+    function getLimit() {
+        return $this->getState('limit');
+    }
+    function getLimitstart() {
+        return $this->getState('limitstart');
+    }
+    function getIllness() {
+        return $this->getState('illness');
+    }
+    function getYear() {
+        return $this->getState('year');
+    }
+    function _buildQuery() {
+        $query="SELECT * FROM #__Kid k ".$this->_buildWhere();
+        var_dump($query);
+        return $query;
+    }
+    function _buildWhere() {
+        $where = "where ";
+        $illness = $this->getIllness();
+        $year = $this->getYear();
+        if ($illness!="" && $year!="") {
+            $where .="k.illness LIKE '%$illness%' AND k.dob LIKE '%$year%'";
+            return $where;
+        }
+        else {
+            if ($illness) {
+                $where .="k.illness LIKE '%$illness%'";
+                return $where;
+            }
+            if ($year) {
+                $where .="k.dob LIKE '%$year%'";
+                return $where;
+            }
+        }
+
+
+    }
+
     function getTotal() {
         // Load the content if it doesn't already exist
         if (empty($this->_total)) {
             $query = $this->_buildQuery();
-            $query .= $this->_buildDivisionFilter();
             $this->_total = $this->_getListCount($query);
         }
         return $this->_total;
+
     }
+
     function getPagination() {
         // Load the content if it doesn't already exist
         if (empty($this->_pagination)) {
@@ -75,33 +107,19 @@ class KidModelSearch extends JModel {
         }
         return $this->_pagination;
     }
-   
-    function _buildQuery(){
-        $searchword = $this->_searchword;
-        switch ($this->_searchType){
-            case "year" : return "select distinct s.* from #__Kid s, #__division_Kids ds, #__division d
-                where s.id = ds.Kid_id and d.id = ds.division_id and s.name like '%$searchword%'";break;
-            case "illness": return "select distinct s.* from #__Kid s, #__division_Kids ds, #__division d
-                where s.id = ds.Kid_id and d.id = ds.division_id and s.email like '%$searchword%'";break;
-            
-            default : return "";
-        }
-    }
- 
-    function getData() {
-        // Lets load the content if it doesn't already exist      
-       
-        if (empty($this->_data)&&trim($this->_searchword)!='') {
-            $db =& JFactory::getDBO();
-            $query = $this->_buildQuery();
-            
-            //echo $query;
-            $db->setQuery($query,$this->limitstart,$this->limit);
-            //$this->_data = $db->loadObjectList();
+    /**
+     * Gets the Kid
+     * @return string The Kid to be displayed to the user
+     */
+    function getKids() {
+        $db =& JFactory::getDBO();
+        $query = $this->_buildQuery();
+        $this->total = $this->_getListCount($query);
 
-            $this->_data = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));
-        }
-        return $this->_data;
+        $db->setQuery($query,$this->getLimitstart(),$this->getLimit());
+        $data = $db->loadObjectList();
+
+        return $data;
     }
 
 }

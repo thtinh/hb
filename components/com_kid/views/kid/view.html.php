@@ -19,8 +19,7 @@ jimport('joomla.html.pagination');
 class KidViewKid extends JView {
 
     function display($tpl = null, $pagination = null) {
-        global $mainframe;
-       
+        global $mainframe;  
         $params				= $this->_getMenuParams();
         $pageNav = $this->get('Pagination');
         $data = $this->get( 'Kids' );
