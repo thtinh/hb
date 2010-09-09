@@ -138,6 +138,11 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 #searchForm .search_button{background: url(../images/btnSearch-bg.png) no-repeat;padding: 3px 15px 3px 0px;float:right;border:none;color:#fff;width:74px;height: 25px}
 .search_submit{overflow: hidden;margin-top: 10px}
 #searchForm label{margin: 5px;display:block;}
+.ajax-loading {
+	padding: 20px 0;
+	background: url(http://demos111.mootools.net/demos/Group/spinner.gif) no-repeat center;
+}
+
 
 /* Album */
 #album-menu ul {list-style:none;margin-right:10px; padding-right:0px; height:35px;}
@@ -264,3 +269,4 @@ a.readon_news{float:right;}
 #kid-directory{line-height: 2em;margin-top:5px;}
 #kid-info img{float:right;width: 150px;margin-left:10px;}
 #kid-info, #kid-description{margin-left:10px;}
+#kid-directory #search-noresult{margin-left: auto;margin-right: auto;text-align: center}

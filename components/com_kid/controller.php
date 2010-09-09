@@ -36,7 +36,7 @@ class KidController extends JController {
          $model = $this->getModel('Search');
          $view = & $this->getView('Kid', 'html');
          $view->setModel($model, true);
-         $view->display();
+         $view->displayResult("result");
     }
 
     function display_Kids() {

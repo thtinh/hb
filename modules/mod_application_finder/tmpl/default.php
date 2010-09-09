@@ -4,7 +4,7 @@ defined('_JEXEC') or die('Restricted access');
 <div class="search_right">
 
     <div class="search">
-        <form id="searchForm" name="searchForm" action="index.php" method="get" onsubmit="return doSearch();">
+        <form id="searchForm" name="searchForm" action="index.php" method="get">
             <div class="search_field_1">
                 <label for="illness">Loại dị tật</label>
                 <?php echo $lists['illness'];?>
@@ -25,13 +25,10 @@ defined('_JEXEC') or die('Restricted access');
             </div>
 
             <input id="option" type="hidden" name="option" value="com_kid"/>
-
-            <input type="hidden" name="layout" value="default"/>
+            <input type="hidden" name="layout" value="default"/>            
             <input type="hidden" value="search" name="task">
-            <input type="hidden" name="cp_illness" value="" />
-            <input type="hidden" name="cp_year" value="" />
             <input type="hidden" name="limit" value="5" />
-            <input type="hidden" name="Itemid" value="<?php echo $itemid;?>"/>
+            
 
         </form>
 
@@ -50,6 +47,6 @@ $script .= "  }  ";
 $script .= "  document.searchForm.submit();  ";
 $script .= " }  ";
 $document =& JFactory::getDocument();
-$document->addScriptDeclaration($script);
-
+//$document->addScriptDeclaration($script);
+$document->addScript('templates/vxg_hb/js/hb.js');
 ?>

@@ -4,7 +4,7 @@ $menus = &JSite::getMenu();
 $menu  = $menus->getActive();
 $itemid  = $menu->id;
 if ($itemid=='') $itemid = '134';
-$fieldid = 1;
+
 $database = JFactory::getDBO();
 //$query = "SELECT DISTINCT name as value, label as text FROM #__custom_properties_values as v WHERE field_id = $fieldid";
 $query = "select distinct illness as text,illness as value from #__kid";
@@ -13,17 +13,15 @@ $illness_html[] = JHTML::_('select.option',  '', ' -' );
 $database->setQuery( $query );
 $illnesslist = array_merge( $illness_html, $database->loadObjectList() );
 $selectedIllness = JRequest::getVar('illness',"");
-$javascript = 'onchange="document.searchForm.cp_illness.value = this.options[this.options.selectedIndex].value;document.searchForm.submit();"';
+//$javascript = 'onchange="document.searchForm.cp_illness.value = this.options[this.options.selectedIndex].value;document.searchForm.submit();"';
 $lists['illness']= JHTML::_('select.genericlist',$illnesslist,'illness', 'class="inputbox '. $css_class.'" size="1" '. $javascript, 'value', 'text', $selectedIllness);
 
-$fieldid = 2;
-//$query = "SELECT DISTINCT name as value, label as text FROM #__custom_properties_values as v WHERE field_id = $fieldid";
 $query = "select distinct year(dob) as value, year(dob) as text from #__kid";
 $database->setQuery( $query );
 $year_html[] = JHTML::_('select.option',  '', '-' );
 $selectedYear = JRequest::getVar('year',"");
 $yearlist = array_merge( $year_html, $database->loadObjectList() );
-$javascript = 'onchange="document.searchForm.cp_year.value = this.options[this.options.selectedIndex].value;document.searchForm.submit();"';
+
 $lists['year']= JHTML::_('select.genericlist',$yearlist,'year', 'class="inputbox '. $css_class.'" size="1" '. $javascript, 'value', 'text', $selectedYear);
 $lists['year'] =  html_entity_decode($lists['year']);
 

@@ -32,22 +32,30 @@ class KidModelSearch extends JModel {
     function __construct() {
         parent::__construct();
 
-        global $mainframe, $option;
+        global $mainframe, $option; 
         // Get pagination request variables
         $limit = 5;
         $limitstart = JRequest::getVar('limitstart', 0, '', 'int');
-
+  
         // In case limit has been changed, adjust it
         $limitstart = ($limit != 0 ? (floor($limitstart / $limit) * $limit) : 0);
-
+        
+        
+        
         $this->setState('limit', $limit);
-        $this->setState('limitstart', $limitstart);
-
-        $this->_filterillness     = $mainframe->getUserStateFromRequest(  $option.'cp_illness', 'cp_application', 'name', 'cmd' );
-        $this->_filteryear = $mainframe->getUserStateFromRequest( $option.'cp_product', 'cp_year', 'name', 'cmd' );
-
-        $this->setState('illness', $this->_filterillness);
-        $this->setState('year', $this->_filteryear);
+        $this->setState('limitstart', $limitstart);       
+        
+        $this->_filterillness     = $mainframe->getUserStateFromRequest(  $option.'illness', 'illness', 'name', 'cmd' );
+        $this->_filteryear = $mainframe->getUserStateFromRequest(  $option.'year', 'year', 'name', 'cmd' );
+        
+        if ($this->getState('year')==null){
+            $this->setState('year', $this->_filteryear);
+        }
+         if ($this->getState('illness')==null){
+            $this->setState('illness', $this->_filterillness);
+        }
+     
+        
 
     }
     function getLimit() {
@@ -64,7 +72,7 @@ class KidModelSearch extends JModel {
     }
     function _buildQuery() {
         $query="SELECT * FROM #__Kid k ".$this->_buildWhere();
-        var_dump($query);
+    
         return $query;
     }
     function _buildWhere() {
@@ -114,6 +122,7 @@ class KidModelSearch extends JModel {
     function getKids() {
         $db =& JFactory::getDBO();
         $query = $this->_buildQuery();
+        
         $this->total = $this->_getListCount($query);
 
         $db->setQuery($query,$this->getLimitstart(),$this->getLimit());
