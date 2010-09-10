@@ -21,12 +21,11 @@ defined('_JEXEC') or die('Restricted access');
             </div>
 
             <div class="search_submit">
-                <input type="submit" value="Tìm" class="search_button">
+                <input id="submit" type="submit" value="Tìm" class="search_button">
             </div>
 
-            <input id="option" type="hidden" name="option" value="com_kid"/>
-            <input type="hidden" name="layout" value="default"/>            
-            <input type="hidden" value="search" name="task">
+            <input type="hidden" name="option" value="com_kid"/>
+            <input type="hidden" name="layout" value="default"/>                   
             <input type="hidden" name="limit" value="5" />
             
 

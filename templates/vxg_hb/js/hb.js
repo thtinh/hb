@@ -35,7 +35,7 @@ window.addEvent('domready', function(){
             if (document.searchForm.searchword.value !='') {
                 document.searchForm.option.value = 'com_search';
                 document.searchForm.method = "post";
-        
+                document.searchForm.action = "index2.php?option=com_search&Itemid=19&searchword="+document.searchForm.searchword.value;
             }
             else {
                 document.searchForm.option.value = 'com_kid';
@@ -62,6 +62,7 @@ window.addEvent('domready', function(){
                     
                 }
             });
+            this.toQueryString();
         });
     }
     

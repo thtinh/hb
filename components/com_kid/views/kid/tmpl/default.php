@@ -26,5 +26,5 @@ JHTML::_('behavior.mootools');
         </div>
     <?php endfor; ?>
     <div class="pagination"><?= $this->pageNav->getListFooter(); ?></div>
-
+    
 </div>

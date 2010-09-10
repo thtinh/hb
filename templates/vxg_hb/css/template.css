@@ -139,8 +139,8 @@ div.button div.yoo-carousel .article {padding:15px 10px 10px;}
 .search_submit{overflow: hidden;margin-top: 10px}
 #searchForm label{margin: 5px;display:block;}
 .ajax-loading {
-	padding: 20px 0;
-	background: url(http://demos111.mootools.net/demos/Group/spinner.gif) no-repeat center;
+	padding: 30px 0;
+	background: url(../images/loading.gif) no-repeat center;
 }
 
 

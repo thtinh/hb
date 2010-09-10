@@ -45,8 +45,8 @@ class KidModelSearch extends JModel {
         $this->setState('limit', $limit);
         $this->setState('limitstart', $limitstart);       
         
-        $this->_filterillness     = $mainframe->getUserStateFromRequest(  $option.'illness', 'illness', 'name', 'cmd' );
-        $this->_filteryear = $mainframe->getUserStateFromRequest(  $option.'year', 'year', 'name', 'cmd' );
+        $this->_filterillness     = $mainframe->getUserStateFromRequest(  $option.'illness', 'illness', 'name', 'string' );
+        $this->_filteryear = $mainframe->getUserStateFromRequest(  $option.'year', 'year', 'name', 'string' );
         
         if ($this->getState('year')==null){
             $this->setState('year', $this->_filteryear);
